@@ -1,0 +1,138 @@
+\hypertarget{classpangolin_1_1_data_log}{}\section{pangolin\+:\+:Data\+Log Class Reference}
+\label{classpangolin_1_1_data_log}\index{pangolin\+::\+Data\+Log@{pangolin\+::\+Data\+Log}}
+
+
+A \hyperlink{classpangolin_1_1_data_log}{Data\+Log} can efficiently record floating point sample data of any size.  
+
+
+
+
+{\ttfamily \#include $<$datalog.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_data_log_a0c8f4f1670198d8a3ea316871d6fb44a}{Data\+Log} (unsigned int block\+\_\+samples\+\_\+alloc=10000)
+\item 
+void \hyperlink{classpangolin_1_1_data_log_aa7eb0e27c58460dd5392158f9ead6d3b}{Set\+Labels} (const std\+::vector$<$ std\+::string $>$ \&labels)
+\begin{DoxyCompactList}\small\item\em Provide textual labels corresponding to each dimension logged. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& {\bfseries Labels} () const \hypertarget{classpangolin_1_1_data_log_a7f82e7854a40fe48eca912a4fdc3fd3c}{}\label{classpangolin_1_1_data_log_a7f82e7854a40fe48eca912a4fdc3fd3c}
+
+\item 
+void {\bfseries Log} (unsigned int dimension, const float $\ast$vals, unsigned int samples=1)\hypertarget{classpangolin_1_1_data_log_a8e18b177f25638e0bc5bbbadd6869ac3}{}\label{classpangolin_1_1_data_log_a8e18b177f25638e0bc5bbbadd6869ac3}
+
+\item 
+void {\bfseries Log} (float v)\hypertarget{classpangolin_1_1_data_log_ac3514c098e2fd0831ccfca5800cf4de7}{}\label{classpangolin_1_1_data_log_ac3514c098e2fd0831ccfca5800cf4de7}
+
+\item 
+void {\bfseries Log} (float v1, float v2)\hypertarget{classpangolin_1_1_data_log_aba33eb426fe42c9eebe9db5df756eab2}{}\label{classpangolin_1_1_data_log_aba33eb426fe42c9eebe9db5df756eab2}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3)\hypertarget{classpangolin_1_1_data_log_a239375ed52092dc34df73f9769bb8916}{}\label{classpangolin_1_1_data_log_a239375ed52092dc34df73f9769bb8916}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3, float v4)\hypertarget{classpangolin_1_1_data_log_a8b5655beb52a0bfefcd5f1cad7740471}{}\label{classpangolin_1_1_data_log_a8b5655beb52a0bfefcd5f1cad7740471}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3, float v4, float v5)\hypertarget{classpangolin_1_1_data_log_a3e5bb5245f7ace74d1edfe22cf3caca2}{}\label{classpangolin_1_1_data_log_a3e5bb5245f7ace74d1edfe22cf3caca2}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3, float v4, float v5, float v6)\hypertarget{classpangolin_1_1_data_log_af777f6a6ad712a2c661fc46dc5116134}{}\label{classpangolin_1_1_data_log_af777f6a6ad712a2c661fc46dc5116134}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3, float v4, float v5, float v6, float v7)\hypertarget{classpangolin_1_1_data_log_a7911073c03725fe4e16210cd9dc1a7f7}{}\label{classpangolin_1_1_data_log_a7911073c03725fe4e16210cd9dc1a7f7}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3, float v4, float v5, float v6, float v7, float v8)\hypertarget{classpangolin_1_1_data_log_aeb93b51a7205c3e9075932e8bb085520}{}\label{classpangolin_1_1_data_log_aeb93b51a7205c3e9075932e8bb085520}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3, float v4, float v5, float v6, float v7, float v8, float v9)\hypertarget{classpangolin_1_1_data_log_afd4d65ada2542407964fcb5546127eb0}{}\label{classpangolin_1_1_data_log_afd4d65ada2542407964fcb5546127eb0}
+
+\item 
+void {\bfseries Log} (float v1, float v2, float v3, float v4, float v5, float v6, float v7, float v8, float v9, float v10)\hypertarget{classpangolin_1_1_data_log_aa4e904fcf838d2d1985eafcd5b34dd9a}{}\label{classpangolin_1_1_data_log_aa4e904fcf838d2d1985eafcd5b34dd9a}
+
+\item 
+void {\bfseries Log} (const std\+::vector$<$ float $>$ \&vals)\hypertarget{classpangolin_1_1_data_log_a93f2055a18e59137d36d662e96436565}{}\label{classpangolin_1_1_data_log_a93f2055a18e59137d36d662e96436565}
+
+\item 
+void {\bfseries Clear} ()\hypertarget{classpangolin_1_1_data_log_a6c7507f95ee9f73a266ea1ffa4aaecbb}{}\label{classpangolin_1_1_data_log_a6c7507f95ee9f73a266ea1ffa4aaecbb}
+
+\item 
+void {\bfseries Save} (std\+::string filename)\hypertarget{classpangolin_1_1_data_log_ade4c0071631ef20172906a50279026a2}{}\label{classpangolin_1_1_data_log_ade4c0071631ef20172906a50279026a2}
+
+\item 
+const \hyperlink{classpangolin_1_1_data_log_block}{Data\+Log\+Block} $\ast$ {\bfseries First\+Block} () const \hypertarget{classpangolin_1_1_data_log_a8304ddf3c98448431798a12521c6c690}{}\label{classpangolin_1_1_data_log_a8304ddf3c98448431798a12521c6c690}
+
+\item 
+const \hyperlink{classpangolin_1_1_data_log_block}{Data\+Log\+Block} $\ast$ {\bfseries Last\+Block} () const \hypertarget{classpangolin_1_1_data_log_ab7c456328a50f2e196fbf47cc77aa67c}{}\label{classpangolin_1_1_data_log_ab7c456328a50f2e196fbf47cc77aa67c}
+
+\item 
+unsigned int {\bfseries Samples} () const \hypertarget{classpangolin_1_1_data_log_a125e32c0ee4767f72253d8a544741c92}{}\label{classpangolin_1_1_data_log_a125e32c0ee4767f72253d8a544741c92}
+
+\item 
+const float $\ast$ {\bfseries Sample} (int n) const \hypertarget{classpangolin_1_1_data_log_a99538f491bbf39f78712025d4218dff4}{}\label{classpangolin_1_1_data_log_a99538f491bbf39f78712025d4218dff4}
+
+\item 
+const \hyperlink{structpangolin_1_1_dimension_stats}{Dimension\+Stats} \& {\bfseries Stats} (size\+\_\+t dim) const \hypertarget{classpangolin_1_1_data_log_ac51716574725c8aa0cf3d1705c134ad4}{}\label{classpangolin_1_1_data_log_ac51716574725c8aa0cf3d1705c134ad4}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries block\+\_\+samples\+\_\+alloc}\hypertarget{classpangolin_1_1_data_log_a990a2d63bd18bd4c4cdf96cc8a4602ba}{}\label{classpangolin_1_1_data_log_a990a2d63bd18bd4c4cdf96cc8a4602ba}
+
+\item 
+std\+::vector$<$ std\+::string $>$ {\bfseries labels}\hypertarget{classpangolin_1_1_data_log_a17b9968806d9251ddd6cbf204e9ca4c0}{}\label{classpangolin_1_1_data_log_a17b9968806d9251ddd6cbf204e9ca4c0}
+
+\item 
+\hyperlink{classpangolin_1_1_data_log_block}{Data\+Log\+Block} $\ast$ {\bfseries block0}\hypertarget{classpangolin_1_1_data_log_a618cec617dc2b8405729abb7889c3179}{}\label{classpangolin_1_1_data_log_a618cec617dc2b8405729abb7889c3179}
+
+\item 
+\hyperlink{classpangolin_1_1_data_log_block}{Data\+Log\+Block} $\ast$ {\bfseries blockn}\hypertarget{classpangolin_1_1_data_log_ad8ab0338adf86fc912d6211a3502155d}{}\label{classpangolin_1_1_data_log_ad8ab0338adf86fc912d6211a3502155d}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_dimension_stats}{Dimension\+Stats} $>$ {\bfseries stats}\hypertarget{classpangolin_1_1_data_log_a0b31a1be6ccba4ecb465e48a2cf18fef}{}\label{classpangolin_1_1_data_log_a0b31a1be6ccba4ecb465e48a2cf18fef}
+
+\item 
+bool {\bfseries record\+\_\+stats}\hypertarget{classpangolin_1_1_data_log_a989503f87d8b8e452d517c1ec7b7ab8f}{}\label{classpangolin_1_1_data_log_a989503f87d8b8e452d517c1ec7b7ab8f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classpangolin_1_1_data_log}{Data\+Log} can efficiently record floating point sample data of any size. 
+
+Memory is allocated in blocks is transparent to the user. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{pangolin\+::\+Data\+Log@{pangolin\+::\+Data\+Log}!Data\+Log@{Data\+Log}}
+\index{Data\+Log@{Data\+Log}!pangolin\+::\+Data\+Log@{pangolin\+::\+Data\+Log}}
+\subsubsection[{\texorpdfstring{Data\+Log(unsigned int block\+\_\+samples\+\_\+alloc=10000)}{DataLog(unsigned int block_samples_alloc=10000)}}]{\setlength{\rightskip}{0pt plus 5cm}pangolin\+::\+Data\+Log\+::\+Data\+Log (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{block\+\_\+samples\+\_\+alloc = {\ttfamily 10000}}
+\end{DoxyParamCaption}
+)}\hypertarget{classpangolin_1_1_data_log_a0c8f4f1670198d8a3ea316871d6fb44a}{}\label{classpangolin_1_1_data_log_a0c8f4f1670198d8a3ea316871d6fb44a}
+
+\begin{DoxyParams}{Parameters}
+{\em block\+\_\+samples\+\_\+alloc} & number of samples each memory block can hold. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Data\+Log@{pangolin\+::\+Data\+Log}!Set\+Labels@{Set\+Labels}}
+\index{Set\+Labels@{Set\+Labels}!pangolin\+::\+Data\+Log@{pangolin\+::\+Data\+Log}}
+\subsubsection[{\texorpdfstring{Set\+Labels(const std\+::vector$<$ std\+::string $>$ \&labels)}{SetLabels(const std::vector< std::string > &labels)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Data\+Log\+::\+Set\+Labels (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{labels}
+\end{DoxyParamCaption}
+)}\hypertarget{classpangolin_1_1_data_log_aa7eb0e27c58460dd5392158f9ead6d3b}{}\label{classpangolin_1_1_data_log_aa7eb0e27c58460dd5392158f9ead6d3b}
+
+
+Provide textual labels corresponding to each dimension logged. 
+
+This information may be used by graphical interfaces to \hyperlink{classpangolin_1_1_data_log}{Data\+Log}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/plot/datalog.\+h\end{DoxyCompactItemize}

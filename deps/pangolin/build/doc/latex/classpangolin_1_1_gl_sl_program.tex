@@ -1,0 +1,97 @@
+\hypertarget{classpangolin_1_1_gl_sl_program}{}\section{pangolin\+:\+:Gl\+Sl\+Program Class Reference}
+\label{classpangolin_1_1_gl_sl_program}\index{pangolin\+::\+Gl\+Sl\+Program@{pangolin\+::\+Gl\+Sl\+Program}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Add\+Shader} (Gl\+Sl\+Shader\+Type shader\+\_\+type, const std\+::string \&source\+\_\+code, const std\+::map$<$ std\+::string, std\+::string $>$ \&program\+\_\+defines=std\+::map$<$ std\+::string, std\+::string $>$(), const std\+::vector$<$ std\+::string $>$ \&search\+\_\+path=std\+::vector$<$ std\+::string $>$())\hypertarget{classpangolin_1_1_gl_sl_program_a6880948ce17871643d9d7f1fea79e40f}{}\label{classpangolin_1_1_gl_sl_program_a6880948ce17871643d9d7f1fea79e40f}
+
+\item 
+bool {\bfseries Add\+Shader\+From\+File} (Gl\+Sl\+Shader\+Type shader\+\_\+type, const std\+::string \&filename, const std\+::map$<$ std\+::string, std\+::string $>$ \&program\+\_\+defines=std\+::map$<$ std\+::string, std\+::string $>$(), const std\+::vector$<$ std\+::string $>$ \&search\+\_\+path=std\+::vector$<$ std\+::string $>$())\hypertarget{classpangolin_1_1_gl_sl_program_afcf996e6d0de9b3a153de63e6d36ccdd}{}\label{classpangolin_1_1_gl_sl_program_afcf996e6d0de9b3a153de63e6d36ccdd}
+
+\item 
+bool {\bfseries Link} ()\hypertarget{classpangolin_1_1_gl_sl_program_a335888bedc6c9efd37b6c4313a80febc}{}\label{classpangolin_1_1_gl_sl_program_a335888bedc6c9efd37b6c4313a80febc}
+
+\item 
+G\+Lint {\bfseries Get\+Attribute\+Handle} (const std\+::string \&name)\hypertarget{classpangolin_1_1_gl_sl_program_a0445181368ce89c014e95a15bfd1b905}{}\label{classpangolin_1_1_gl_sl_program_a0445181368ce89c014e95a15bfd1b905}
+
+\item 
+G\+Lint {\bfseries Get\+Uniform\+Handle} (const std\+::string \&name)\hypertarget{classpangolin_1_1_gl_sl_program_a84634c0ec52ade204eb77f96f73f0266}{}\label{classpangolin_1_1_gl_sl_program_a84634c0ec52ade204eb77f96f73f0266}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, int x)\hypertarget{classpangolin_1_1_gl_sl_program_a5731be2af6fa53c17cfb35088b95a601}{}\label{classpangolin_1_1_gl_sl_program_a5731be2af6fa53c17cfb35088b95a601}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, int x1, int x2)\hypertarget{classpangolin_1_1_gl_sl_program_a3ca25f615d97242871d658bb6a1e4992}{}\label{classpangolin_1_1_gl_sl_program_a3ca25f615d97242871d658bb6a1e4992}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, int x1, int x2, int x3)\hypertarget{classpangolin_1_1_gl_sl_program_a63d941f091d09c131ed38d93c1349a72}{}\label{classpangolin_1_1_gl_sl_program_a63d941f091d09c131ed38d93c1349a72}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, int x1, int x2, int x3, int x4)\hypertarget{classpangolin_1_1_gl_sl_program_acac7526f33948068f3e2fe3cd57abacc}{}\label{classpangolin_1_1_gl_sl_program_acac7526f33948068f3e2fe3cd57abacc}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, float f)\hypertarget{classpangolin_1_1_gl_sl_program_a5db8cb062b0e0590c2ac5c20e2f7d7f1}{}\label{classpangolin_1_1_gl_sl_program_a5db8cb062b0e0590c2ac5c20e2f7d7f1}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, float f1, float f2)\hypertarget{classpangolin_1_1_gl_sl_program_a7ec9ea99220ddb382a04d461aa15ab28}{}\label{classpangolin_1_1_gl_sl_program_a7ec9ea99220ddb382a04d461aa15ab28}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, float f1, float f2, float f3)\hypertarget{classpangolin_1_1_gl_sl_program_ae3515f491cec31186996ee0d96c133f8}{}\label{classpangolin_1_1_gl_sl_program_ae3515f491cec31186996ee0d96c133f8}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, float f1, float f2, float f3, float f4)\hypertarget{classpangolin_1_1_gl_sl_program_a7b61e3c3986d934af45dca4b195aaca7}{}\label{classpangolin_1_1_gl_sl_program_a7b61e3c3986d934af45dca4b195aaca7}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, \hyperlink{structpangolin_1_1_colour}{Colour} c)\hypertarget{classpangolin_1_1_gl_sl_program_a77ede6406251fccc92ec635434a3b4ad}{}\label{classpangolin_1_1_gl_sl_program_a77ede6406251fccc92ec635434a3b4ad}
+
+\item 
+void {\bfseries Set\+Uniform} (const std\+::string \&name, const \hyperlink{structpangolin_1_1_open_gl_matrix}{Open\+Gl\+Matrix} \&m)\hypertarget{classpangolin_1_1_gl_sl_program_a5bca14ef8436d5db56e895632b6527ae}{}\label{classpangolin_1_1_gl_sl_program_a5bca14ef8436d5db56e895632b6527ae}
+
+\item 
+void {\bfseries Bind} ()\hypertarget{classpangolin_1_1_gl_sl_program_ad279f3dc5429b3da7d7dc0e516dcce0e}{}\label{classpangolin_1_1_gl_sl_program_ad279f3dc5429b3da7d7dc0e516dcce0e}
+
+\item 
+void {\bfseries Save\+Bind} ()\hypertarget{classpangolin_1_1_gl_sl_program_a45242b8df838a436d103504e16efbc81}{}\label{classpangolin_1_1_gl_sl_program_a45242b8df838a436d103504e16efbc81}
+
+\item 
+void {\bfseries Unbind} ()\hypertarget{classpangolin_1_1_gl_sl_program_a1e29f0a97f40b680395776414a477370}{}\label{classpangolin_1_1_gl_sl_program_a1e29f0a97f40b680395776414a477370}
+
+\item 
+void {\bfseries Bind\+Pangolin\+Default\+Attrib\+Locations\+And\+Link} ()\hypertarget{classpangolin_1_1_gl_sl_program_a6e48637494710a102122e0532abba2dd}{}\label{classpangolin_1_1_gl_sl_program_a6e48637494710a102122e0532abba2dd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries Parse\+Include\+Filename} (const std\+::string \&location)\hypertarget{classpangolin_1_1_gl_sl_program_ab3ddbf504d2c3f9027e11853f22928e1}{}\label{classpangolin_1_1_gl_sl_program_ab3ddbf504d2c3f9027e11853f22928e1}
+
+\item 
+std\+::string {\bfseries Search\+Include\+Path} (const std\+::string \&filename, const std\+::vector$<$ std\+::string $>$ \&search\+\_\+path, const std\+::string \&current\+\_\+path)\hypertarget{classpangolin_1_1_gl_sl_program_af8d35348ed13a2bcae13f489b1c957ba}{}\label{classpangolin_1_1_gl_sl_program_af8d35348ed13a2bcae13f489b1c957ba}
+
+\item 
+bool {\bfseries Add\+Preprocessed\+Shader} (Gl\+Sl\+Shader\+Type shader\+\_\+type, const std\+::string \&source\+\_\+code, const std\+::string \&name\+\_\+for\+\_\+errors)\hypertarget{classpangolin_1_1_gl_sl_program_adedca316d4367dfa2ab6c11ff6ca82cb}{}\label{classpangolin_1_1_gl_sl_program_adedca316d4367dfa2ab6c11ff6ca82cb}
+
+\item 
+void {\bfseries Parse\+G\+L\+SL} (std\+::istream \&input, std\+::ostream \&output, const std\+::map$<$ std\+::string, std\+::string $>$ \&program\+\_\+defines, const std\+::vector$<$ std\+::string $>$ \&search\+\_\+path, const std\+::string \&current\+\_\+path)\hypertarget{classpangolin_1_1_gl_sl_program_a6e2ace720497d9dc3d8bda29d0d2d9b6}{}\label{classpangolin_1_1_gl_sl_program_a6e2ace720497d9dc3d8bda29d0d2d9b6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries linked}\hypertarget{classpangolin_1_1_gl_sl_program_a451702d087219a5e434b80d935d25ad8}{}\label{classpangolin_1_1_gl_sl_program_a451702d087219a5e434b80d935d25ad8}
+
+\item 
+std\+::vector$<$ G\+Lhandle\+A\+RB $>$ {\bfseries shaders}\hypertarget{classpangolin_1_1_gl_sl_program_ad273d9dc9b3c1262d225ad82530bea6a}{}\label{classpangolin_1_1_gl_sl_program_ad273d9dc9b3c1262d225ad82530bea6a}
+
+\item 
+G\+Lenum {\bfseries prog}\hypertarget{classpangolin_1_1_gl_sl_program_a16644db3f31e33995eac41949c4344d8}{}\label{classpangolin_1_1_gl_sl_program_a16644db3f31e33995eac41949c4344d8}
+
+\item 
+G\+Lint {\bfseries prev\+\_\+prog}\hypertarget{classpangolin_1_1_gl_sl_program_aa4e51f100762bfd3599843ccdebc2714}{}\label{classpangolin_1_1_gl_sl_program_aa4e51f100762bfd3599843ccdebc2714}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/gl/glsl.\+h\end{DoxyCompactItemize}

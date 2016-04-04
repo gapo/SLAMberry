@@ -1,0 +1,61 @@
+\hypertarget{classpangolin_1_1_shift_video}{}\section{pangolin\+:\+:Shift\+Video Class Reference}
+\label{classpangolin_1_1_shift_video}\index{pangolin\+::\+Shift\+Video@{pangolin\+::\+Shift\+Video}}
+Inheritance diagram for pangolin\+:\+:Shift\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_shift_video}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Shift\+Video} (\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$videoin, \hyperlink{structpangolin_1_1_video_pixel_format}{Video\+Pixel\+Format} new\+\_\+fmt, int shift\+\_\+right\+\_\+bits=0, unsigned int mask=0x\+F\+F\+F\+F)\hypertarget{classpangolin_1_1_shift_video_a8ad45176015a35aed0e50481c2badce4}{}\label{classpangolin_1_1_shift_video_a8ad45176015a35aed0e50481c2badce4}
+
+\item 
+void \hyperlink{classpangolin_1_1_shift_video_abd1b69a437aed53dbcf6e064a15d82a3}{Start} ()\hypertarget{classpangolin_1_1_shift_video_abd1b69a437aed53dbcf6e064a15d82a3}{}\label{classpangolin_1_1_shift_video_abd1b69a437aed53dbcf6e064a15d82a3}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a74a2e3e1b87c7cbf9de9bcb39e1df128}{Video\+Input\+::\+Start()} \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_shift_video_a403662f0304427ea8ca047e7d02fb369}{Stop} ()\hypertarget{classpangolin_1_1_shift_video_a403662f0304427ea8ca047e7d02fb369}{}\label{classpangolin_1_1_shift_video_a403662f0304427ea8ca047e7d02fb369}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a8945f80194cc7ec9594db7f27e7d09b8}{Video\+Input\+::\+Stop()} \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_shift_video_aaaf42a6603580c8376769d144945df0e}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_shift_video_aaaf42a6603580c8376769d144945df0e}{}\label{classpangolin_1_1_shift_video_aaaf42a6603580c8376769d144945df0e}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a93cee5c33386973a2a51165e6bdcf40b}{Video\+Input\+::\+Size\+Bytes()} \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_shift_video_a63488eb65d208cc1b05a9d4baf3d6058}{Streams} () const \hypertarget{classpangolin_1_1_shift_video_a63488eb65d208cc1b05a9d4baf3d6058}{}\label{classpangolin_1_1_shift_video_a63488eb65d208cc1b05a9d4baf3d6058}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a9030d775d699c39ab7b7ba378c007c6a}{Video\+Input\+::\+Streams()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_shift_video_a67e43e271b0cef25e74c236580ebdd99}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_shift_video_a67e43e271b0cef25e74c236580ebdd99}{}\label{classpangolin_1_1_shift_video_a67e43e271b0cef25e74c236580ebdd99}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_ad3d8ff59c1ec4139320097e6e1111f32}{Video\+Input\+::\+Grab\+Next()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_shift_video_a6a892441163b80351fcaac011964cf6c}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_shift_video_a6a892441163b80351fcaac011964cf6c}{}\label{classpangolin_1_1_shift_video_a6a892441163b80351fcaac011964cf6c}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a4c8ac38e3c6a3f591663aeebf645e4c6}{Video\+Input\+::\+Grab\+Newest()} \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ \& {\bfseries Input\+Streams} ()\hypertarget{classpangolin_1_1_shift_video_a47fb5b8af22e7c95f68e425c53212a11}{}\label{classpangolin_1_1_shift_video_a47fb5b8af22e7c95f68e425c53212a11}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ {\bfseries videoin}\hypertarget{classpangolin_1_1_shift_video_ab4395c3eb68c486d8a8fed8195a02aec}{}\label{classpangolin_1_1_shift_video_ab4395c3eb68c486d8a8fed8195a02aec}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_shift_video_a1070e30e0b218fa754cd28cd61b926c3}{}\label{classpangolin_1_1_shift_video_a1070e30e0b218fa754cd28cd61b926c3}
+
+\item 
+size\+\_\+t {\bfseries size\+\_\+bytes}\hypertarget{classpangolin_1_1_shift_video_a43d1b3eefb55556e3e02b56ad0538ce9}{}\label{classpangolin_1_1_shift_video_a43d1b3eefb55556e3e02b56ad0538ce9}
+
+\item 
+unsigned char $\ast$ {\bfseries buffer}\hypertarget{classpangolin_1_1_shift_video_ab6c0151499a02c64253c601a37bb0008}{}\label{classpangolin_1_1_shift_video_ab6c0151499a02c64253c601a37bb0008}
+
+\item 
+int {\bfseries shift\+\_\+right\+\_\+bits}\hypertarget{classpangolin_1_1_shift_video_a9fc55d6a38c76797928fea95a6694f95}{}\label{classpangolin_1_1_shift_video_a9fc55d6a38c76797928fea95a6694f95}
+
+\item 
+unsigned int {\bfseries mask}\hypertarget{classpangolin_1_1_shift_video_a2ac01689d4cac5e8db54c0a220a3b8ea}{}\label{classpangolin_1_1_shift_video_a2ac01689d4cac5e8db54c0a220a3b8ea}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/shift.\+h\end{DoxyCompactItemize}

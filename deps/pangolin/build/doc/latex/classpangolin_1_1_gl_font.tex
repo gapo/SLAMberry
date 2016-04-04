@@ -1,0 +1,73 @@
+\hypertarget{classpangolin_1_1_gl_font}{}\section{pangolin\+:\+:Gl\+Font Class Reference}
+\label{classpangolin_1_1_gl_font}\index{pangolin\+::\+Gl\+Font@{pangolin\+::\+Gl\+Font}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Gl\+Font} (const unsigned char $\ast$ttf\+\_\+buffer, float pixel\+\_\+height, int tex\+\_\+w=512, int tex\+\_\+h=512)\hypertarget{classpangolin_1_1_gl_font_a415c64b1617ba1d5b1339602746cab5e}{}\label{classpangolin_1_1_gl_font_a415c64b1617ba1d5b1339602746cab5e}
+
+\item 
+{\bfseries Gl\+Font} (const std\+::string \&filename, float pixel\+\_\+height, int tex\+\_\+w=512, int tex\+\_\+h=512)\hypertarget{classpangolin_1_1_gl_font_acf8674e7ef87fd9baf65d4df5067b888}{}\label{classpangolin_1_1_gl_font_acf8674e7ef87fd9baf65d4df5067b888}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_text}{Gl\+Text} {\bfseries Text} (const char $\ast$fmt,...)\hypertarget{classpangolin_1_1_gl_font_aa01e014e321b6198aaf3e788a004c134}{}\label{classpangolin_1_1_gl_font_aa01e014e321b6198aaf3e788a004c134}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_text}{Gl\+Text} {\bfseries Text} (const std\+::string \&str)\hypertarget{classpangolin_1_1_gl_font_a75978f30f9bad8d0a5a7e78df3dc7a00}{}\label{classpangolin_1_1_gl_font_a75978f30f9bad8d0a5a7e78df3dc7a00}
+
+\item 
+float {\bfseries Height} () const \hypertarget{classpangolin_1_1_gl_font_a56ca3022889d3b150112aa631bba0dab}{}\label{classpangolin_1_1_gl_font_a56ca3022889d3b150112aa631bba0dab}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classpangolin_1_1_gl_font}{Gl\+Font} \& {\bfseries I} ()\hypertarget{classpangolin_1_1_gl_font_af0a76ffa1929730c31d81011459b60bf}{}\label{classpangolin_1_1_gl_font_af0a76ffa1929730c31d81011459b60bf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialise\+Font} (const unsigned char $\ast$ttf\+\_\+buffer, float pixel\+\_\+height, int tex\+\_\+w, int tex\+\_\+h)\hypertarget{classpangolin_1_1_gl_font_a3dcadff69ed2b1e9c14141aadc0a0c26}{}\label{classpangolin_1_1_gl_font_a3dcadff69ed2b1e9c14141aadc0a0c26}
+
+\item 
+void {\bfseries Initialise\+Gl\+Texture} ()\hypertarget{classpangolin_1_1_gl_font_a714a0f3d3c7466ff01de0b1a0c88b413}{}\label{classpangolin_1_1_gl_font_a714a0f3d3c7466ff01de0b1a0c88b413}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float {\bfseries font\+\_\+height\+\_\+px}\hypertarget{classpangolin_1_1_gl_font_a744c738a832f3e1e7f8373509de7c552}{}\label{classpangolin_1_1_gl_font_a744c738a832f3e1e7f8373509de7c552}
+
+\item 
+int {\bfseries tex\+\_\+w}\hypertarget{classpangolin_1_1_gl_font_a2e0a85f9080850da13d2e4ba6750a0e6}{}\label{classpangolin_1_1_gl_font_a2e0a85f9080850da13d2e4ba6750a0e6}
+
+\item 
+int {\bfseries tex\+\_\+h}\hypertarget{classpangolin_1_1_gl_font_a742a2db1404f9db06b1d736f593af482}{}\label{classpangolin_1_1_gl_font_a742a2db1404f9db06b1d736f593af482}
+
+\item 
+unsigned char $\ast$ {\bfseries font\+\_\+bitmap}\hypertarget{classpangolin_1_1_gl_font_a7e03e88ac7aa915a09b243a5cf3df97a}{}\label{classpangolin_1_1_gl_font_a7e03e88ac7aa915a09b243a5cf3df97a}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_texture}{Gl\+Texture} {\bfseries m\+Tex}\hypertarget{classpangolin_1_1_gl_font_a5515a6f60ecb444bb18354f5bebce17d}{}\label{classpangolin_1_1_gl_font_a5515a6f60ecb444bb18354f5bebce17d}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_char}{Gl\+Char} {\bfseries chardata} \mbox{[}N\+U\+M\+\_\+\+C\+H\+A\+RS\mbox{]}\hypertarget{classpangolin_1_1_gl_font_aede88934c27afe8e81ce16106eab99ae}{}\label{classpangolin_1_1_gl_font_aede88934c27afe8e81ce16106eab99ae}
+
+\item 
+G\+Lfloat {\bfseries kern\+\_\+table} \mbox{[}N\+U\+M\+\_\+\+C\+H\+A\+RS $\ast$N\+U\+M\+\_\+\+C\+H\+A\+RS\mbox{]}\hypertarget{classpangolin_1_1_gl_font_a9a3dd53988b84caa55c46eff00c19e2e}{}\label{classpangolin_1_1_gl_font_a9a3dd53988b84caa55c46eff00c19e2e}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries F\+I\+R\+S\+T\+\_\+\+C\+H\+AR} = 32\hypertarget{classpangolin_1_1_gl_font_ab37c43cd34933cdf0b8dc675a69183e5}{}\label{classpangolin_1_1_gl_font_ab37c43cd34933cdf0b8dc675a69183e5}
+
+\item 
+static const int {\bfseries N\+U\+M\+\_\+\+C\+H\+A\+RS} = 96\hypertarget{classpangolin_1_1_gl_font_a4b4292de8a07f1a431dc0e7130b39c00}{}\label{classpangolin_1_1_gl_font_a4b4292de8a07f1a431dc0e7130b39c00}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/gl/glfont.\+h\end{DoxyCompactItemize}

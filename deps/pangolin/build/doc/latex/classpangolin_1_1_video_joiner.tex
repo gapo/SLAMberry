@@ -1,0 +1,85 @@
+\hypertarget{classpangolin_1_1_video_joiner}{}\section{pangolin\+:\+:Video\+Joiner Class Reference}
+\label{classpangolin_1_1_video_joiner}\index{pangolin\+::\+Video\+Joiner@{pangolin\+::\+Video\+Joiner}}
+Inheritance diagram for pangolin\+:\+:Video\+Joiner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_video_joiner}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Video\+Joiner} (const std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ \&src)\hypertarget{classpangolin_1_1_video_joiner_a12e4fa5ea8b2d95b135d32fce818fb09}{}\label{classpangolin_1_1_video_joiner_a12e4fa5ea8b2d95b135d32fce818fb09}
+
+\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_video_joiner_ad928bb80dc60f22a686c53bf79a462e3}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_video_joiner_ad928bb80dc60f22a686c53bf79a462e3}{}\label{classpangolin_1_1_video_joiner_ad928bb80dc60f22a686c53bf79a462e3}
+
+\begin{DoxyCompactList}\small\item\em Required buffer size to store all frames. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_video_joiner_a5b9570d085cc766e215fa695206261ae}{Streams} () const \hypertarget{classpangolin_1_1_video_joiner_a5b9570d085cc766e215fa695206261ae}{}\label{classpangolin_1_1_video_joiner_a5b9570d085cc766e215fa695206261ae}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_video_joiner_aa7ba71c954efebd82c890155275e54d1}{Start} ()\hypertarget{classpangolin_1_1_video_joiner_aa7ba71c954efebd82c890155275e54d1}{}\label{classpangolin_1_1_video_joiner_aa7ba71c954efebd82c890155275e54d1}
+
+\begin{DoxyCompactList}\small\item\em Start Video device. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_video_joiner_a47a796bf96196681c3eb33ffe0f37559}{Stop} ()\hypertarget{classpangolin_1_1_video_joiner_a47a796bf96196681c3eb33ffe0f37559}{}\label{classpangolin_1_1_video_joiner_a47a796bf96196681c3eb33ffe0f37559}
+
+\begin{DoxyCompactList}\small\item\em Stop Video device. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_video_joiner_a54719b11d488f8b011ada9050646bcc0}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the next frame from the camera to image. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_video_joiner_a142ee897491581645c0f168673a3f932}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the newest frame from the camera to image discarding all older frames. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ \& {\bfseries Input\+Streams} ()\hypertarget{classpangolin_1_1_video_joiner_aff4636355426ba2bac61d219039bbbdd}{}\label{classpangolin_1_1_video_joiner_aff4636355426ba2bac61d219039bbbdd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ {\bfseries src}\hypertarget{classpangolin_1_1_video_joiner_a08fff09d58e6cc9804d9423d70069752}{}\label{classpangolin_1_1_video_joiner_a08fff09d58e6cc9804d9423d70069752}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_video_joiner_a903ffed1e03d51e53f4d2c79712a2979}{}\label{classpangolin_1_1_video_joiner_a903ffed1e03d51e53f4d2c79712a2979}
+
+\item 
+size\+\_\+t {\bfseries size\+\_\+bytes}\hypertarget{classpangolin_1_1_video_joiner_afaac17b37be28ef8b3379d15f6f3d62b}{}\label{classpangolin_1_1_video_joiner_afaac17b37be28ef8b3379d15f6f3d62b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Video\+Joiner@{pangolin\+::\+Video\+Joiner}!Grab\+Newest@{Grab\+Newest}}
+\index{Grab\+Newest@{Grab\+Newest}!pangolin\+::\+Video\+Joiner@{pangolin\+::\+Video\+Joiner}}
+\subsubsection[{\texorpdfstring{Grab\+Newest(unsigned char $\ast$image, bool wait=true)}{GrabNewest(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Video\+Joiner\+::\+Grab\+Newest (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_video_joiner_a142ee897491581645c0f168673a3f932}{}\label{classpangolin_1_1_video_joiner_a142ee897491581645c0f168673a3f932}
+
+
+Copy the newest frame from the camera to image discarding all older frames. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a062ad8f58e023e93ce48b1c61ea00674}{pangolin\+::\+Video\+Interface}.
+
+\index{pangolin\+::\+Video\+Joiner@{pangolin\+::\+Video\+Joiner}!Grab\+Next@{Grab\+Next}}
+\index{Grab\+Next@{Grab\+Next}!pangolin\+::\+Video\+Joiner@{pangolin\+::\+Video\+Joiner}}
+\subsubsection[{\texorpdfstring{Grab\+Next(unsigned char $\ast$image, bool wait=true)}{GrabNext(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Video\+Joiner\+::\+Grab\+Next (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_video_joiner_a54719b11d488f8b011ada9050646bcc0}{}\label{classpangolin_1_1_video_joiner_a54719b11d488f8b011ada9050646bcc0}
+
+
+Copy the next frame from the camera to image. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a2a87c2219959a762dbbb43760d27ff27}{pangolin\+::\+Video\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/join.\+h\end{DoxyCompactItemize}

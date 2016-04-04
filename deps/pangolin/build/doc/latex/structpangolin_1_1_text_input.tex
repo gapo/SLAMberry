@@ -1,0 +1,73 @@
+\hypertarget{structpangolin_1_1_text_input}{}\section{pangolin\+:\+:Text\+Input Struct Reference}
+\label{structpangolin_1_1_text_input}\index{pangolin\+::\+Text\+Input@{pangolin\+::\+Text\+Input}}
+Inheritance diagram for pangolin\+:\+:Text\+Input\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.962963cm]{structpangolin_1_1_text_input}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Text\+Input} (std\+::string title, \hyperlink{classpangolin_1_1_var_value_generic}{Var\+Value\+Generic} \&tv)\hypertarget{structpangolin_1_1_text_input_a1e3121ac096852641d4c284250751717}{}\label{structpangolin_1_1_text_input_a1e3121ac096852641d4c284250751717}
+
+\item 
+void {\bfseries Mouse} (\hyperlink{structpangolin_1_1_view}{View} \&, Mouse\+Button button, int x, int y, bool pressed, int mouse\+\_\+state)\hypertarget{structpangolin_1_1_text_input_a27d416092e825c4c21322188f643c9cc}{}\label{structpangolin_1_1_text_input_a27d416092e825c4c21322188f643c9cc}
+
+\item 
+void {\bfseries Mouse\+Motion} (\hyperlink{structpangolin_1_1_view}{View} \&, int x, int y, int mouse\+\_\+state)\hypertarget{structpangolin_1_1_text_input_a2c6deff3d77227cf4353a9d27553a54e}{}\label{structpangolin_1_1_text_input_a2c6deff3d77227cf4353a9d27553a54e}
+
+\item 
+void {\bfseries Keyboard} (\hyperlink{structpangolin_1_1_view}{View} \&, unsigned char key, int x, int y, bool pressed)\hypertarget{structpangolin_1_1_text_input_a069e3ebdc0567c22152d47d96d29c5df}{}\label{structpangolin_1_1_text_input_a069e3ebdc0567c22152d47d96d29c5df}
+
+\item 
+void \hyperlink{structpangolin_1_1_text_input_a76fba1c1f6ececafa48b393b5a823944}{Render} ()
+\begin{DoxyCompactList}\small\item\em Perform any automatic rendering for this \hyperlink{structpangolin_1_1_view}{View}. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_text_input_a2d749a3cd765aebceb05310152559897}{Resize\+Children} ()\hypertarget{structpangolin_1_1_text_input_a2d749a3cd765aebceb05310152559897}{}\label{structpangolin_1_1_text_input_a2d749a3cd765aebceb05310152559897}
+
+\begin{DoxyCompactList}\small\item\em Instruct all children to resize. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries edit}\hypertarget{structpangolin_1_1_text_input_a7c43bd80c89d0b3819094c9da5c07ed7}{}\label{structpangolin_1_1_text_input_a7c43bd80c89d0b3819094c9da5c07ed7}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_text}{Gl\+Text} {\bfseries gledit}\hypertarget{structpangolin_1_1_text_input_af5289e2ead9b59a5d3498478c6c33670}{}\label{structpangolin_1_1_text_input_af5289e2ead9b59a5d3498478c6c33670}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_text}{Gl\+Text} {\bfseries gltext}\hypertarget{structpangolin_1_1_text_input_aa6e230140d88326e64b318870a9b35ec}{}\label{structpangolin_1_1_text_input_aa6e230140d88326e64b318870a9b35ec}
+
+\item 
+G\+Lfloat {\bfseries raster} \mbox{[}2\mbox{]}\hypertarget{structpangolin_1_1_text_input_a56759b64810ab00dea80bca2da47accd}{}\label{structpangolin_1_1_text_input_a56759b64810ab00dea80bca2da47accd}
+
+\item 
+bool {\bfseries do\+\_\+edit}\hypertarget{structpangolin_1_1_text_input_aefd15e802c99da15131edc87a4748d8c}{}\label{structpangolin_1_1_text_input_aefd15e802c99da15131edc87a4748d8c}
+
+\item 
+int {\bfseries sel} \mbox{[}2\mbox{]}\hypertarget{structpangolin_1_1_text_input_a687bcacda8b3bf0432202145bdd0c262}{}\label{structpangolin_1_1_text_input_a687bcacda8b3bf0432202145bdd0c262}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Text\+Input@{pangolin\+::\+Text\+Input}!Render@{Render}}
+\index{Render@{Render}!pangolin\+::\+Text\+Input@{pangolin\+::\+Text\+Input}}
+\subsubsection[{\texorpdfstring{Render()}{Render()}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Text\+Input\+::\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structpangolin_1_1_text_input_a76fba1c1f6ececafa48b393b5a823944}{}\label{structpangolin_1_1_text_input_a76fba1c1f6ececafa48b393b5a823944}
+
+
+Perform any automatic rendering for this \hyperlink{structpangolin_1_1_view}{View}. 
+
+Default implementation simply instructs children to render themselves. 
+
+Reimplemented from \hyperlink{structpangolin_1_1_view_a15bf43d7ebc4ebe4e02cba572f0d49ba}{pangolin\+::\+View}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/display/widgets/widgets.\+h\end{DoxyCompactItemize}

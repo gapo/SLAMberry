@@ -1,0 +1,49 @@
+\hypertarget{classpangolin_1_1_stream_info}{}\section{pangolin\+:\+:Stream\+Info Class Reference}
+\label{classpangolin_1_1_stream_info}\index{pangolin\+::\+Stream\+Info@{pangolin\+::\+Stream\+Info}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Stream\+Info} (\hyperlink{structpangolin_1_1_video_pixel_format}{Video\+Pixel\+Format} fmt, const \hyperlink{structpangolin_1_1_image}{Image}$<$ unsigned char $>$ img\+\_\+offset)\hypertarget{classpangolin_1_1_stream_info_acb39187d3f2ba7555130664804fa0459}{}\label{classpangolin_1_1_stream_info_acb39187d3f2ba7555130664804fa0459}
+
+\item 
+{\bfseries Stream\+Info} (\hyperlink{structpangolin_1_1_video_pixel_format}{Video\+Pixel\+Format} fmt, size\+\_\+t w, size\+\_\+t h, size\+\_\+t pitch, unsigned char $\ast$offset=0)\hypertarget{classpangolin_1_1_stream_info_a77f72472c2875b2bda2e0ac185acaa68}{}\label{classpangolin_1_1_stream_info_a77f72472c2875b2bda2e0ac185acaa68}
+
+\item 
+\hyperlink{structpangolin_1_1_video_pixel_format}{Video\+Pixel\+Format} \hyperlink{classpangolin_1_1_stream_info_abcda0cc5a6563084f9d242d225c51262}{Pix\+Format} () const \hypertarget{classpangolin_1_1_stream_info_abcda0cc5a6563084f9d242d225c51262}{}\label{classpangolin_1_1_stream_info_abcda0cc5a6563084f9d242d225c51262}
+
+\begin{DoxyCompactList}\small\item\em Format representing how image is layed out in memory. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_stream_info_a217608065e543a5cb33c6c52d60cb721}{Width} () const \hypertarget{classpangolin_1_1_stream_info_a217608065e543a5cb33c6c52d60cb721}{}\label{classpangolin_1_1_stream_info_a217608065e543a5cb33c6c52d60cb721}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structpangolin_1_1_image}{Image} width in pixels. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_stream_info_aa6a95427f17d8065c12dded3aab3bb5e}{Height} () const \hypertarget{classpangolin_1_1_stream_info_aa6a95427f17d8065c12dded3aab3bb5e}{}\label{classpangolin_1_1_stream_info_aa6a95427f17d8065c12dded3aab3bb5e}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{structpangolin_1_1_image}{Image} height in pixels. \end{DoxyCompactList}\item 
+double {\bfseries Aspect} () const \hypertarget{classpangolin_1_1_stream_info_a2974af369680583f4036fdaec9a07bef}{}\label{classpangolin_1_1_stream_info_a2974af369680583f4036fdaec9a07bef}
+
+\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_stream_info_ab6614ae5519ee51043855e744bd84357}{Pitch} () const \hypertarget{classpangolin_1_1_stream_info_ab6614ae5519ee51043855e744bd84357}{}\label{classpangolin_1_1_stream_info_ab6614ae5519ee51043855e744bd84357}
+
+\begin{DoxyCompactList}\small\item\em Pitch\+: Number of bytes between one image row and the next. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_stream_info_afd1d4a472fb59a52622d41063c274397}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_stream_info_afd1d4a472fb59a52622d41063c274397}{}\label{classpangolin_1_1_stream_info_afd1d4a472fb59a52622d41063c274397}
+
+\begin{DoxyCompactList}\small\item\em Number of contiguous bytes in memory that the image occupies. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \hyperlink{classpangolin_1_1_stream_info_aaf61a6adb5fa2b5848290b324a910048}{Offset} () const \hypertarget{classpangolin_1_1_stream_info_aaf61a6adb5fa2b5848290b324a910048}{}\label{classpangolin_1_1_stream_info_aaf61a6adb5fa2b5848290b324a910048}
+
+\begin{DoxyCompactList}\small\item\em Offset in bytes relative to start of frame buffer. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_image}{Image}$<$ unsigned char $>$ \hyperlink{classpangolin_1_1_stream_info_a5c4e9224c753125109038e83997dbd70}{Stream\+Image} (unsigned char $\ast$base\+\_\+ptr) const \hypertarget{classpangolin_1_1_stream_info_a5c4e9224c753125109038e83997dbd70}{}\label{classpangolin_1_1_stream_info_a5c4e9224c753125109038e83997dbd70}
+
+\begin{DoxyCompactList}\small\item\em Return \hyperlink{structpangolin_1_1_image}{Image} wrapper around raw base pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpangolin_1_1_video_pixel_format}{Video\+Pixel\+Format} {\bfseries fmt}\hypertarget{classpangolin_1_1_stream_info_a3a0ccbc2a79d02d66d308a6c88e13955}{}\label{classpangolin_1_1_stream_info_a3a0ccbc2a79d02d66d308a6c88e13955}
+
+\item 
+\hyperlink{structpangolin_1_1_image}{Image}$<$ unsigned char $>$ {\bfseries img\+\_\+offset}\hypertarget{classpangolin_1_1_stream_info_a46eaf5cc5214d8249394f0c837246929}{}\label{classpangolin_1_1_stream_info_a46eaf5cc5214d8249394f0c837246929}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/video.\+h\end{DoxyCompactItemize}

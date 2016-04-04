@@ -1,0 +1,231 @@
+\hypertarget{classpangolin_1_1_plotter}{}\section{pangolin\+:\+:Plotter Class Reference}
+\label{classpangolin_1_1_plotter}\index{pangolin\+::\+Plotter@{pangolin\+::\+Plotter}}
+Inheritance diagram for pangolin\+:\+:Plotter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_plotter}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpangolin_1_1_plotter_1_1_plot_attrib}{Plot\+Attrib}
+\item 
+struct \hyperlink{structpangolin_1_1_plotter_1_1_plot_implicit}{Plot\+Implicit}
+\item 
+struct \hyperlink{structpangolin_1_1_plotter_1_1_plot_series}{Plot\+Series}
+\item 
+struct \hyperlink{structpangolin_1_1_plotter_1_1_tick}{Tick}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Plotter} (\hyperlink{classpangolin_1_1_data_log}{Data\+Log} $\ast$log, float left=0, float right=600, float bottom=-\/1, float top=1, float tickx=30, float ticky=0.\+5, \hyperlink{classpangolin_1_1_plotter}{Plotter} $\ast$linked\+\_\+plotter\+\_\+x=0, \hyperlink{classpangolin_1_1_plotter}{Plotter} $\ast$linked\+\_\+plotter\+\_\+y=0)\hypertarget{classpangolin_1_1_plotter_ad2fe719a5005597dabb043956775c683}{}\label{classpangolin_1_1_plotter_ad2fe719a5005597dabb043956775c683}
+
+\item 
+void \hyperlink{classpangolin_1_1_plotter_a362ca1771e2738997cd933e75512b5f0}{Render} ()
+\begin{DoxyCompactList}\small\item\em Perform any automatic rendering for this \hyperlink{structpangolin_1_1_view}{View}. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} \& {\bfseries Get\+Selection} ()\hypertarget{classpangolin_1_1_plotter_a7e143d52c233acbe3511c578f735ff0c}{}\label{classpangolin_1_1_plotter_a7e143d52c233acbe3511c578f735ff0c}
+
+\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} \& {\bfseries Get\+Default\+View} ()\hypertarget{classpangolin_1_1_plotter_a0fb03d930eeb11d3cd496f523fc8054c}{}\label{classpangolin_1_1_plotter_a0fb03d930eeb11d3cd496f523fc8054c}
+
+\item 
+void {\bfseries Set\+Default\+View} (const \hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} \&range)\hypertarget{classpangolin_1_1_plotter_af36e68f055e90b7dd9f6b3a1a2af0c12}{}\label{classpangolin_1_1_plotter_af36e68f055e90b7dd9f6b3a1a2af0c12}
+
+\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} \& {\bfseries Get\+View} ()\hypertarget{classpangolin_1_1_plotter_a6364f82365a47c720ec1885167c34b2d}{}\label{classpangolin_1_1_plotter_a6364f82365a47c720ec1885167c34b2d}
+
+\item 
+void {\bfseries Set\+View} (const \hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} \&range)\hypertarget{classpangolin_1_1_plotter_a0db2927be2eff59b126afc49b38ef890}{}\label{classpangolin_1_1_plotter_a0db2927be2eff59b126afc49b38ef890}
+
+\item 
+void {\bfseries Set\+View\+Smooth} (const \hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} \&range)\hypertarget{classpangolin_1_1_plotter_a757162280c2fac9669e353a8ba8f4a3a}{}\label{classpangolin_1_1_plotter_a757162280c2fac9669e353a8ba8f4a3a}
+
+\item 
+void {\bfseries Scroll\+View} (float x, float y)\hypertarget{classpangolin_1_1_plotter_a0d49abf8d5222afa99cc23744dd38724}{}\label{classpangolin_1_1_plotter_a0d49abf8d5222afa99cc23744dd38724}
+
+\item 
+void {\bfseries Scroll\+View\+Smooth} (float x, float y)\hypertarget{classpangolin_1_1_plotter_a5b904e49878c93318ec71691b2ec90b1}{}\label{classpangolin_1_1_plotter_a5b904e49878c93318ec71691b2ec90b1}
+
+\item 
+void {\bfseries Scale\+View} (float x, float y, float cx, float cy)\hypertarget{classpangolin_1_1_plotter_a0d24221ae1f4d96231c2ddee484fb747}{}\label{classpangolin_1_1_plotter_a0d24221ae1f4d96231c2ddee484fb747}
+
+\item 
+void {\bfseries Scale\+View\+Smooth} (float x, float y, float cx, float cy)\hypertarget{classpangolin_1_1_plotter_a447409870dc48c516f8b4e4a8c9facc6}{}\label{classpangolin_1_1_plotter_a447409870dc48c516f8b4e4a8c9facc6}
+
+\item 
+void {\bfseries Reset\+View} ()\hypertarget{classpangolin_1_1_plotter_ad0cdb984126268ab5c38fb4b332df06c}{}\label{classpangolin_1_1_plotter_ad0cdb984126268ab5c38fb4b332df06c}
+
+\item 
+void {\bfseries Set\+Ticks} (float tickx, float ticky)\hypertarget{classpangolin_1_1_plotter_a4f2c2fe5f7aa764b1904e1d49e091332}{}\label{classpangolin_1_1_plotter_a4f2c2fe5f7aa764b1904e1d49e091332}
+
+\item 
+void {\bfseries Track} (const std\+::string \&x=\char`\"{}\$i\char`\"{}, const std\+::string \&y=\char`\"{}\char`\"{})\hypertarget{classpangolin_1_1_plotter_a545c30542785e231c337f4e55be04e17}{}\label{classpangolin_1_1_plotter_a545c30542785e231c337f4e55be04e17}
+
+\item 
+void {\bfseries Toggle\+Tracking} ()\hypertarget{classpangolin_1_1_plotter_ac78d898fcc8bbe9663dc6a4b20c6600d}{}\label{classpangolin_1_1_plotter_ac78d898fcc8bbe9663dc6a4b20c6600d}
+
+\item 
+void {\bfseries Trigger} (const std\+::string \&x=\char`\"{}\$0\char`\"{}, int edge=-\/1, float value=0.\+0f)\hypertarget{classpangolin_1_1_plotter_a916d24daeb2deeaceac3c5d30969a465}{}\label{classpangolin_1_1_plotter_a916d24daeb2deeaceac3c5d30969a465}
+
+\item 
+void {\bfseries Toggle\+Trigger} ()\hypertarget{classpangolin_1_1_plotter_a227905026d2c5d11103aed6501644442}{}\label{classpangolin_1_1_plotter_a227905026d2c5d11103aed6501644442}
+
+\item 
+void {\bfseries Set\+Background\+Colour} (const \hyperlink{structpangolin_1_1_colour}{Colour} \&col)\hypertarget{classpangolin_1_1_plotter_a9b7dc1f6ad99184a17df4f0c38926d19}{}\label{classpangolin_1_1_plotter_a9b7dc1f6ad99184a17df4f0c38926d19}
+
+\item 
+void {\bfseries Set\+Axis\+Colour} (const \hyperlink{structpangolin_1_1_colour}{Colour} \&col)\hypertarget{classpangolin_1_1_plotter_acbe05289d8a2c828a7341464d5bfaad2}{}\label{classpangolin_1_1_plotter_acbe05289d8a2c828a7341464d5bfaad2}
+
+\item 
+void {\bfseries Set\+Tick\+Colour} (const \hyperlink{structpangolin_1_1_colour}{Colour} \&col)\hypertarget{classpangolin_1_1_plotter_adf86fd9b57493dedb5152782b393a725}{}\label{classpangolin_1_1_plotter_adf86fd9b57493dedb5152782b393a725}
+
+\item 
+void {\bfseries Screen\+To\+Plot} (int xpix, int ypix, float \&xplot, float \&yplot)\hypertarget{classpangolin_1_1_plotter_ad2b85eaacfe5e6286ee5fa50122cf8f6}{}\label{classpangolin_1_1_plotter_ad2b85eaacfe5e6286ee5fa50122cf8f6}
+
+\item 
+void {\bfseries Keyboard} (\hyperlink{structpangolin_1_1_view}{View} \&, unsigned char key, int x, int y, bool pressed)\hypertarget{classpangolin_1_1_plotter_a960784ab9d53f766a06da91a6cc53870}{}\label{classpangolin_1_1_plotter_a960784ab9d53f766a06da91a6cc53870}
+
+\item 
+void {\bfseries Mouse} (\hyperlink{structpangolin_1_1_view}{View} \&, Mouse\+Button button, int x, int y, bool pressed, int mouse\+\_\+state)\hypertarget{classpangolin_1_1_plotter_aa4818365d7227a1230e472df4c1394ad}{}\label{classpangolin_1_1_plotter_aa4818365d7227a1230e472df4c1394ad}
+
+\item 
+void {\bfseries Mouse\+Motion} (\hyperlink{structpangolin_1_1_view}{View} \&, int x, int y, int mouse\+\_\+state)\hypertarget{classpangolin_1_1_plotter_a761b5286086df7b7569ce96fce59ba8d}{}\label{classpangolin_1_1_plotter_a761b5286086df7b7569ce96fce59ba8d}
+
+\item 
+void {\bfseries Passive\+Mouse\+Motion} (\hyperlink{structpangolin_1_1_view}{View} \&, int x, int y, int button\+\_\+state)\hypertarget{classpangolin_1_1_plotter_a11b97c61cdf697734b8082f18ab8cd01}{}\label{classpangolin_1_1_plotter_a11b97c61cdf697734b8082f18ab8cd01}
+
+\item 
+void {\bfseries Special} (\hyperlink{structpangolin_1_1_view}{View} \&, Input\+Special in\+Type, float x, float y, float p1, float p2, float p3, float p4, int button\+\_\+state)\hypertarget{classpangolin_1_1_plotter_aac79230630e398c8d11552ce19f65583}{}\label{classpangolin_1_1_plotter_aac79230630e398c8d11552ce19f65583}
+
+\item 
+\hyperlink{structpangolin_1_1_marker}{Marker} \& {\bfseries Add\+Marker} (Marker\+::\+Direction d, float value, Marker\+::\+Equality leg=Marker\+::\+Equal, \hyperlink{structpangolin_1_1_colour}{Colour} c=\hyperlink{structpangolin_1_1_colour}{Colour}())\hypertarget{classpangolin_1_1_plotter_abd7620a9a12699e3cbc697d9483e1679}{}\label{classpangolin_1_1_plotter_abd7620a9a12699e3cbc697d9483e1679}
+
+\item 
+void {\bfseries Clear\+Markers} ()\hypertarget{classpangolin_1_1_plotter_a8962e7067de746c92ab66c5bb08dd650}{}\label{classpangolin_1_1_plotter_a8962e7067de746c92ab66c5bb08dd650}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Fix\+Selection} ()\hypertarget{classpangolin_1_1_plotter_a5c69ca9bb07a6625c5157f93fdccaf74}{}\label{classpangolin_1_1_plotter_a5c69ca9bb07a6625c5157f93fdccaf74}
+
+\item 
+void {\bfseries Update\+View} ()\hypertarget{classpangolin_1_1_plotter_a0317818cfe148efae2241e2a02fc4ed5}{}\label{classpangolin_1_1_plotter_a0317818cfe148efae2241e2a02fc4ed5}
+
+\item 
+\hyperlink{structpangolin_1_1_plotter_1_1_tick}{Tick} {\bfseries Find\+Tick\+Factor} (float tick)\hypertarget{classpangolin_1_1_plotter_a428425f6caf99125544ba86a93189409}{}\label{classpangolin_1_1_plotter_a428425f6caf99125544ba86a93189409}
+
+\item 
+void {\bfseries Compute\+Track\+Value} (float track\+\_\+val\mbox{[}2\mbox{]})\hypertarget{classpangolin_1_1_plotter_a7af97ee38c37bd5eaabe71c5a9606b03}{}\label{classpangolin_1_1_plotter_a7af97ee38c37bd5eaabe71c5a9606b03}
+
+\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} {\bfseries Compute\+Auto\+Selection} ()\hypertarget{classpangolin_1_1_plotter_a3a851d58352191a3eae4d7d0f16f1102}{}\label{classpangolin_1_1_plotter_a3a851d58352191a3eae4d7d0f16f1102}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_data_log}{Data\+Log} $\ast$ {\bfseries log}\hypertarget{classpangolin_1_1_plotter_a224997a1a5e4eb9b6a5dceefa500fe83}{}\label{classpangolin_1_1_plotter_a224997a1a5e4eb9b6a5dceefa500fe83}
+
+\item 
+\hyperlink{classpangolin_1_1_colour_wheel}{Colour\+Wheel} {\bfseries colour\+\_\+wheel}\hypertarget{classpangolin_1_1_plotter_a9e757f1b7af3ceeadeee985d382c41d8}{}\label{classpangolin_1_1_plotter_a9e757f1b7af3ceeadeee985d382c41d8}
+
+\item 
+\hyperlink{structpangolin_1_1_colour}{Colour} {\bfseries colour\+\_\+bg}\hypertarget{classpangolin_1_1_plotter_a1ba84e08dab4f3954d73cfbffb83e0ac}{}\label{classpangolin_1_1_plotter_a1ba84e08dab4f3954d73cfbffb83e0ac}
+
+\item 
+\hyperlink{structpangolin_1_1_colour}{Colour} {\bfseries colour\+\_\+tk}\hypertarget{classpangolin_1_1_plotter_ae9d3f699586f97ea696a557db3db59dd}{}\label{classpangolin_1_1_plotter_ae9d3f699586f97ea696a557db3db59dd}
+
+\item 
+\hyperlink{structpangolin_1_1_colour}{Colour} {\bfseries colour\+\_\+ax}\hypertarget{classpangolin_1_1_plotter_a6f334ce179ad76d17cadfd02da2c3e26}{}\label{classpangolin_1_1_plotter_a6f334ce179ad76d17cadfd02da2c3e26}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_sl_program}{Gl\+Sl\+Program} {\bfseries prog\+\_\+lines}\hypertarget{classpangolin_1_1_plotter_a6ebddc2526037c69ecbdb41bb7a1ab21}{}\label{classpangolin_1_1_plotter_a6ebddc2526037c69ecbdb41bb7a1ab21}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_sl_program}{Gl\+Sl\+Program} {\bfseries prog\+\_\+text}\hypertarget{classpangolin_1_1_plotter_a2f4a8d6209202f4ae917b38487d50c31}{}\label{classpangolin_1_1_plotter_a2f4a8d6209202f4ae917b38487d50c31}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_plotter_1_1_plot_series}{Plot\+Series} $>$ {\bfseries plotseries}\hypertarget{classpangolin_1_1_plotter_a62d355a7049fb0fd05d8b7bed86c0312}{}\label{classpangolin_1_1_plotter_a62d355a7049fb0fd05d8b7bed86c0312}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_marker}{Marker} $>$ {\bfseries plotmarkers}\hypertarget{classpangolin_1_1_plotter_aa7929c1050523ce512f1906f1b3d7fd9}{}\label{classpangolin_1_1_plotter_aa7929c1050523ce512f1906f1b3d7fd9}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_plotter_1_1_plot_implicit}{Plot\+Implicit} $>$ {\bfseries plotimplicits}\hypertarget{classpangolin_1_1_plotter_a4ad7bdb3f63497d2d66d68b4e624243c}{}\label{classpangolin_1_1_plotter_a4ad7bdb3f63497d2d66d68b4e624243c}
+
+\item 
+\hyperlink{structpangolin_1_1_plotter_1_1_tick}{Tick} {\bfseries tick} \mbox{[}2\mbox{]}\hypertarget{classpangolin_1_1_plotter_ac6d597c464f905bd6447cb127de1dfd7}{}\label{classpangolin_1_1_plotter_ac6d597c464f905bd6447cb127de1dfd7}
+
+\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} {\bfseries rview\+\_\+default}\hypertarget{classpangolin_1_1_plotter_a3bdad88492d253d8384677594a538c1d}{}\label{classpangolin_1_1_plotter_a3bdad88492d253d8384677594a538c1d}
+
+\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} {\bfseries rview}\hypertarget{classpangolin_1_1_plotter_aede16897ea243c314ecda7850a588763}{}\label{classpangolin_1_1_plotter_aede16897ea243c314ecda7850a588763}
+
+\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} {\bfseries target}\hypertarget{classpangolin_1_1_plotter_a1ae99c3f73e4f8bd1428d24d2c2a627a}{}\label{classpangolin_1_1_plotter_a1ae99c3f73e4f8bd1428d24d2c2a627a}
+
+\item 
+\hyperlink{structpangolin_1_1_x_y_range}{X\+Y\+Rangef} {\bfseries selection}\hypertarget{classpangolin_1_1_plotter_a44d1db4eef06061fdb2072d48c229067}{}\label{classpangolin_1_1_plotter_a44d1db4eef06061fdb2072d48c229067}
+
+\item 
+bool {\bfseries track}\hypertarget{classpangolin_1_1_plotter_ace405a63961b551cec10d488fe9da515}{}\label{classpangolin_1_1_plotter_ace405a63961b551cec10d488fe9da515}
+
+\item 
+std\+::string {\bfseries track\+\_\+x}\hypertarget{classpangolin_1_1_plotter_af7a8735ec1225024b325768b2c7ce3df}{}\label{classpangolin_1_1_plotter_af7a8735ec1225024b325768b2c7ce3df}
+
+\item 
+std\+::string {\bfseries track\+\_\+y}\hypertarget{classpangolin_1_1_plotter_a58771f877bcdeeaf832f5fc261dfc211}{}\label{classpangolin_1_1_plotter_a58771f877bcdeeaf832f5fc261dfc211}
+
+\item 
+float {\bfseries last\+\_\+track\+\_\+val} \mbox{[}2\mbox{]}\hypertarget{classpangolin_1_1_plotter_a0c073e29229f74f572b4caa2490c5f01}{}\label{classpangolin_1_1_plotter_a0c073e29229f74f572b4caa2490c5f01}
+
+\item 
+int {\bfseries trigger\+\_\+edge}\hypertarget{classpangolin_1_1_plotter_a153cd19bc37531b76bc8f0fda251fe96}{}\label{classpangolin_1_1_plotter_a153cd19bc37531b76bc8f0fda251fe96}
+
+\item 
+float {\bfseries trigger\+\_\+value}\hypertarget{classpangolin_1_1_plotter_a571c76c43e7d2c2ac6a7db6cfd76e708}{}\label{classpangolin_1_1_plotter_a571c76c43e7d2c2ac6a7db6cfd76e708}
+
+\item 
+std\+::string {\bfseries trigger}\hypertarget{classpangolin_1_1_plotter_a53844846bc993f9cbe275f4b4ff60956}{}\label{classpangolin_1_1_plotter_a53844846bc993f9cbe275f4b4ff60956}
+
+\item 
+float {\bfseries hover} \mbox{[}2\mbox{]}\hypertarget{classpangolin_1_1_plotter_aeb7e882d057de810da93e0b06eac7052}{}\label{classpangolin_1_1_plotter_aeb7e882d057de810da93e0b06eac7052}
+
+\item 
+int {\bfseries last\+\_\+mouse\+\_\+pos} \mbox{[}2\mbox{]}\hypertarget{classpangolin_1_1_plotter_af6af1c7f3f9305b419ea8d5054343268}{}\label{classpangolin_1_1_plotter_af6af1c7f3f9305b419ea8d5054343268}
+
+\item 
+\hyperlink{classpangolin_1_1_plotter}{Plotter} $\ast$ {\bfseries linked\+\_\+plotter\+\_\+x}\hypertarget{classpangolin_1_1_plotter_a5d1de5b19a0e23d8245efa65823b3373}{}\label{classpangolin_1_1_plotter_a5d1de5b19a0e23d8245efa65823b3373}
+
+\item 
+\hyperlink{classpangolin_1_1_plotter}{Plotter} $\ast$ {\bfseries linked\+\_\+plotter\+\_\+y}\hypertarget{classpangolin_1_1_plotter_a5e1e79fca6fd38ff034276f5c5d22ce3}{}\label{classpangolin_1_1_plotter_a5e1e79fca6fd38ff034276f5c5d22ce3}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Plotter@{pangolin\+::\+Plotter}!Render@{Render}}
+\index{Render@{Render}!pangolin\+::\+Plotter@{pangolin\+::\+Plotter}}
+\subsubsection[{\texorpdfstring{Render()}{Render()}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Plotter\+::\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_plotter_a362ca1771e2738997cd933e75512b5f0}{}\label{classpangolin_1_1_plotter_a362ca1771e2738997cd933e75512b5f0}
+
+
+Perform any automatic rendering for this \hyperlink{structpangolin_1_1_view}{View}. 
+
+Default implementation simply instructs children to render themselves. 
+
+Reimplemented from \hyperlink{structpangolin_1_1_view_a15bf43d7ebc4ebe4e02cba572f0d49ba}{pangolin\+::\+View}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/plot/plotter.\+h\end{DoxyCompactItemize}

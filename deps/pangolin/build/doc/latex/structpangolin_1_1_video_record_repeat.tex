@@ -1,0 +1,157 @@
+\hypertarget{structpangolin_1_1_video_record_repeat}{}\section{pangolin\+:\+:Video\+Record\+Repeat Struct Reference}
+\label{structpangolin_1_1_video_record_repeat}\index{pangolin\+::\+Video\+Record\+Repeat@{pangolin\+::\+Video\+Record\+Repeat}}
+Inheritance diagram for pangolin\+:\+:Video\+Record\+Repeat\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structpangolin_1_1_video_record_repeat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Video\+Record\+Repeat} (const std\+::string \&input\+\_\+uri, const std\+::string \&output\+\_\+uri=\char`\"{}video\+\_\+log.\+pango\char`\"{}, int buffer\+\_\+size\+\_\+bytes=10240000)\hypertarget{structpangolin_1_1_video_record_repeat_a22391fffc56b1dfaeae3866f22326636}{}\label{structpangolin_1_1_video_record_repeat_a22391fffc56b1dfaeae3866f22326636}
+
+\item 
+void {\bfseries Open} (const std\+::string \&input\+\_\+uri, const std\+::string \&output\+\_\+uri=\char`\"{}video\+\_\+log.\+pango\char`\"{}, int buffer\+\_\+size\+\_\+bytes=10240000)\hypertarget{structpangolin_1_1_video_record_repeat_a19197695b92c2d521704c6896497d940}{}\label{structpangolin_1_1_video_record_repeat_a19197695b92c2d521704c6896497d940}
+
+\item 
+void {\bfseries Close} ()\hypertarget{structpangolin_1_1_video_record_repeat_abf31dc22fd1db65af63ac67a10c21b74}{}\label{structpangolin_1_1_video_record_repeat_abf31dc22fd1db65af63ac67a10c21b74}
+
+\item 
+size\+\_\+t \hyperlink{structpangolin_1_1_video_record_repeat_a4435bf9e21453d7930535f40ace62360}{Size\+Bytes} () const \hypertarget{structpangolin_1_1_video_record_repeat_a4435bf9e21453d7930535f40ace62360}{}\label{structpangolin_1_1_video_record_repeat_a4435bf9e21453d7930535f40ace62360}
+
+\begin{DoxyCompactList}\small\item\em Required buffer size to store all frames. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{structpangolin_1_1_video_record_repeat_a20fa16106a2f18c015295ac2bab06216}{Streams} () const \hypertarget{structpangolin_1_1_video_record_repeat_a20fa16106a2f18c015295ac2bab06216}{}\label{structpangolin_1_1_video_record_repeat_a20fa16106a2f18c015295ac2bab06216}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+unsigned int {\bfseries Width} () const \hypertarget{structpangolin_1_1_video_record_repeat_a545c8761da4018c3e1fa3ad5973a60ad}{}\label{structpangolin_1_1_video_record_repeat_a545c8761da4018c3e1fa3ad5973a60ad}
+
+\item 
+unsigned int {\bfseries Height} () const \hypertarget{structpangolin_1_1_video_record_repeat_a92ef78558cf2f88629a1c8d9b129c201}{}\label{structpangolin_1_1_video_record_repeat_a92ef78558cf2f88629a1c8d9b129c201}
+
+\item 
+\hyperlink{structpangolin_1_1_video_pixel_format}{Video\+Pixel\+Format} {\bfseries Pix\+Format} () const \hypertarget{structpangolin_1_1_video_record_repeat_a23ae57ad1ce2f7d52179858c27c75ad2}{}\label{structpangolin_1_1_video_record_repeat_a23ae57ad1ce2f7d52179858c27c75ad2}
+
+\item 
+const \hyperlink{classpangolin_1_1_uri}{Uri} \& {\bfseries Video\+Uri} () const \hypertarget{structpangolin_1_1_video_record_repeat_a3634ca43e18b4d17237ff8d1ba81f53b}{}\label{structpangolin_1_1_video_record_repeat_a3634ca43e18b4d17237ff8d1ba81f53b}
+
+\item 
+void \hyperlink{structpangolin_1_1_video_record_repeat_ae5a9c15264fe11c7414dc3b03193fddb}{Start} ()\hypertarget{structpangolin_1_1_video_record_repeat_ae5a9c15264fe11c7414dc3b03193fddb}{}\label{structpangolin_1_1_video_record_repeat_ae5a9c15264fe11c7414dc3b03193fddb}
+
+\begin{DoxyCompactList}\small\item\em Start Video device. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_video_record_repeat_ac90363207a03d531b468116ecafd5a16}{Stop} ()\hypertarget{structpangolin_1_1_video_record_repeat_ac90363207a03d531b468116ecafd5a16}{}\label{structpangolin_1_1_video_record_repeat_ac90363207a03d531b468116ecafd5a16}
+
+\begin{DoxyCompactList}\small\item\em Stop Video device. \end{DoxyCompactList}\item 
+bool \hyperlink{structpangolin_1_1_video_record_repeat_a02e8a9acf1860b9cfa163c9423daa227}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the next frame from the camera to image. \end{DoxyCompactList}\item 
+bool \hyperlink{structpangolin_1_1_video_record_repeat_a69a05858f73b533a5598add0c9d3dd2f}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the newest frame from the camera to image discarding all older frames. \end{DoxyCompactList}\item 
+const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \& \hyperlink{structpangolin_1_1_video_record_repeat_a71b988cb501381fe7c51438fb8a9bdb9}{Device\+Properties} () const \hypertarget{structpangolin_1_1_video_record_repeat_a71b988cb501381fe7c51438fb8a9bdb9}{}\label{structpangolin_1_1_video_record_repeat_a71b988cb501381fe7c51438fb8a9bdb9}
+
+\begin{DoxyCompactList}\small\item\em Access J\+S\+ON properties of device. \end{DoxyCompactList}\item 
+const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \& \hyperlink{structpangolin_1_1_video_record_repeat_a9946eb41120ac4c7c9715bffc8f59af0}{Frame\+Properties} () const \hypertarget{structpangolin_1_1_video_record_repeat_a9946eb41120ac4c7c9715bffc8f59af0}{}\label{structpangolin_1_1_video_record_repeat_a9946eb41120ac4c7c9715bffc8f59af0}
+
+\begin{DoxyCompactList}\small\item\em Access J\+S\+ON properties of most recently captured frame. \end{DoxyCompactList}\item 
+bool {\bfseries Grab} (unsigned char $\ast$\hyperlink{structpangolin_1_1buffer}{buffer}, std\+::vector$<$ \hyperlink{structpangolin_1_1_image}{Image}$<$ unsigned char $>$ $>$ \&images, bool wait=true, bool newest=false)\hypertarget{structpangolin_1_1_video_record_repeat_a97e8822a94103ed15cd4efd62c554953}{}\label{structpangolin_1_1_video_record_repeat_a97e8822a94103ed15cd4efd62c554953}
+
+\item 
+{\footnotesize template$<$typename Video\+Type $>$ }\\Video\+Type $\ast$ {\bfseries Cast} ()\hypertarget{structpangolin_1_1_video_record_repeat_aeaffd78592f9798cc5daef4cd9f52684}{}\label{structpangolin_1_1_video_record_repeat_aeaffd78592f9798cc5daef4cd9f52684}
+
+\item 
+const std\+::string \& {\bfseries Log\+Filename} () const \hypertarget{structpangolin_1_1_video_record_repeat_ad5a2c2a336274e12739e68db0cfa8d0c}{}\label{structpangolin_1_1_video_record_repeat_ad5a2c2a336274e12739e68db0cfa8d0c}
+
+\item 
+void {\bfseries Record} ()\hypertarget{structpangolin_1_1_video_record_repeat_a63b5152c65a4c5c24f470243e34d2105}{}\label{structpangolin_1_1_video_record_repeat_a63b5152c65a4c5c24f470243e34d2105}
+
+\item 
+void {\bfseries Play} (bool realtime=true)\hypertarget{structpangolin_1_1_video_record_repeat_a262fdfe43c5124e6315d274597ce3322}{}\label{structpangolin_1_1_video_record_repeat_a262fdfe43c5124e6315d274597ce3322}
+
+\item 
+void {\bfseries Source} ()\hypertarget{structpangolin_1_1_video_record_repeat_a4d0472f36225cbee15eee9061658620c}{}\label{structpangolin_1_1_video_record_repeat_a4d0472f36225cbee15eee9061658620c}
+
+\item 
+bool {\bfseries Is\+Recording} () const \hypertarget{structpangolin_1_1_video_record_repeat_a9d0704323f2e613799dcd0afb14d6ada}{}\label{structpangolin_1_1_video_record_repeat_a9d0704323f2e613799dcd0afb14d6ada}
+
+\item 
+bool {\bfseries Is\+Playing} () const \hypertarget{structpangolin_1_1_video_record_repeat_a15d684fb994a6e792b3d82a0a98cf9b6}{}\label{structpangolin_1_1_video_record_repeat_a15d684fb994a6e792b3d82a0a98cf9b6}
+
+\item 
+int {\bfseries Frame\+Id} ()\hypertarget{structpangolin_1_1_video_record_repeat_ad3fdaa37988d1e19026094c098c6c536}{}\label{structpangolin_1_1_video_record_repeat_ad3fdaa37988d1e19026094c098c6c536}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1json_1_1value}{json\+::value} {\bfseries null\+\_\+props}\hypertarget{structpangolin_1_1_video_record_repeat_a2cc53dee06936913f6d936d75042a278}{}\label{structpangolin_1_1_video_record_repeat_a2cc53dee06936913f6d936d75042a278}
+
+\item 
+std\+::string {\bfseries str\+\_\+uri\+\_\+input}\hypertarget{structpangolin_1_1_video_record_repeat_a6531e91c7fa5a49a9a4d308cbbc31c27}{}\label{structpangolin_1_1_video_record_repeat_a6531e91c7fa5a49a9a4d308cbbc31c27}
+
+\item 
+\hyperlink{classpangolin_1_1_uri}{Uri} {\bfseries uri\+\_\+input}\hypertarget{structpangolin_1_1_video_record_repeat_aad8a25d52998237f2c267365758004c9}{}\label{structpangolin_1_1_video_record_repeat_aad8a25d52998237f2c267365758004c9}
+
+\item 
+\hyperlink{classpangolin_1_1_uri}{Uri} {\bfseries uri\+\_\+output}\hypertarget{structpangolin_1_1_video_record_repeat_a5a9232862c1b65a6ce5e5edd72bc696b}{}\label{structpangolin_1_1_video_record_repeat_a5a9232862c1b65a6ce5e5edd72bc696b}
+
+\item 
+\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ {\bfseries video\+\_\+src}\hypertarget{structpangolin_1_1_video_record_repeat_aff0b4dad20868975a6ed194954b8d6ff}{}\label{structpangolin_1_1_video_record_repeat_aff0b4dad20868975a6ed194954b8d6ff}
+
+\item 
+\hyperlink{structpangolin_1_1_video_properties_interface}{Video\+Properties\+Interface} $\ast$ {\bfseries video\+\_\+src\+\_\+props}\hypertarget{structpangolin_1_1_video_record_repeat_a07fd1f9e1a42cd1a6d5f5d995d7db0d3}{}\label{structpangolin_1_1_video_record_repeat_a07fd1f9e1a42cd1a6d5f5d995d7db0d3}
+
+\item 
+\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ {\bfseries video\+\_\+file}\hypertarget{structpangolin_1_1_video_record_repeat_a46a4648ff7bea1790272baf1bb8da68c}{}\label{structpangolin_1_1_video_record_repeat_a46a4648ff7bea1790272baf1bb8da68c}
+
+\item 
+\hyperlink{structpangolin_1_1_video_properties_interface}{Video\+Properties\+Interface} $\ast$ {\bfseries video\+\_\+file\+\_\+props}\hypertarget{structpangolin_1_1_video_record_repeat_aa0899bb44fb0cd007ca3e2ac575a6eb7}{}\label{structpangolin_1_1_video_record_repeat_aa0899bb44fb0cd007ca3e2ac575a6eb7}
+
+\item 
+\hyperlink{structpangolin_1_1_video_output_interface}{Video\+Output\+Interface} $\ast$ {\bfseries video\+\_\+recorder}\hypertarget{structpangolin_1_1_video_record_repeat_a3e087b7be67751fe7c0e2b53e88cd10d}{}\label{structpangolin_1_1_video_record_repeat_a3e087b7be67751fe7c0e2b53e88cd10d}
+
+\item 
+int {\bfseries buffer\+\_\+size\+\_\+bytes}\hypertarget{structpangolin_1_1_video_record_repeat_a9480cb60e2cad0f75e301ebb84b49b8b}{}\label{structpangolin_1_1_video_record_repeat_a9480cb60e2cad0f75e301ebb84b49b8b}
+
+\item 
+int {\bfseries frame\+\_\+num}\hypertarget{structpangolin_1_1_video_record_repeat_a4e6b1539a2bd961aa548166560fb2ad9}{}\label{structpangolin_1_1_video_record_repeat_a4e6b1539a2bd961aa548166560fb2ad9}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Video\+Record\+Repeat@{pangolin\+::\+Video\+Record\+Repeat}!Grab\+Newest@{Grab\+Newest}}
+\index{Grab\+Newest@{Grab\+Newest}!pangolin\+::\+Video\+Record\+Repeat@{pangolin\+::\+Video\+Record\+Repeat}}
+\subsubsection[{\texorpdfstring{Grab\+Newest(unsigned char $\ast$image, bool wait=true)}{GrabNewest(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Video\+Record\+Repeat\+::\+Grab\+Newest (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structpangolin_1_1_video_record_repeat_a69a05858f73b533a5598add0c9d3dd2f}{}\label{structpangolin_1_1_video_record_repeat_a69a05858f73b533a5598add0c9d3dd2f}
+
+
+Copy the newest frame from the camera to image discarding all older frames. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a062ad8f58e023e93ce48b1c61ea00674}{pangolin\+::\+Video\+Interface}.
+
+\index{pangolin\+::\+Video\+Record\+Repeat@{pangolin\+::\+Video\+Record\+Repeat}!Grab\+Next@{Grab\+Next}}
+\index{Grab\+Next@{Grab\+Next}!pangolin\+::\+Video\+Record\+Repeat@{pangolin\+::\+Video\+Record\+Repeat}}
+\subsubsection[{\texorpdfstring{Grab\+Next(unsigned char $\ast$image, bool wait=true)}{GrabNext(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Video\+Record\+Repeat\+::\+Grab\+Next (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structpangolin_1_1_video_record_repeat_a02e8a9acf1860b9cfa163c9423daa227}{}\label{structpangolin_1_1_video_record_repeat_a02e8a9acf1860b9cfa163c9423daa227}
+
+
+Copy the next frame from the camera to image. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a2a87c2219959a762dbbb43760d27ff27}{pangolin\+::\+Video\+Interface}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/video\+\_\+record\+\_\+repeat.\+h\end{DoxyCompactItemize}

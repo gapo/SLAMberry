@@ -1,0 +1,103 @@
+\hypertarget{classpangolin_1_1_gl_engine}{}\section{pangolin\+:\+:Gl\+Engine Class Reference}
+\label{classpangolin_1_1_gl_engine}\index{pangolin\+::\+Gl\+Engine@{pangolin\+::\+Gl\+Engine}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Update\+Matrices} ()\hypertarget{classpangolin_1_1_gl_engine_a85af054f66c735a16eda03b242630be8}{}\label{classpangolin_1_1_gl_engine_a85af054f66c735a16eda03b242630be8}
+
+\item 
+void {\bfseries Set\+Color} (float r, float g, float b, float a)\hypertarget{classpangolin_1_1_gl_engine_ade54b722f63796c94a4a0f3fc4193cc4}{}\label{classpangolin_1_1_gl_engine_ade54b722f63796c94a4a0f3fc4193cc4}
+
+\item 
+void {\bfseries Enable\+Texturing} (G\+Lboolean v)\hypertarget{classpangolin_1_1_gl_engine_aa6167f2c360aca0dc93856181de29178}{}\label{classpangolin_1_1_gl_engine_aa6167f2c360aca0dc93856181de29178}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bfseries vert}
+\item 
+const char $\ast$ {\bfseries frag}
+\item 
+std\+::stack$<$ \hyperlink{structpangolin_1_1_open_gl_matrix}{Open\+Gl\+Matrix} $>$ {\bfseries projection}\hypertarget{classpangolin_1_1_gl_engine_a73fdbb1caced9e65f3110d182b8f2b89}{}\label{classpangolin_1_1_gl_engine_a73fdbb1caced9e65f3110d182b8f2b89}
+
+\item 
+std\+::stack$<$ \hyperlink{structpangolin_1_1_open_gl_matrix}{Open\+Gl\+Matrix} $>$ {\bfseries modelview}\hypertarget{classpangolin_1_1_gl_engine_a4405297088d532ad9b142a64bcb060dc}{}\label{classpangolin_1_1_gl_engine_a4405297088d532ad9b142a64bcb060dc}
+
+\item 
+std\+::stack$<$ \hyperlink{structpangolin_1_1_open_gl_matrix}{Open\+Gl\+Matrix} $>$ $\ast$ {\bfseries currentmatrix}\hypertarget{classpangolin_1_1_gl_engine_ae980b81dc9773851f36f7804a6bf922a}{}\label{classpangolin_1_1_gl_engine_ae980b81dc9773851f36f7804a6bf922a}
+
+\item 
+G\+Lenum {\bfseries matrixmode}\hypertarget{classpangolin_1_1_gl_engine_a6880f2b51d83d1e5dd3d6f557d7aa6c8}{}\label{classpangolin_1_1_gl_engine_a6880f2b51d83d1e5dd3d6f557d7aa6c8}
+
+\item 
+float {\bfseries color} \mbox{[}4\mbox{]}\hypertarget{classpangolin_1_1_gl_engine_ab7a12f10e136807a67d130b271fa7e21}{}\label{classpangolin_1_1_gl_engine_ab7a12f10e136807a67d130b271fa7e21}
+
+\item 
+\hyperlink{classpangolin_1_1_gl_sl_program}{Gl\+Sl\+Program} {\bfseries prog\+\_\+fixed}\hypertarget{classpangolin_1_1_gl_engine_aecc159f5b9057fbb26c404527e2198ce}{}\label{classpangolin_1_1_gl_engine_aecc159f5b9057fbb26c404527e2198ce}
+
+\item 
+G\+Lint {\bfseries u\+\_\+color}\hypertarget{classpangolin_1_1_gl_engine_a1c846bf1c9b239f3d7a5a3a78983869c}{}\label{classpangolin_1_1_gl_engine_a1c846bf1c9b239f3d7a5a3a78983869c}
+
+\item 
+G\+Lint {\bfseries u\+\_\+model\+View\+Matrix}\hypertarget{classpangolin_1_1_gl_engine_a0b153194c12897ce7c93367ca317f7b9}{}\label{classpangolin_1_1_gl_engine_a0b153194c12897ce7c93367ca317f7b9}
+
+\item 
+G\+Lint {\bfseries u\+\_\+model\+View\+Projection\+Matrix}\hypertarget{classpangolin_1_1_gl_engine_ad2fc4ebbdb669ef755d7f9466776caaf}{}\label{classpangolin_1_1_gl_engine_ad2fc4ebbdb669ef755d7f9466776caaf}
+
+\item 
+G\+Lint {\bfseries u\+\_\+texture}\hypertarget{classpangolin_1_1_gl_engine_a93197b50d98df00bcee1acb99965b91a}{}\label{classpangolin_1_1_gl_engine_a93197b50d98df00bcee1acb99965b91a}
+
+\item 
+G\+Lint {\bfseries u\+\_\+texture\+Enable}\hypertarget{classpangolin_1_1_gl_engine_a00bc41a89fc34752eeed98e5ab12e071}{}\label{classpangolin_1_1_gl_engine_a00bc41a89fc34752eeed98e5ab12e071}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\index{pangolin\+::\+Gl\+Engine@{pangolin\+::\+Gl\+Engine}!frag@{frag}}
+\index{frag@{frag}!pangolin\+::\+Gl\+Engine@{pangolin\+::\+Gl\+Engine}}
+\subsubsection[{\texorpdfstring{frag}{frag}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ pangolin\+::\+Gl\+Engine\+::frag}\hypertarget{classpangolin_1_1_gl_engine_a31a7ddec551f97901b4c2e32ea1b8c41}{}\label{classpangolin_1_1_gl_engine_a31a7ddec551f97901b4c2e32ea1b8c41}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+
+
+ 
+            \textcolor{stringliteral}{"varying vec4 v\_frontColor;\(\backslash\)n"}
+            \textcolor{stringliteral}{"varying vec2 v\_texcoord;\(\backslash\)n"}
+            \textcolor{stringliteral}{"uniform sampler2D u\_texture;\(\backslash\)n"}
+            \textcolor{stringliteral}{"uniform bool u\_textureEnable;\(\backslash\)n"}
+            \textcolor{stringliteral}{"void main() \{\(\backslash\)n"}
+            \textcolor{stringliteral}{"  gl\_FragColor = v\_frontColor;\(\backslash\)n"}
+            \textcolor{stringliteral}{"  if(u\_textureEnable) \{\(\backslash\)n"}
+            \textcolor{stringliteral}{"    gl\_FragColor *= texture2D(u\_texture, v\_texcoord);\(\backslash\)n"}
+            \textcolor{stringliteral}{"  \}\(\backslash\)n"}
+            \textcolor{stringliteral}{"\}\(\backslash\)n"}
+\end{DoxyCode}
+\index{pangolin\+::\+Gl\+Engine@{pangolin\+::\+Gl\+Engine}!vert@{vert}}
+\index{vert@{vert}!pangolin\+::\+Gl\+Engine@{pangolin\+::\+Gl\+Engine}}
+\subsubsection[{\texorpdfstring{vert}{vert}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ pangolin\+::\+Gl\+Engine\+::vert}\hypertarget{classpangolin_1_1_gl_engine_a506421bbd51fc480ee4ea202f40c5c23}{}\label{classpangolin_1_1_gl_engine_a506421bbd51fc480ee4ea202f40c5c23}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+            \textcolor{stringliteral}{"attribute vec4 a\_position;\(\backslash\)n"}
+            \textcolor{stringliteral}{"attribute vec4 a\_color;\(\backslash\)n"}
+            \textcolor{stringliteral}{"attribute vec3 a\_normal;\(\backslash\)n"}
+            \textcolor{stringliteral}{"attribute vec2 a\_texcoord;\(\backslash\)n"}
+            \textcolor{stringliteral}{"uniform vec4 u\_color;\(\backslash\)n"}
+            \textcolor{stringliteral}{"uniform mat4 u\_modelViewMatrix;\(\backslash\)n"}
+            \textcolor{stringliteral}{"uniform mat4 u\_modelViewProjectionMatrix;\(\backslash\)n"}
+            \textcolor{stringliteral}{"varying vec4 v\_frontColor;\(\backslash\)n"}
+            \textcolor{stringliteral}{"varying vec2 v\_texcoord;\(\backslash\)n"}
+            \textcolor{stringliteral}{"void main() \{\(\backslash\)n"}
+            \textcolor{stringliteral}{"    gl\_Position = u\_modelViewProjectionMatrix * a\_position;\(\backslash\)n"}
+            \textcolor{stringliteral}{"    v\_frontColor = u\_color;\(\backslash\)n"}
+            \textcolor{stringliteral}{"    v\_texcoord = a\_texcoord;\(\backslash\)n"}
+            \textcolor{stringliteral}{"\}\(\backslash\)n"}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/gl/compat/gl2engine.\+h\end{DoxyCompactItemize}

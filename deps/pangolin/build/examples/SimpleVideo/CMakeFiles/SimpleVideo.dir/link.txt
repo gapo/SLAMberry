@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++0x -Wall  -O3 -DNDEBUG   CMakeFiles/SimpleVideo.dir/main.cpp.o  -o SimpleVideo -rdynamic ../../src/libpangolin.so -lGLU -lGL -lGLEW -lX11 -lpython3.5m -ldc1394 -lavcodec -lavformat -lavutil -lswscale -lpng -lz -ljpeg -ltiff -lIlmImf -Wl,-rpath,/home/gapo/meng/deps/pangolin/build/src 

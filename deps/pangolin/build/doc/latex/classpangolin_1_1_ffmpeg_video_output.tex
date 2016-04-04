@@ -1,0 +1,73 @@
+\hypertarget{classpangolin_1_1_ffmpeg_video_output}{}\section{pangolin\+:\+:Ffmpeg\+Video\+Output Class Reference}
+\label{classpangolin_1_1_ffmpeg_video_output}\index{pangolin\+::\+Ffmpeg\+Video\+Output@{pangolin\+::\+Ffmpeg\+Video\+Output}}
+Inheritance diagram for pangolin\+:\+:Ffmpeg\+Video\+Output\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_ffmpeg_video_output}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ffmpeg\+Video\+Output} (const std\+::string \&filename, int base\+\_\+frame\+\_\+rate, int bit\+\_\+rate)\hypertarget{classpangolin_1_1_ffmpeg_video_output_a71dac37bc51715e713c1d62603d6d4b3}{}\label{classpangolin_1_1_ffmpeg_video_output_a71dac37bc51715e713c1d62603d6d4b3}
+
+\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_ffmpeg_video_output_afd0b368ca1d399254f7f46de4aad952b}{Streams} () const \hypertarget{classpangolin_1_1_ffmpeg_video_output_afd0b368ca1d399254f7f46de4aad952b}{}\label{classpangolin_1_1_ffmpeg_video_output_afd0b368ca1d399254f7f46de4aad952b}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Streams} (const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \&streams, const std\+::string \&uri, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&properties)\hypertarget{classpangolin_1_1_ffmpeg_video_output_ae9f22da72c1857595684a3d5c211a080}{}\label{classpangolin_1_1_ffmpeg_video_output_ae9f22da72c1857595684a3d5c211a080}
+
+\item 
+int {\bfseries Write\+Streams} (unsigned char $\ast$data, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&frame\+\_\+properties)\hypertarget{classpangolin_1_1_ffmpeg_video_output_ad78e9b60c966b2d2e39536c4a7661163}{}\label{classpangolin_1_1_ffmpeg_video_output_ad78e9b60c966b2d2e39536c4a7661163}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Initialise} (std\+::string filename)\hypertarget{classpangolin_1_1_ffmpeg_video_output_a48d467d91ed75ad84a9f8d34c89ac0aa}{}\label{classpangolin_1_1_ffmpeg_video_output_a48d467d91ed75ad84a9f8d34c89ac0aa}
+
+\item 
+void {\bfseries Start\+Stream} ()\hypertarget{classpangolin_1_1_ffmpeg_video_output_a99d272f5e6b7b72110a7c79c3d2b5b1a}{}\label{classpangolin_1_1_ffmpeg_video_output_a99d272f5e6b7b72110a7c79c3d2b5b1a}
+
+\item 
+void {\bfseries Close} ()\hypertarget{classpangolin_1_1_ffmpeg_video_output_af7097bb6c47222ee8c1a845df2cfccc6}{}\label{classpangolin_1_1_ffmpeg_video_output_af7097bb6c47222ee8c1a845df2cfccc6}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries filename}\hypertarget{classpangolin_1_1_ffmpeg_video_output_a9515e6e389e494ff801555197c17d076}{}\label{classpangolin_1_1_ffmpeg_video_output_a9515e6e389e494ff801555197c17d076}
+
+\item 
+bool {\bfseries started}\hypertarget{classpangolin_1_1_ffmpeg_video_output_a39c337252b41d5680db4606f802b5e70}{}\label{classpangolin_1_1_ffmpeg_video_output_a39c337252b41d5680db4606f802b5e70}
+
+\item 
+A\+V\+Format\+Context $\ast$ {\bfseries oc}\hypertarget{classpangolin_1_1_ffmpeg_video_output_a050b84fda7d97afaf6e8d1d727740e01}{}\label{classpangolin_1_1_ffmpeg_video_output_a050b84fda7d97afaf6e8d1d727740e01}
+
+\item 
+std\+::vector$<$ Ffmpeg\+Video\+Output\+Stream $\ast$ $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_ffmpeg_video_output_ade3e3ba44877ff9cb9328739794a14ce}{}\label{classpangolin_1_1_ffmpeg_video_output_ade3e3ba44877ff9cb9328739794a14ce}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries strs}\hypertarget{classpangolin_1_1_ffmpeg_video_output_a06f84ddb6046f2658bfab821463a83af}{}\label{classpangolin_1_1_ffmpeg_video_output_a06f84ddb6046f2658bfab821463a83af}
+
+\item 
+int {\bfseries frame\+\_\+count}\hypertarget{classpangolin_1_1_ffmpeg_video_output_acda847f4bb1fab562c1b228500e73c21}{}\label{classpangolin_1_1_ffmpeg_video_output_acda847f4bb1fab562c1b228500e73c21}
+
+\item 
+int {\bfseries base\+\_\+frame\+\_\+rate}\hypertarget{classpangolin_1_1_ffmpeg_video_output_aa0d397dc329499f9c597d1caeecfcb45}{}\label{classpangolin_1_1_ffmpeg_video_output_aa0d397dc329499f9c597d1caeecfcb45}
+
+\item 
+int {\bfseries bit\+\_\+rate}\hypertarget{classpangolin_1_1_ffmpeg_video_output_aebdc068920fdeccef39d8ce2ac768d59}{}\label{classpangolin_1_1_ffmpeg_video_output_aebdc068920fdeccef39d8ce2ac768d59}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Ffmpeg\+Video\+Output\+Stream}\hypertarget{classpangolin_1_1_ffmpeg_video_output_a1a5cda24c7a6f613553098210e328b72}{}\label{classpangolin_1_1_ffmpeg_video_output_a1a5cda24c7a6f613553098210e328b72}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.\+h\end{DoxyCompactItemize}

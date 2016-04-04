@@ -1,0 +1,82 @@
+\hypertarget{classpangolin_1_1_firewire_deinterlace}{}\section{pangolin\+:\+:Firewire\+Deinterlace Class Reference}
+\label{classpangolin_1_1_firewire_deinterlace}\index{pangolin\+::\+Firewire\+Deinterlace@{pangolin\+::\+Firewire\+Deinterlace}}
+Inheritance diagram for pangolin\+:\+:Firewire\+Deinterlace\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_firewire_deinterlace}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Firewire\+Deinterlace} (\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$videoin)\hypertarget{classpangolin_1_1_firewire_deinterlace_a73c8249ab0a378c53126c1eee1cbeb31}{}\label{classpangolin_1_1_firewire_deinterlace_a73c8249ab0a378c53126c1eee1cbeb31}
+
+\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_firewire_deinterlace_a58027da028da58434244fc685be8eee5}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_firewire_deinterlace_a58027da028da58434244fc685be8eee5}{}\label{classpangolin_1_1_firewire_deinterlace_a58027da028da58434244fc685be8eee5}
+
+\begin{DoxyCompactList}\small\item\em Required buffer size to store all frames. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_firewire_deinterlace_a9942d1a457c2ef3f32747fd8e19c8e83}{Streams} () const \hypertarget{classpangolin_1_1_firewire_deinterlace_a9942d1a457c2ef3f32747fd8e19c8e83}{}\label{classpangolin_1_1_firewire_deinterlace_a9942d1a457c2ef3f32747fd8e19c8e83}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_firewire_deinterlace_acb1fbdec5835d754db4a197fdc801ab3}{Start} ()\hypertarget{classpangolin_1_1_firewire_deinterlace_acb1fbdec5835d754db4a197fdc801ab3}{}\label{classpangolin_1_1_firewire_deinterlace_acb1fbdec5835d754db4a197fdc801ab3}
+
+\begin{DoxyCompactList}\small\item\em Start Video device. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_firewire_deinterlace_a614914e451e2179a44b31f2a50841330}{Stop} ()\hypertarget{classpangolin_1_1_firewire_deinterlace_a614914e451e2179a44b31f2a50841330}{}\label{classpangolin_1_1_firewire_deinterlace_a614914e451e2179a44b31f2a50841330}
+
+\begin{DoxyCompactList}\small\item\em Stop Video device. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_firewire_deinterlace_aaa81e0d6457be119a59cec2090da1412}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the next frame from the camera to image. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_firewire_deinterlace_ab819fe555e55255b96a727eb284ed2dc}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the newest frame from the camera to image discarding all older frames. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ {\bfseries videoin}\hypertarget{classpangolin_1_1_firewire_deinterlace_a13682005b960077262c0d8031aa17dc1}{}\label{classpangolin_1_1_firewire_deinterlace_a13682005b960077262c0d8031aa17dc1}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_firewire_deinterlace_a1b26fb353dd5bef9c73e0c2ea746f9e9}{}\label{classpangolin_1_1_firewire_deinterlace_a1b26fb353dd5bef9c73e0c2ea746f9e9}
+
+\item 
+unsigned char $\ast$ {\bfseries buffer}\hypertarget{classpangolin_1_1_firewire_deinterlace_a3abdcf85ad82749086033d99a506a62c}{}\label{classpangolin_1_1_firewire_deinterlace_a3abdcf85ad82749086033d99a506a62c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Firewire\+Deinterlace@{pangolin\+::\+Firewire\+Deinterlace}!Grab\+Newest@{Grab\+Newest}}
+\index{Grab\+Newest@{Grab\+Newest}!pangolin\+::\+Firewire\+Deinterlace@{pangolin\+::\+Firewire\+Deinterlace}}
+\subsubsection[{\texorpdfstring{Grab\+Newest(unsigned char $\ast$image, bool wait=true)}{GrabNewest(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Firewire\+Deinterlace\+::\+Grab\+Newest (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_firewire_deinterlace_ab819fe555e55255b96a727eb284ed2dc}{}\label{classpangolin_1_1_firewire_deinterlace_ab819fe555e55255b96a727eb284ed2dc}
+
+
+Copy the newest frame from the camera to image discarding all older frames. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a062ad8f58e023e93ce48b1c61ea00674}{pangolin\+::\+Video\+Interface}.
+
+\index{pangolin\+::\+Firewire\+Deinterlace@{pangolin\+::\+Firewire\+Deinterlace}!Grab\+Next@{Grab\+Next}}
+\index{Grab\+Next@{Grab\+Next}!pangolin\+::\+Firewire\+Deinterlace@{pangolin\+::\+Firewire\+Deinterlace}}
+\subsubsection[{\texorpdfstring{Grab\+Next(unsigned char $\ast$image, bool wait=true)}{GrabNext(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Firewire\+Deinterlace\+::\+Grab\+Next (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_firewire_deinterlace_aaa81e0d6457be119a59cec2090da1412}{}\label{classpangolin_1_1_firewire_deinterlace_aaa81e0d6457be119a59cec2090da1412}
+
+
+Copy the next frame from the camera to image. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a2a87c2219959a762dbbb43760d27ff27}{pangolin\+::\+Video\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/firewire\+\_\+deinterlace.\+h\end{DoxyCompactItemize}

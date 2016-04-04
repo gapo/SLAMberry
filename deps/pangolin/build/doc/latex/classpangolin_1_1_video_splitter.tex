@@ -1,0 +1,82 @@
+\hypertarget{classpangolin_1_1_video_splitter}{}\section{pangolin\+:\+:Video\+Splitter Class Reference}
+\label{classpangolin_1_1_video_splitter}\index{pangolin\+::\+Video\+Splitter@{pangolin\+::\+Video\+Splitter}}
+Inheritance diagram for pangolin\+:\+:Video\+Splitter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_video_splitter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Video\+Splitter} (\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$videoin, const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \&streams)\hypertarget{classpangolin_1_1_video_splitter_a7add43bc2f5d72f756f030465fdb2392}{}\label{classpangolin_1_1_video_splitter_a7add43bc2f5d72f756f030465fdb2392}
+
+\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_video_splitter_a3f18102a14178e0bc626c2efc76eaf95}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_video_splitter_a3f18102a14178e0bc626c2efc76eaf95}{}\label{classpangolin_1_1_video_splitter_a3f18102a14178e0bc626c2efc76eaf95}
+
+\begin{DoxyCompactList}\small\item\em Required buffer size to store all frames. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_video_splitter_ab324de088b519ab1fc783a16ca2f560c}{Streams} () const \hypertarget{classpangolin_1_1_video_splitter_ab324de088b519ab1fc783a16ca2f560c}{}\label{classpangolin_1_1_video_splitter_ab324de088b519ab1fc783a16ca2f560c}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_video_splitter_acebb7784386bd00e9f403f92cab3a2b1}{Start} ()\hypertarget{classpangolin_1_1_video_splitter_acebb7784386bd00e9f403f92cab3a2b1}{}\label{classpangolin_1_1_video_splitter_acebb7784386bd00e9f403f92cab3a2b1}
+
+\begin{DoxyCompactList}\small\item\em Start Video device. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_video_splitter_a34fd98e2c8831669f36f1224ce6491c5}{Stop} ()\hypertarget{classpangolin_1_1_video_splitter_a34fd98e2c8831669f36f1224ce6491c5}{}\label{classpangolin_1_1_video_splitter_a34fd98e2c8831669f36f1224ce6491c5}
+
+\begin{DoxyCompactList}\small\item\em Stop Video device. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_video_splitter_a733a8cdb440ddd826fb5a251a8fb868f}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the next frame from the camera to image. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_video_splitter_a332bbd9bf732f9c84dfd7e4844dbed10}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the newest frame from the camera to image discarding all older frames. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ \& {\bfseries Input\+Streams} ()\hypertarget{classpangolin_1_1_video_splitter_a17b0a62a6a2030e1a3c88464fbe5e353}{}\label{classpangolin_1_1_video_splitter_a17b0a62a6a2030e1a3c88464fbe5e353}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ {\bfseries videoin}\hypertarget{classpangolin_1_1_video_splitter_ac19c36abd092957109c01aa9b1aac7fe}{}\label{classpangolin_1_1_video_splitter_ac19c36abd092957109c01aa9b1aac7fe}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_video_splitter_ac09a58523cc0080c3baec6b6d2f60c46}{}\label{classpangolin_1_1_video_splitter_ac09a58523cc0080c3baec6b6d2f60c46}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Video\+Splitter@{pangolin\+::\+Video\+Splitter}!Grab\+Newest@{Grab\+Newest}}
+\index{Grab\+Newest@{Grab\+Newest}!pangolin\+::\+Video\+Splitter@{pangolin\+::\+Video\+Splitter}}
+\subsubsection[{\texorpdfstring{Grab\+Newest(unsigned char $\ast$image, bool wait=true)}{GrabNewest(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Video\+Splitter\+::\+Grab\+Newest (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_video_splitter_a332bbd9bf732f9c84dfd7e4844dbed10}{}\label{classpangolin_1_1_video_splitter_a332bbd9bf732f9c84dfd7e4844dbed10}
+
+
+Copy the newest frame from the camera to image discarding all older frames. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a062ad8f58e023e93ce48b1c61ea00674}{pangolin\+::\+Video\+Interface}.
+
+\index{pangolin\+::\+Video\+Splitter@{pangolin\+::\+Video\+Splitter}!Grab\+Next@{Grab\+Next}}
+\index{Grab\+Next@{Grab\+Next}!pangolin\+::\+Video\+Splitter@{pangolin\+::\+Video\+Splitter}}
+\subsubsection[{\texorpdfstring{Grab\+Next(unsigned char $\ast$image, bool wait=true)}{GrabNext(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Video\+Splitter\+::\+Grab\+Next (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_video_splitter_a733a8cdb440ddd826fb5a251a8fb868f}{}\label{classpangolin_1_1_video_splitter_a733a8cdb440ddd826fb5a251a8fb868f}
+
+
+Copy the next frame from the camera to image. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a2a87c2219959a762dbbb43760d27ff27}{pangolin\+::\+Video\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/video\+\_\+splitter.\+h\end{DoxyCompactItemize}

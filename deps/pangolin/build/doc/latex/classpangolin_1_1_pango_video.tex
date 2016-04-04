@@ -1,0 +1,129 @@
+\hypertarget{classpangolin_1_1_pango_video}{}\section{pangolin\+:\+:Pango\+Video Class Reference}
+\label{classpangolin_1_1_pango_video}\index{pangolin\+::\+Pango\+Video@{pangolin\+::\+Pango\+Video}}
+Inheritance diagram for pangolin\+:\+:Pango\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.736434cm]{classpangolin_1_1_pango_video}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pango\+Video} (const std\+::string \&filename, bool realtime=true)\hypertarget{classpangolin_1_1_pango_video_a835d9bf15b58320383eed6fb2aa6e8d7}{}\label{classpangolin_1_1_pango_video_a835d9bf15b58320383eed6fb2aa6e8d7}
+
+\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_pango_video_aed023430933996b5202799a3405cd388}{Size\+Bytes} () const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_aed023430933996b5202799a3405cd388}{}\label{classpangolin_1_1_pango_video_aed023430933996b5202799a3405cd388}
+
+\begin{DoxyCompactList}\small\item\em Required buffer size to store all frames. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_pango_video_a082c8deeda9600e96326eb6a312af11b}{Streams} () const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_a082c8deeda9600e96326eb6a312af11b}{}\label{classpangolin_1_1_pango_video_a082c8deeda9600e96326eb6a312af11b}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_pango_video_abc5f6c2942f1b7d946b67b411d82e682}{Start} () P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_abc5f6c2942f1b7d946b67b411d82e682}{}\label{classpangolin_1_1_pango_video_abc5f6c2942f1b7d946b67b411d82e682}
+
+\begin{DoxyCompactList}\small\item\em Start Video device. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_pango_video_a7978def8e5f13fff25225a045721f898}{Stop} () P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_a7978def8e5f13fff25225a045721f898}{}\label{classpangolin_1_1_pango_video_a7978def8e5f13fff25225a045721f898}
+
+\begin{DoxyCompactList}\small\item\em Stop Video device. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_pango_video_abd49b114ac38554bbf29f4baa2d145ea}{Grab\+Next} (unsigned char $\ast$image, bool wait=true) P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE
+\begin{DoxyCompactList}\small\item\em Copy the next frame from the camera to image. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_pango_video_a4968ca84a65d97cb87c5df1508d53655}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true) P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE
+\begin{DoxyCompactList}\small\item\em Copy the newest frame from the camera to image discarding all older frames. \end{DoxyCompactList}\item 
+const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \& \hyperlink{classpangolin_1_1_pango_video_aeb10784316444180dacf7785dfa11784}{Device\+Properties} () const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_aeb10784316444180dacf7785dfa11784}{}\label{classpangolin_1_1_pango_video_aeb10784316444180dacf7785dfa11784}
+
+\begin{DoxyCompactList}\small\item\em Access J\+S\+ON properties of device. \end{DoxyCompactList}\item 
+const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \& \hyperlink{classpangolin_1_1_pango_video_a1681ce549af0437857b0741c1161f420}{Frame\+Properties} () const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_a1681ce549af0437857b0741c1161f420}{}\label{classpangolin_1_1_pango_video_a1681ce549af0437857b0741c1161f420}
+
+\begin{DoxyCompactList}\small\item\em Access J\+S\+ON properties of most recently captured frame. \end{DoxyCompactList}\item 
+int \hyperlink{classpangolin_1_1_pango_video_a02cf8a9313c3826fdcf1e299ee8b9013}{Get\+Current\+Frame\+Id} () const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_a02cf8a9313c3826fdcf1e299ee8b9013}{}\label{classpangolin_1_1_pango_video_a02cf8a9313c3826fdcf1e299ee8b9013}
+
+\begin{DoxyCompactList}\small\item\em Return monotonic id of current frame. \end{DoxyCompactList}\item 
+int \hyperlink{classpangolin_1_1_pango_video_af6c22038f6e41b16f34ca08d7c82fec2}{Get\+Total\+Frames} () const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE
+\begin{DoxyCompactList}\small\item\em Return total number of frames to be captured from device, or std\+::numeric\+\_\+limits$<$int$>$\+::max() on failure. \end{DoxyCompactList}\item 
+int \hyperlink{classpangolin_1_1_pango_video_a7285cb5a18bcdf1e938dbcdbc9b54b37}{Seek} (int frameid) P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_a7285cb5a18bcdf1e938dbcdbc9b54b37}{}\label{classpangolin_1_1_pango_video_a7285cb5a18bcdf1e938dbcdbc9b54b37}
+
+\begin{DoxyCompactList}\small\item\em Return -\/1 on failure, frameid on success. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries Find\+Source} ()\hypertarget{classpangolin_1_1_pango_video_a9b00559cacf5e721d5b0bda29d39d05c}{}\label{classpangolin_1_1_pango_video_a9b00559cacf5e721d5b0bda29d39d05c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_packet_stream_reader}{Packet\+Stream\+Reader} {\bfseries reader}\hypertarget{classpangolin_1_1_pango_video_a1d6589328e5dcbb0a6bcf21ed6b7477c}{}\label{classpangolin_1_1_pango_video_a1d6589328e5dcbb0a6bcf21ed6b7477c}
+
+\item 
+size\+\_\+t {\bfseries size\+\_\+bytes}\hypertarget{classpangolin_1_1_pango_video_afd22d0fbd6f350e7e5f40eafc3e97801}{}\label{classpangolin_1_1_pango_video_afd22d0fbd6f350e7e5f40eafc3e97801}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_pango_video_a09ae4a03fc3ba838fb462727ee892a5e}{}\label{classpangolin_1_1_pango_video_a09ae4a03fc3ba838fb462727ee892a5e}
+
+\item 
+\hyperlink{classpangolin_1_1json_1_1value}{json\+::value} {\bfseries device\+\_\+properties}\hypertarget{classpangolin_1_1_pango_video_a560fdeab226aa558afa2257e04a81001}{}\label{classpangolin_1_1_pango_video_a560fdeab226aa558afa2257e04a81001}
+
+\item 
+\hyperlink{classpangolin_1_1json_1_1value}{json\+::value} {\bfseries frame\+\_\+properties}\hypertarget{classpangolin_1_1_pango_video_a7d2778cfb6a216ae9c264f51cd2e0474}{}\label{classpangolin_1_1_pango_video_a7d2778cfb6a216ae9c264f51cd2e0474}
+
+\item 
+int {\bfseries src\+\_\+id}\hypertarget{classpangolin_1_1_pango_video_a273b4bda5c65d99cd41a95b590cbb56d}{}\label{classpangolin_1_1_pango_video_a273b4bda5c65d99cd41a95b590cbb56d}
+
+\item 
+int {\bfseries frame\+\_\+id}\hypertarget{classpangolin_1_1_pango_video_aae49ceda3a0d883f9a8d4fcb1d80172e}{}\label{classpangolin_1_1_pango_video_aae49ceda3a0d883f9a8d4fcb1d80172e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Pango\+Video@{pangolin\+::\+Pango\+Video}!Get\+Total\+Frames@{Get\+Total\+Frames}}
+\index{Get\+Total\+Frames@{Get\+Total\+Frames}!pangolin\+::\+Pango\+Video@{pangolin\+::\+Pango\+Video}}
+\subsubsection[{\texorpdfstring{Get\+Total\+Frames() const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE}{GetTotalFrames() const PANGOLIN_OVERRIDE}}]{\setlength{\rightskip}{0pt plus 5cm}int pangolin\+::\+Pango\+Video\+::\+Get\+Total\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_pango_video_af6c22038f6e41b16f34ca08d7c82fec2}{}\label{classpangolin_1_1_pango_video_af6c22038f6e41b16f34ca08d7c82fec2}
+
+
+Return total number of frames to be captured from device, or std\+::numeric\+\_\+limits$<$int$>$\+::max() on failure. 
+
+
+
+Implements \hyperlink{structpangolin_1_1_video_playback_interface_aa1ab605b49009c52a80eaa0cc074b63b}{pangolin\+::\+Video\+Playback\+Interface}.
+
+\index{pangolin\+::\+Pango\+Video@{pangolin\+::\+Pango\+Video}!Grab\+Newest@{Grab\+Newest}}
+\index{Grab\+Newest@{Grab\+Newest}!pangolin\+::\+Pango\+Video@{pangolin\+::\+Pango\+Video}}
+\subsubsection[{\texorpdfstring{Grab\+Newest(unsigned char $\ast$image, bool wait=true) P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE}{GrabNewest(unsigned char *image, bool wait=true) PANGOLIN_OVERRIDE}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Pango\+Video\+::\+Grab\+Newest (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_pango_video_a4968ca84a65d97cb87c5df1508d53655}{}\label{classpangolin_1_1_pango_video_a4968ca84a65d97cb87c5df1508d53655}
+
+
+Copy the newest frame from the camera to image discarding all older frames. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a062ad8f58e023e93ce48b1c61ea00674}{pangolin\+::\+Video\+Interface}.
+
+\index{pangolin\+::\+Pango\+Video@{pangolin\+::\+Pango\+Video}!Grab\+Next@{Grab\+Next}}
+\index{Grab\+Next@{Grab\+Next}!pangolin\+::\+Pango\+Video@{pangolin\+::\+Pango\+Video}}
+\subsubsection[{\texorpdfstring{Grab\+Next(unsigned char $\ast$image, bool wait=true) P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE}{GrabNext(unsigned char *image, bool wait=true) PANGOLIN_OVERRIDE}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Pango\+Video\+::\+Grab\+Next (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_pango_video_abd49b114ac38554bbf29f4baa2d145ea}{}\label{classpangolin_1_1_pango_video_abd49b114ac38554bbf29f4baa2d145ea}
+
+
+Copy the next frame from the camera to image. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a2a87c2219959a762dbbb43760d27ff27}{pangolin\+::\+Video\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/pango\+\_\+video.\+h\end{DoxyCompactItemize}

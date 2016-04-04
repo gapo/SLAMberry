@@ -1,0 +1,61 @@
+\hypertarget{classpangolin_1_1_debayer_video}{}\section{pangolin\+:\+:Debayer\+Video Class Reference}
+\label{classpangolin_1_1_debayer_video}\index{pangolin\+::\+Debayer\+Video@{pangolin\+::\+Debayer\+Video}}
+Inheritance diagram for pangolin\+:\+:Debayer\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_debayer_video}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Debayer\+Video} (\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$videoin, color\+\_\+filter\+\_\+t tile, bayer\+\_\+method\+\_\+t method)\hypertarget{classpangolin_1_1_debayer_video_a56ab8559cc057ab0ea448b4e91dc326c}{}\label{classpangolin_1_1_debayer_video_a56ab8559cc057ab0ea448b4e91dc326c}
+
+\item 
+void \hyperlink{classpangolin_1_1_debayer_video_aa294683b7bad6e7ae287bac4c36bbc9a}{Start} ()\hypertarget{classpangolin_1_1_debayer_video_aa294683b7bad6e7ae287bac4c36bbc9a}{}\label{classpangolin_1_1_debayer_video_aa294683b7bad6e7ae287bac4c36bbc9a}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a74a2e3e1b87c7cbf9de9bcb39e1df128}{Video\+Input\+::\+Start()} \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_debayer_video_a8406e1f4468ba0a66a70731d2f1caf30}{Stop} ()\hypertarget{classpangolin_1_1_debayer_video_a8406e1f4468ba0a66a70731d2f1caf30}{}\label{classpangolin_1_1_debayer_video_a8406e1f4468ba0a66a70731d2f1caf30}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a8945f80194cc7ec9594db7f27e7d09b8}{Video\+Input\+::\+Stop()} \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_debayer_video_aea059c5ce2046b2ec7f2d5f4594b954c}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_debayer_video_aea059c5ce2046b2ec7f2d5f4594b954c}{}\label{classpangolin_1_1_debayer_video_aea059c5ce2046b2ec7f2d5f4594b954c}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a93cee5c33386973a2a51165e6bdcf40b}{Video\+Input\+::\+Size\+Bytes()} \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_debayer_video_a0afaf3bf703bdb1e6f76cfad6d94ecad}{Streams} () const \hypertarget{classpangolin_1_1_debayer_video_a0afaf3bf703bdb1e6f76cfad6d94ecad}{}\label{classpangolin_1_1_debayer_video_a0afaf3bf703bdb1e6f76cfad6d94ecad}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a9030d775d699c39ab7b7ba378c007c6a}{Video\+Input\+::\+Streams()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_debayer_video_a7d8a25a6a000062b2e8a0bae7c01d280}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_debayer_video_a7d8a25a6a000062b2e8a0bae7c01d280}{}\label{classpangolin_1_1_debayer_video_a7d8a25a6a000062b2e8a0bae7c01d280}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_ad3d8ff59c1ec4139320097e6e1111f32}{Video\+Input\+::\+Grab\+Next()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_debayer_video_ac40d7ecaecde6ecf5fadbecabe73fead}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_debayer_video_ac40d7ecaecde6ecf5fadbecabe73fead}{}\label{classpangolin_1_1_debayer_video_ac40d7ecaecde6ecf5fadbecabe73fead}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a4c8ac38e3c6a3f591663aeebf645e4c6}{Video\+Input\+::\+Grab\+Newest()} \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ \& {\bfseries Input\+Streams} ()\hypertarget{classpangolin_1_1_debayer_video_ae449f64f8545bd3e68df380536d9b089}{}\label{classpangolin_1_1_debayer_video_ae449f64f8545bd3e68df380536d9b089}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ $>$ {\bfseries videoin}\hypertarget{classpangolin_1_1_debayer_video_aa342097d0d232e96c1fee8b234248ee8}{}\label{classpangolin_1_1_debayer_video_aa342097d0d232e96c1fee8b234248ee8}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_debayer_video_ad03742068d5994ca83b4a182adbd1b81}{}\label{classpangolin_1_1_debayer_video_ad03742068d5994ca83b4a182adbd1b81}
+
+\item 
+size\+\_\+t {\bfseries size\+\_\+bytes}\hypertarget{classpangolin_1_1_debayer_video_a2628558cc1b0dd7a1735521c17507ad3}{}\label{classpangolin_1_1_debayer_video_a2628558cc1b0dd7a1735521c17507ad3}
+
+\item 
+unsigned char $\ast$ {\bfseries buffer}\hypertarget{classpangolin_1_1_debayer_video_abf3153ef5cd48d0cdfe55e97a590b26a}{}\label{classpangolin_1_1_debayer_video_abf3153ef5cd48d0cdfe55e97a590b26a}
+
+\item 
+color\+\_\+filter\+\_\+t {\bfseries tile}\hypertarget{classpangolin_1_1_debayer_video_ae75a56606b60a7361c64a987bbac127c}{}\label{classpangolin_1_1_debayer_video_ae75a56606b60a7361c64a987bbac127c}
+
+\item 
+bayer\+\_\+method\+\_\+t {\bfseries method}\hypertarget{classpangolin_1_1_debayer_video_a597561e9e21b227b695f4102c16d016d}{}\label{classpangolin_1_1_debayer_video_a597561e9e21b227b695f4102c16d016d}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/debayer.\+h\end{DoxyCompactItemize}

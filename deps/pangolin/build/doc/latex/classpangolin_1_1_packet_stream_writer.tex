@@ -1,0 +1,61 @@
+\hypertarget{classpangolin_1_1_packet_stream_writer}{}\section{pangolin\+:\+:Packet\+Stream\+Writer Class Reference}
+\label{classpangolin_1_1_packet_stream_writer}\index{pangolin\+::\+Packet\+Stream\+Writer@{pangolin\+::\+Packet\+Stream\+Writer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Packet\+Stream\+Writer} (const std\+::string \&filename, unsigned int buffer\+\_\+size\+\_\+bytes=10000000)\hypertarget{classpangolin_1_1_packet_stream_writer_aa157486194193ca4a8f68fb203637800}{}\label{classpangolin_1_1_packet_stream_writer_aa157486194193ca4a8f68fb203637800}
+
+\item 
+void {\bfseries Open} (const std\+::string \&filename, unsigned int buffer\+\_\+size\+\_\+bytes=10000000)\hypertarget{classpangolin_1_1_packet_stream_writer_aa514d5604ac0f347f7275c434f37bdca}{}\label{classpangolin_1_1_packet_stream_writer_aa514d5604ac0f347f7275c434f37bdca}
+
+\item 
+Packet\+Stream\+Source\+Id {\bfseries Add\+Source} (const std\+::string \&source\+\_\+driver, const std\+::string \&source\+\_\+uri, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&json\+\_\+header=\hyperlink{classpangolin_1_1json_1_1value}{json\+::value}(), const size\+\_\+t packet\+\_\+size\+\_\+bytes=0, const std\+::string \&packet\+\_\+definitions=\char`\"{}\char`\"{})\hypertarget{classpangolin_1_1_packet_stream_writer_aff95a47df0697479f63a98d8021bb2c1}{}\label{classpangolin_1_1_packet_stream_writer_aff95a47df0697479f63a98d8021bb2c1}
+
+\item 
+void {\bfseries Write\+Source\+Packet\+Meta} (Packet\+Stream\+Source\+Id src, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&json)\hypertarget{classpangolin_1_1_packet_stream_writer_ae0b8269bdc55d16722e27fcc2ab687b6}{}\label{classpangolin_1_1_packet_stream_writer_ae0b8269bdc55d16722e27fcc2ab687b6}
+
+\item 
+void {\bfseries Write\+Source\+Packet} (Packet\+Stream\+Source\+Id src, const char $\ast$data, size\+\_\+t n)\hypertarget{classpangolin_1_1_packet_stream_writer_a04471a882b3cf388fb15b96536972997}{}\label{classpangolin_1_1_packet_stream_writer_a04471a882b3cf388fb15b96536972997}
+
+\item 
+void {\bfseries Write\+Pango\+Header} ()\hypertarget{classpangolin_1_1_packet_stream_writer_a98769a090eb605689cc88e6a5c3052c2}{}\label{classpangolin_1_1_packet_stream_writer_a98769a090eb605689cc88e6a5c3052c2}
+
+\item 
+void {\bfseries Write\+Stats} ()\hypertarget{classpangolin_1_1_packet_stream_writer_a8e66e558ba56dbec5f20aee019f25a7a}{}\label{classpangolin_1_1_packet_stream_writer_a8e66e558ba56dbec5f20aee019f25a7a}
+
+\item 
+void {\bfseries Write\+Sync} ()\hypertarget{classpangolin_1_1_packet_stream_writer_ab41e3271bd3b5ca136cdff5477439740}{}\label{classpangolin_1_1_packet_stream_writer_ab41e3271bd3b5ca136cdff5477439740}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Write\+Compressed\+Unsigned\+Int} (size\+\_\+t n)\hypertarget{classpangolin_1_1_packet_stream_writer_accf4896829d689b05f8cd374c99c67cb}{}\label{classpangolin_1_1_packet_stream_writer_accf4896829d689b05f8cd374c99c67cb}
+
+\item 
+void {\bfseries Write\+Timestamp} ()\hypertarget{classpangolin_1_1_packet_stream_writer_a37862edcb8b743f50949ba50ca286b50}{}\label{classpangolin_1_1_packet_stream_writer_a37862edcb8b743f50949ba50ca286b50}
+
+\item 
+void {\bfseries Write\+Tag} (const uint32\+\_\+t tag)\hypertarget{classpangolin_1_1_packet_stream_writer_a73a33d797e6c03ff26032f8ab3e4d238}{}\label{classpangolin_1_1_packet_stream_writer_a73a33d797e6c03ff26032f8ab3e4d238}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_packet_stream_source}{Packet\+Stream\+Source} $>$ {\bfseries sources}\hypertarget{classpangolin_1_1_packet_stream_writer_a3865a3f75df0d38b8693a9492ac69285}{}\label{classpangolin_1_1_packet_stream_writer_a3865a3f75df0d38b8693a9492ac69285}
+
+\item 
+\hyperlink{classpangolin_1_1threadedfilebuf}{threadedfilebuf} {\bfseries buffer}\hypertarget{classpangolin_1_1_packet_stream_writer_adc2cdfb08279b9d1c8902885513cfd56}{}\label{classpangolin_1_1_packet_stream_writer_adc2cdfb08279b9d1c8902885513cfd56}
+
+\item 
+std\+::ostream {\bfseries writer}\hypertarget{classpangolin_1_1_packet_stream_writer_ae00f3814caaa4890d7eb2f19e77c0c97}{}\label{classpangolin_1_1_packet_stream_writer_ae00f3814caaa4890d7eb2f19e77c0c97}
+
+\item 
+unsigned int {\bfseries bytes\+\_\+written}\hypertarget{classpangolin_1_1_packet_stream_writer_a66cb0699dcdb321bb6b3e160b3dbba5c}{}\label{classpangolin_1_1_packet_stream_writer_a66cb0699dcdb321bb6b3e160b3dbba5c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/log/packetstream.\+h\end{DoxyCompactItemize}

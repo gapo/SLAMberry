@@ -1,0 +1,203 @@
+\hypertarget{display_8h}{}\section{/home/gapo/meng/deps/pangolin/include/pangolin/display/display.h File Reference}
+\label{display_8h}\index{/home/gapo/meng/deps/pangolin/include/pangolin/display/display.\+h@{/home/gapo/meng/deps/pangolin/include/pangolin/display/display.\+h}}
+{\ttfamily \#include $<$pangolin/platform.\+h$>$}\\*
+{\ttfamily \#include $<$pangolin/gl/glinclude.\+h$>$}\\*
+{\ttfamily \#include $<$pangolin/compat/function.\+h$>$}\\*
+{\ttfamily \#include $<$pangolin/handler/handler\+\_\+enums.\+h$>$}\\*
+{\ttfamily \#include $<$pangolin/utils/params.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structpangolin_1_1_toggle_view_functor}{pangolin\+::\+Toggle\+View\+Functor}
+\begin{DoxyCompactList}\small\item\em Convenience functor for toggling \hyperlink{structpangolin_1_1_view}{pangolin\+::\+View}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{display_8h_a8642351d0206a6f6116c57227855d78d}{pangolin\+::\+Bind\+To\+Context} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Give this Open\+GL context a name or switch contexts. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a99d20252e835872aa20c0fc05b862737}{pangolin\+::\+Create\+Window\+And\+Bind} (std\+::string window\+\_\+title, int w=640, int h=480, const Params \&params=Params())
+\begin{DoxyCompactList}\small\item\em Initialise Open\+GL window (determined by platform) and bind context. \end{DoxyCompactList}\item 
+int \hyperlink{display_8h_a8701ac01252ec62ccf4d44911972dfb1}{pangolin\+::\+Launch\+User\+App} (User\+App \&app)
+\begin{DoxyCompactList}\small\item\em Launch users derived \hyperlink{classpangolin_1_1_user_app}{User\+App}, controlling Open\+GL event loop. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a2c58aa331e5a601f651cf95f2417906b}{pangolin\+::\+Finish\+Frame} ()\hypertarget{display_8h_a2c58aa331e5a601f651cf95f2417906b}{}\label{display_8h_a2c58aa331e5a601f651cf95f2417906b}
+
+\begin{DoxyCompactList}\small\item\em Perform any post rendering, event processing and frame swapping. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a561c7a52400ffa3d8036e4b1e800e816}{pangolin\+::\+Quit} ()\hypertarget{display_8h_a561c7a52400ffa3d8036e4b1e800e816}{}\label{display_8h_a561c7a52400ffa3d8036e4b1e800e816}
+
+\begin{DoxyCompactList}\small\item\em Request that the program exit. \end{DoxyCompactList}\item 
+bool \hyperlink{display_8h_ab34810bc115a7b03e3117a8f83d8ed0d}{pangolin\+::\+Should\+Quit} ()\hypertarget{display_8h_ab34810bc115a7b03e3117a8f83d8ed0d}{}\label{display_8h_ab34810bc115a7b03e3117a8f83d8ed0d}
+
+\begin{DoxyCompactList}\small\item\em Returns true if user has requested to close Open\+GL window. \end{DoxyCompactList}\item 
+bool \hyperlink{display_8h_ab4bb80b8f002f55bbd7cf7942536b1f2}{pangolin\+::\+Had\+Input} ()\hypertarget{display_8h_ab4bb80b8f002f55bbd7cf7942536b1f2}{}\label{display_8h_ab4bb80b8f002f55bbd7cf7942536b1f2}
+
+\begin{DoxyCompactList}\small\item\em Returns true if user has interacted with the window since this was last called. \end{DoxyCompactList}\item 
+bool \hyperlink{display_8h_acedec9c04d09c855441ea02611f461f4}{pangolin\+::\+Has\+Resized} ()\hypertarget{display_8h_acedec9c04d09c855441ea02611f461f4}{}\label{display_8h_acedec9c04d09c855441ea02611f461f4}
+
+\begin{DoxyCompactList}\small\item\em Returns true if user has resized the window. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a0d8584083b4f129c90a035908ce24b09}{pangolin\+::\+Render\+Views} ()\hypertarget{display_8h_a0d8584083b4f129c90a035908ce24b09}{}\label{display_8h_a0d8584083b4f129c90a035908ce24b09}
+
+\begin{DoxyCompactList}\small\item\em Renders any views with default draw methods. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_aa7aff394ed2badccf8c1354f659bbc20}{pangolin\+::\+Post\+Render} ()\hypertarget{display_8h_aa7aff394ed2badccf8c1354f659bbc20}{}\label{display_8h_aa7aff394ed2badccf8c1354f659bbc20}
+
+\begin{DoxyCompactList}\small\item\em Perform any post render events, such as screen recording. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a8ef85af18212208a144d952fbf4923eb}{pangolin\+::\+Register\+Key\+Press\+Callback} (int key, boostd\+::function$<$ void(void)$>$ func)
+\begin{DoxyCompactList}\small\item\em Request to be notified via functor when key is pressed. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a3004bcb363b1c26fda63a15efe7d3b6f}{pangolin\+::\+Save\+Window\+On\+Render} (std\+::string filename\+\_\+prefix)\hypertarget{display_8h_a3004bcb363b1c26fda63a15efe7d3b6f}{}\label{display_8h_a3004bcb363b1c26fda63a15efe7d3b6f}
+
+\begin{DoxyCompactList}\small\item\em Save window contents to image. \end{DoxyCompactList}\item 
+void {\bfseries pangolin\+::\+Save\+Framebuffer} (std\+::string prefix, const Viewport \&v)\hypertarget{display_8h_a482b1e4ef33d1642eb459021e1cb0fed}{}\label{display_8h_a482b1e4ef33d1642eb459021e1cb0fed}
+
+\item 
+void \hyperlink{display_8h_aad76f08bd978b776febb5f5bcde5a331}{pangolin\+::process\+::\+Keyboard} (unsigned char key, int x, int y)
+\begin{DoxyCompactList}\small\item\em Tell pangolin to process input to drive display. \end{DoxyCompactList}\item 
+void {\bfseries pangolin\+::process\+::\+Keyboard\+Up} (unsigned char key, int x, int y)\hypertarget{display_8h_a57acd20c982689bbb79dfa70c9ae2f0d}{}\label{display_8h_a57acd20c982689bbb79dfa70c9ae2f0d}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Special\+Func} (int key, int x, int y)\hypertarget{display_8h_a507951b2c13e67fcaabf31836383a2bd}{}\label{display_8h_a507951b2c13e67fcaabf31836383a2bd}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Special\+Func\+Up} (int key, int x, int y)\hypertarget{display_8h_a6afc765ba6f5c52d4238e49fdc42128d}{}\label{display_8h_a6afc765ba6f5c52d4238e49fdc42128d}
+
+\item 
+void \hyperlink{display_8h_a740a58c3d708aed9725d728d0ebe06b4}{pangolin\+::process\+::\+Resize} (int width, int height)\hypertarget{display_8h_a740a58c3d708aed9725d728d0ebe06b4}{}\label{display_8h_a740a58c3d708aed9725d728d0ebe06b4}
+
+\begin{DoxyCompactList}\small\item\em Tell pangolin base window size has changed You will need to call this manually if you haven\textquotesingle{}t let Pangolin register callbacks from your windowing system. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a97f0b8bb5c9020caacfedb9877166600}{pangolin\+::process\+::\+Display} ()
+\begin{DoxyCompactList}\small\item\em Event based rendering entry point (from e.\+g. \end{DoxyCompactList}\item 
+void {\bfseries pangolin\+::process\+::\+Mouse} (int button, int state, int x, int y)\hypertarget{display_8h_af4c358f5fe8e4998031f3c48262e8ef1}{}\label{display_8h_af4c358f5fe8e4998031f3c48262e8ef1}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Mouse\+Motion} (int x, int y)\hypertarget{display_8h_abe6830ea3d248e0fa85cbc396e3d926f}{}\label{display_8h_abe6830ea3d248e0fa85cbc396e3d926f}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Passive\+Mouse\+Motion} (int x, int y)\hypertarget{display_8h_a6c85aab24f5dac3d393a6bf2a7936999}{}\label{display_8h_a6c85aab24f5dac3d393a6bf2a7936999}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Scroll} (float x, float y)\hypertarget{display_8h_a1e1adf742d9f4249a2ec2fb4c9252934}{}\label{display_8h_a1e1adf742d9f4249a2ec2fb4c9252934}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Zoom} (float m)\hypertarget{display_8h_aca3d9832ae769cf981a61ff5994b0659}{}\label{display_8h_aca3d9832ae769cf981a61ff5994b0659}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Rotate} (float r)\hypertarget{display_8h_a727dfbf09cbb684bd8d455224960ef4c}{}\label{display_8h_a727dfbf09cbb684bd8d455224960ef4c}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Subpix\+Motion} (float x, float y, float pressure, float rotation, float tiltx, float tilty)\hypertarget{display_8h_a9538dbc017f1e46bf10c7168ec0ca446}{}\label{display_8h_a9538dbc017f1e46bf10c7168ec0ca446}
+
+\item 
+void {\bfseries pangolin\+::process\+::\+Special\+Input} (Input\+Special in\+Type, float x, float y, float p1, float p2, float p3, float p4)\hypertarget{display_8h_ac8f0863267d62884d674d75fc9725581}{}\label{display_8h_ac8f0863267d62884d674d75fc9725581}
+
+\item 
+View \& \hyperlink{display_8h_acdb4e71302179b8518412c79b3427190}{pangolin\+::\+Display\+Base} ()\hypertarget{display_8h_acdb4e71302179b8518412c79b3427190}{}\label{display_8h_acdb4e71302179b8518412c79b3427190}
+
+\begin{DoxyCompactList}\small\item\em Retrieve \textquotesingle{}base\textquotesingle{} display, corresponding to entire window. \end{DoxyCompactList}\item 
+View \& \hyperlink{display_8h_a5aed7848612198c9486067a3025ca7df}{pangolin\+::\+Display} (const std\+::string \&name)\hypertarget{display_8h_a5aed7848612198c9486067a3025ca7df}{}\label{display_8h_a5aed7848612198c9486067a3025ca7df}
+
+\begin{DoxyCompactList}\small\item\em Create or retrieve named display managed by pangolin (automatically deleted). \end{DoxyCompactList}\item 
+View \& \hyperlink{display_8h_ab50796a962c515871fed68a2116644e4}{pangolin\+::\+Create\+Display} ()\hypertarget{display_8h_ab50796a962c515871fed68a2116644e4}{}\label{display_8h_ab50796a962c515871fed68a2116644e4}
+
+\begin{DoxyCompactList}\small\item\em Create unnamed display managed by pangolin (automatically deleted). \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a83bffd54ca80cef36b4ac4ac9a8bf683}{pangolin\+::\+Toggle\+Fullscreen} ()\hypertarget{display_8h_a83bffd54ca80cef36b4ac4ac9a8bf683}{}\label{display_8h_a83bffd54ca80cef36b4ac4ac9a8bf683}
+
+\begin{DoxyCompactList}\small\item\em Switch between windowed and fullscreen mode. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a990047584201d74cc89ee6ff5d3113fb}{pangolin\+::\+Set\+Fullscreen} (bool fullscreen=true)\hypertarget{display_8h_a990047584201d74cc89ee6ff5d3113fb}{}\label{display_8h_a990047584201d74cc89ee6ff5d3113fb}
+
+\begin{DoxyCompactList}\small\item\em Switch windows/fullscreenmode = fullscreen. \end{DoxyCompactList}\item 
+void \hyperlink{display_8h_a01a234dc1e7a066f9c43d41ed2fa5ed8}{pangolin\+::\+Toggle\+Console} ()\hypertarget{display_8h_a01a234dc1e7a066f9c43d41ed2fa5ed8}{}\label{display_8h_a01a234dc1e7a066f9c43d41ed2fa5ed8}
+
+\begin{DoxyCompactList}\small\item\em Toggle display of Pangolin console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ {\bfseries pangolin\+::\+P\+A\+R\+A\+M\+\_\+\+D\+O\+U\+B\+L\+E\+B\+U\+F\+F\+ER}\hypertarget{display_8h_a18b7b3a5fdca64db02a1ea09e0e51ab3}{}\label{display_8h_a18b7b3a5fdca64db02a1ea09e0e51ab3}
+
+\item 
+const char $\ast$ {\bfseries pangolin\+::\+P\+A\+R\+A\+M\+\_\+\+S\+A\+M\+P\+L\+E\+\_\+\+B\+U\+F\+F\+E\+RS}\hypertarget{display_8h_a54ba7dbf63c4a8d70972eb1cd43bf91c}{}\label{display_8h_a54ba7dbf63c4a8d70972eb1cd43bf91c}
+
+\item 
+const char $\ast$ {\bfseries pangolin\+::\+P\+A\+R\+A\+M\+\_\+\+S\+A\+M\+P\+L\+ES}\hypertarget{display_8h_aad3e948636de78170d2cd730309b5c77}{}\label{display_8h_aad3e948636de78170d2cd730309b5c77}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file contains a number of global methods for creating and querying window state as well as handling user input. 
+
+\subsection{Function Documentation}
+\index{display.\+h@{display.\+h}!Bind\+To\+Context@{Bind\+To\+Context}}
+\index{Bind\+To\+Context@{Bind\+To\+Context}!display.\+h@{display.\+h}}
+\subsubsection[{\texorpdfstring{Bind\+To\+Context(std\+::string name)}{BindToContext(std::string name)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Bind\+To\+Context (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{display_8h_file_a8642351d0206a6f6116c57227855d78d}{}\label{display_8h_file_a8642351d0206a6f6116c57227855d78d}
+
+
+Give this Open\+GL context a name or switch contexts. 
+
+This is required to initialise Pangolin for use with an externally defined Open\+GL context. You needn\textquotesingle{}t call it if you have used \hyperlink{display_8h_a99d20252e835872aa20c0fc05b862737}{Create\+Window\+And\+Bind()} to create a window or launched a \hyperlink{classpangolin_1_1_user_app}{pangolin\+::\+User\+App} \index{display.\+h@{display.\+h}!Create\+Window\+And\+Bind@{Create\+Window\+And\+Bind}}
+\index{Create\+Window\+And\+Bind@{Create\+Window\+And\+Bind}!display.\+h@{display.\+h}}
+\subsubsection[{\texorpdfstring{Create\+Window\+And\+Bind(std\+::string window\+\_\+title, int w=640, int h=480, const Params \&params=\+Params())}{CreateWindowAndBind(std::string window_title, int w=640, int h=480, const Params &params=Params())}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Create\+Window\+And\+Bind (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{window\+\_\+title, }
+\item[{int}]{w = {\ttfamily 640}, }
+\item[{int}]{h = {\ttfamily 480}, }
+\item[{const {\bf Params} \&}]{params = {\ttfamily {\bf Params}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{display_8h_file_a99d20252e835872aa20c0fc05b862737}{}\label{display_8h_file_a99d20252e835872aa20c0fc05b862737}
+
+
+Initialise Open\+GL window (determined by platform) and bind context. 
+
+This method will choose an available windowing system if one is present. \index{display.\+h@{display.\+h}!Display@{Display}}
+\index{Display@{Display}!display.\+h@{display.\+h}}
+\subsubsection[{\texorpdfstring{Display()}{Display()}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::process\+::\+Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{display_8h_file_a97f0b8bb5c9020caacfedb9877166600}{}\label{display_8h_file_a97f0b8bb5c9020caacfedb9877166600}
+
+
+Event based rendering entry point (from e.\+g. 
+
+glut\+Main\+Loop). Not currently supported. \index{display.\+h@{display.\+h}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!display.\+h@{display.\+h}}
+\subsubsection[{\texorpdfstring{Keyboard(unsigned char key, int x, int y)}{Keyboard(unsigned char key, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::process\+::\+Keyboard (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{display_8h_file_aad76f08bd978b776febb5f5bcde5a331}{}\label{display_8h_file_aad76f08bd978b776febb5f5bcde5a331}
+
+
+Tell pangolin to process input to drive display. 
+
+You will need to call this manually if you haven\textquotesingle{}t let Pangolin register callbacks from your windowing system \index{display.\+h@{display.\+h}!Launch\+User\+App@{Launch\+User\+App}}
+\index{Launch\+User\+App@{Launch\+User\+App}!display.\+h@{display.\+h}}
+\subsubsection[{\texorpdfstring{Launch\+User\+App(\+User\+App \&app)}{LaunchUserApp(UserApp &app)}}]{\setlength{\rightskip}{0pt plus 5cm}int pangolin\+::\+Launch\+User\+App (
+\begin{DoxyParamCaption}
+\item[{{\bf User\+App} \&}]{app}
+\end{DoxyParamCaption}
+)}\hypertarget{display_8h_file_a8701ac01252ec62ccf4d44911972dfb1}{}\label{display_8h_file_a8701ac01252ec62ccf4d44911972dfb1}
+
+
+Launch users derived \hyperlink{classpangolin_1_1_user_app}{User\+App}, controlling Open\+GL event loop. 
+
+This method will block until the application exits, calling app\textquotesingle{}s Init() method to start and Render() method subsequently to draw each frame. \begin{DoxyReturn}{Returns}
+exit code for use when returning from main. Currently always 0. 
+\end{DoxyReturn}
+\index{display.\+h@{display.\+h}!Register\+Key\+Press\+Callback@{Register\+Key\+Press\+Callback}}
+\index{Register\+Key\+Press\+Callback@{Register\+Key\+Press\+Callback}!display.\+h@{display.\+h}}
+\subsubsection[{\texorpdfstring{Register\+Key\+Press\+Callback(int key, boostd\+::function$<$ void(void)$>$ func)}{RegisterKeyPressCallback(int key, boostd::function< void(void)> func)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Register\+Key\+Press\+Callback (
+\begin{DoxyParamCaption}
+\item[{int}]{key, }
+\item[{boostd\+::function$<$ void(void)$>$}]{func}
+\end{DoxyParamCaption}
+)}\hypertarget{display_8h_file_a8ef85af18212208a144d952fbf4923eb}{}\label{display_8h_file_a8ef85af18212208a144d952fbf4923eb}
+
+
+Request to be notified via functor when key is pressed. 
+
+Functor may take one parameter which will equal the key pressed 

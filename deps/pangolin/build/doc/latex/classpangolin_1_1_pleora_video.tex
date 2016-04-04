@@ -1,0 +1,112 @@
+\hypertarget{classpangolin_1_1_pleora_video}{}\section{pangolin\+:\+:Pleora\+Video Class Reference}
+\label{classpangolin_1_1_pleora_video}\index{pangolin\+::\+Pleora\+Video@{pangolin\+::\+Pleora\+Video}}
+Inheritance diagram for pangolin\+:\+:Pleora\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_pleora_video}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pleora\+Video} (const char $\ast$model\+\_\+name, const char $\ast$serial\+\_\+num, size\+\_\+t index, size\+\_\+t bpp=8, size\+\_\+t binX=1, size\+\_\+t binY=1, size\+\_\+t buffer\+\_\+count=4, size\+\_\+t desired\+\_\+size\+\_\+x=0, size\+\_\+t desired\+\_\+size\+\_\+y=0, size\+\_\+t desired\+\_\+pos\+\_\+x=0, size\+\_\+t desired\+\_\+pos\+\_\+y=0)\hypertarget{classpangolin_1_1_pleora_video_af5de7d30e0b8287d2c63386610ead49b}{}\label{classpangolin_1_1_pleora_video_af5de7d30e0b8287d2c63386610ead49b}
+
+\item 
+void \hyperlink{classpangolin_1_1_pleora_video_a577b97426c315ddeb29446fcd1c8acda}{Start} ()\hypertarget{classpangolin_1_1_pleora_video_a577b97426c315ddeb29446fcd1c8acda}{}\label{classpangolin_1_1_pleora_video_a577b97426c315ddeb29446fcd1c8acda}
+
+\begin{DoxyCompactList}\small\item\em Start Video device. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_pleora_video_aed12ed85d97d258096a8e6ce19c048e2}{Stop} ()\hypertarget{classpangolin_1_1_pleora_video_aed12ed85d97d258096a8e6ce19c048e2}{}\label{classpangolin_1_1_pleora_video_aed12ed85d97d258096a8e6ce19c048e2}
+
+\begin{DoxyCompactList}\small\item\em Stop Video device. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_pleora_video_af608d7d12abeb6a941f4f1d2de914e8e}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_pleora_video_af608d7d12abeb6a941f4f1d2de914e8e}{}\label{classpangolin_1_1_pleora_video_af608d7d12abeb6a941f4f1d2de914e8e}
+
+\begin{DoxyCompactList}\small\item\em Required buffer size to store all frames. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_pleora_video_a25e41a13969a979657343971d97043aa}{Streams} () const \hypertarget{classpangolin_1_1_pleora_video_a25e41a13969a979657343971d97043aa}{}\label{classpangolin_1_1_pleora_video_a25e41a13969a979657343971d97043aa}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_pleora_video_aa9c01e6f43cebefb05aaaf847292de04}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the next frame from the camera to image. \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_pleora_video_ae1984dd3f892a8cad426e692e21c6fb4}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)
+\begin{DoxyCompactList}\small\item\em Copy the newest frame from the camera to image discarding all older frames. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries Device\+Param} (const char $\ast$name)\hypertarget{classpangolin_1_1_pleora_video_a1d8195f4e6e01ef524320be368acb1b0}{}\label{classpangolin_1_1_pleora_video_a1d8195f4e6e01ef524320be368acb1b0}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\T {\bfseries Stream\+Param} (const char $\ast$name)\hypertarget{classpangolin_1_1_pleora_video_ad1b5da5a21c2fd9c56240a4962293131}{}\label{classpangolin_1_1_pleora_video_ad1b5da5a21c2fd9c56240a4962293131}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_pleora_video_a8171b50fed4fcc81cb3881d09d1510b3}{}\label{classpangolin_1_1_pleora_video_a8171b50fed4fcc81cb3881d09d1510b3}
+
+\item 
+size\+\_\+t {\bfseries size\+\_\+bytes}\hypertarget{classpangolin_1_1_pleora_video_a49b0a13b0f51b2cd55ba5896f674691f}{}\label{classpangolin_1_1_pleora_video_a49b0a13b0f51b2cd55ba5896f674691f}
+
+\item 
+Pv\+System $\ast$ {\bfseries l\+Pv\+System}\hypertarget{classpangolin_1_1_pleora_video_a1d07f01e5d2baaec4975726054f0374e}{}\label{classpangolin_1_1_pleora_video_a1d07f01e5d2baaec4975726054f0374e}
+
+\item 
+Pv\+Device $\ast$ {\bfseries l\+Device}\hypertarget{classpangolin_1_1_pleora_video_acf9169162a19fcaa2747fa71b8c2daad}{}\label{classpangolin_1_1_pleora_video_acf9169162a19fcaa2747fa71b8c2daad}
+
+\item 
+Pv\+Stream $\ast$ {\bfseries l\+Stream}\hypertarget{classpangolin_1_1_pleora_video_a329db77619472aa110c16d1d1b4d9167}{}\label{classpangolin_1_1_pleora_video_a329db77619472aa110c16d1d1b4d9167}
+
+\item 
+Pv\+Gen\+Parameter\+Array $\ast$ {\bfseries l\+Device\+Params}\hypertarget{classpangolin_1_1_pleora_video_a350c0a8c52cc75e49c2edacaf7428121}{}\label{classpangolin_1_1_pleora_video_a350c0a8c52cc75e49c2edacaf7428121}
+
+\item 
+Pv\+Gen\+Command $\ast$ {\bfseries l\+Start}\hypertarget{classpangolin_1_1_pleora_video_a7c6977d724218b751f2b3c9a703995c5}{}\label{classpangolin_1_1_pleora_video_a7c6977d724218b751f2b3c9a703995c5}
+
+\item 
+Pv\+Gen\+Command $\ast$ {\bfseries l\+Stop}\hypertarget{classpangolin_1_1_pleora_video_a4d6a07614ae15e921dec962137666956}{}\label{classpangolin_1_1_pleora_video_a4d6a07614ae15e921dec962137666956}
+
+\item 
+Pv\+Gen\+Parameter\+Array $\ast$ {\bfseries l\+Stream\+Params}\hypertarget{classpangolin_1_1_pleora_video_a2ee2cb5a246856ec29b5fca7b7276b51}{}\label{classpangolin_1_1_pleora_video_a2ee2cb5a246856ec29b5fca7b7276b51}
+
+\item 
+Buffer\+List {\bfseries l\+Buffer\+List}\hypertarget{classpangolin_1_1_pleora_video_a833ff4a806cb846af4c5a3ee6f7db761}{}\label{classpangolin_1_1_pleora_video_a833ff4a806cb846af4c5a3ee6f7db761}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Pleora\+Video@{pangolin\+::\+Pleora\+Video}!Grab\+Newest@{Grab\+Newest}}
+\index{Grab\+Newest@{Grab\+Newest}!pangolin\+::\+Pleora\+Video@{pangolin\+::\+Pleora\+Video}}
+\subsubsection[{\texorpdfstring{Grab\+Newest(unsigned char $\ast$image, bool wait=true)}{GrabNewest(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Pleora\+Video\+::\+Grab\+Newest (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_pleora_video_ae1984dd3f892a8cad426e692e21c6fb4}{}\label{classpangolin_1_1_pleora_video_ae1984dd3f892a8cad426e692e21c6fb4}
+
+
+Copy the newest frame from the camera to image discarding all older frames. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a062ad8f58e023e93ce48b1c61ea00674}{pangolin\+::\+Video\+Interface}.
+
+\index{pangolin\+::\+Pleora\+Video@{pangolin\+::\+Pleora\+Video}!Grab\+Next@{Grab\+Next}}
+\index{Grab\+Next@{Grab\+Next}!pangolin\+::\+Pleora\+Video@{pangolin\+::\+Pleora\+Video}}
+\subsubsection[{\texorpdfstring{Grab\+Next(unsigned char $\ast$image, bool wait=true)}{GrabNext(unsigned char *image, bool wait=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+Pleora\+Video\+::\+Grab\+Next (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{image, }
+\item[{bool}]{wait = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classpangolin_1_1_pleora_video_aa9c01e6f43cebefb05aaaf847292de04}{}\label{classpangolin_1_1_pleora_video_aa9c01e6f43cebefb05aaaf847292de04}
+
+
+Copy the next frame from the camera to image. 
+
+Optionally wait for a frame if one isn\textquotesingle{}t ready Returns true iff image was copied 
+
+Implements \hyperlink{structpangolin_1_1_video_interface_a2a87c2219959a762dbbb43760d27ff27}{pangolin\+::\+Video\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/pleora.\+h\end{DoxyCompactItemize}

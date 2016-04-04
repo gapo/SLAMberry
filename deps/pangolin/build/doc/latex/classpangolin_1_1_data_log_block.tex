@@ -1,0 +1,87 @@
+\hypertarget{classpangolin_1_1_data_log_block}{}\section{pangolin\+:\+:Data\+Log\+Block Class Reference}
+\label{classpangolin_1_1_data_log_block}\index{pangolin\+::\+Data\+Log\+Block@{pangolin\+::\+Data\+Log\+Block}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_data_log_block_aede09d66acd9ec8ce26b17d9a9681358}{Data\+Log\+Block} (size\+\_\+t dim, size\+\_\+t max\+\_\+samples, size\+\_\+t start\+\_\+id)
+\item 
+size\+\_\+t {\bfseries Samples} () const \hypertarget{classpangolin_1_1_data_log_block_ac81f01afbbe07de9a41059fc5a332b05}{}\label{classpangolin_1_1_data_log_block_ac81f01afbbe07de9a41059fc5a332b05}
+
+\item 
+size\+\_\+t {\bfseries Max\+Samples} () const \hypertarget{classpangolin_1_1_data_log_block_a448c0dcf93ba8c6a15ede17482534031}{}\label{classpangolin_1_1_data_log_block_a448c0dcf93ba8c6a15ede17482534031}
+
+\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_data_log_block_a9f70cb83e4530154536e2551b498f803}{Sample\+Space\+Left} () const \hypertarget{classpangolin_1_1_data_log_block_a9f70cb83e4530154536e2551b498f803}{}\label{classpangolin_1_1_data_log_block_a9f70cb83e4530154536e2551b498f803}
+
+\begin{DoxyCompactList}\small\item\em Return how many more samples can fit in this block. \end{DoxyCompactList}\item 
+bool {\bfseries Is\+Full} () const \hypertarget{classpangolin_1_1_data_log_block_a6be29f2cbd2b85ee41c15a9fc86c4552}{}\label{classpangolin_1_1_data_log_block_a6be29f2cbd2b85ee41c15a9fc86c4552}
+
+\item 
+void \hyperlink{classpangolin_1_1_data_log_block_aefa329a9eb3c00bc047d9c01beec02b3}{Add\+Samples} (size\+\_\+t num\+\_\+samples, size\+\_\+t dimensions, const float $\ast$data\+\_\+dim\+\_\+major)\hypertarget{classpangolin_1_1_data_log_block_aefa329a9eb3c00bc047d9c01beec02b3}{}\label{classpangolin_1_1_data_log_block_aefa329a9eb3c00bc047d9c01beec02b3}
+
+\begin{DoxyCompactList}\small\item\em Add data to block. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_data_log_block_abd0be65d936d41d16724e28a41061f6d}{Clear\+Linked} ()\hypertarget{classpangolin_1_1_data_log_block_abd0be65d936d41d16724e28a41061f6d}{}\label{classpangolin_1_1_data_log_block_abd0be65d936d41d16724e28a41061f6d}
+
+\begin{DoxyCompactList}\small\item\em Delete all samples. \end{DoxyCompactList}\item 
+\hyperlink{classpangolin_1_1_data_log_block}{Data\+Log\+Block} $\ast$ {\bfseries Next\+Block} () const \hypertarget{classpangolin_1_1_data_log_block_ab5af4ebb6c68038e5e9482ead3d82d62}{}\label{classpangolin_1_1_data_log_block_ab5af4ebb6c68038e5e9482ead3d82d62}
+
+\item 
+size\+\_\+t {\bfseries Start\+Id} () const \hypertarget{classpangolin_1_1_data_log_block_a4cdb1a482d339a6bef91ecf798d29bf3}{}\label{classpangolin_1_1_data_log_block_a4cdb1a482d339a6bef91ecf798d29bf3}
+
+\item 
+float $\ast$ {\bfseries Dim\+Data} (size\+\_\+t d) const \hypertarget{classpangolin_1_1_data_log_block_a5aaa212eb3b07023d2fef34530050a13}{}\label{classpangolin_1_1_data_log_block_a5aaa212eb3b07023d2fef34530050a13}
+
+\item 
+size\+\_\+t {\bfseries Dimensions} () const \hypertarget{classpangolin_1_1_data_log_block_a17ebf052dae867915b21a60240b7b699}{}\label{classpangolin_1_1_data_log_block_a17ebf052dae867915b21a60240b7b699}
+
+\item 
+const float $\ast$ {\bfseries Sample} (size\+\_\+t n) const \hypertarget{classpangolin_1_1_data_log_block_afec77a511bbeaafa4c32c28d85b8f221}{}\label{classpangolin_1_1_data_log_block_afec77a511bbeaafa4c32c28d85b8f221}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t {\bfseries dim}\hypertarget{classpangolin_1_1_data_log_block_a1d098a02ae3ec17fe90cb621fd4003e8}{}\label{classpangolin_1_1_data_log_block_a1d098a02ae3ec17fe90cb621fd4003e8}
+
+\item 
+size\+\_\+t {\bfseries max\+\_\+samples}\hypertarget{classpangolin_1_1_data_log_block_a38dad18e71d4db9c7ddc48a3c03d2945}{}\label{classpangolin_1_1_data_log_block_a38dad18e71d4db9c7ddc48a3c03d2945}
+
+\item 
+size\+\_\+t {\bfseries samples}\hypertarget{classpangolin_1_1_data_log_block_aadeb0e8a72bca6d4b55bbb384504ff4a}{}\label{classpangolin_1_1_data_log_block_aadeb0e8a72bca6d4b55bbb384504ff4a}
+
+\item 
+size\+\_\+t {\bfseries start\+\_\+id}\hypertarget{classpangolin_1_1_data_log_block_a1a33a2d17044257c0ec1963c2ac51bb9}{}\label{classpangolin_1_1_data_log_block_a1a33a2d17044257c0ec1963c2ac51bb9}
+
+\item 
+float $\ast$ {\bfseries sample\+\_\+buffer}\hypertarget{classpangolin_1_1_data_log_block_a6731923f4fa4e50b105a1a9efd1fa653}{}\label{classpangolin_1_1_data_log_block_a6731923f4fa4e50b105a1a9efd1fa653}
+
+\item 
+\hyperlink{classpangolin_1_1_data_log_block}{Data\+Log\+Block} $\ast$ {\bfseries next\+Block}\hypertarget{classpangolin_1_1_data_log_block_a7e41bf680dc8f525d94dad4434588521}{}\label{classpangolin_1_1_data_log_block_a7e41bf680dc8f525d94dad4434588521}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{pangolin\+::\+Data\+Log\+Block@{pangolin\+::\+Data\+Log\+Block}!Data\+Log\+Block@{Data\+Log\+Block}}
+\index{Data\+Log\+Block@{Data\+Log\+Block}!pangolin\+::\+Data\+Log\+Block@{pangolin\+::\+Data\+Log\+Block}}
+\subsubsection[{\texorpdfstring{Data\+Log\+Block(size\+\_\+t dim, size\+\_\+t max\+\_\+samples, size\+\_\+t start\+\_\+id)}{DataLogBlock(size_t dim, size_t max_samples, size_t start_id)}}]{\setlength{\rightskip}{0pt plus 5cm}pangolin\+::\+Data\+Log\+Block\+::\+Data\+Log\+Block (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{dim, }
+\item[{size\+\_\+t}]{max\+\_\+samples, }
+\item[{size\+\_\+t}]{start\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classpangolin_1_1_data_log_block_aede09d66acd9ec8ce26b17d9a9681358}{}\label{classpangolin_1_1_data_log_block_aede09d66acd9ec8ce26b17d9a9681358}
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & dimension of sample \\
+\hline
+{\em max\+\_\+samples} & maximum number of samples this block can hold \\
+\hline
+{\em start\+\_\+id} & index of first sample (from entire dataset) in this buffer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/plot/datalog.\+h\end{DoxyCompactItemize}

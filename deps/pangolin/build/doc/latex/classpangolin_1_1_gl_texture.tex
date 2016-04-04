@@ -1,0 +1,122 @@
+\hypertarget{classpangolin_1_1_gl_texture}{}\section{pangolin\+:\+:Gl\+Texture Class Reference}
+\label{classpangolin_1_1_gl_texture}\index{pangolin\+::\+Gl\+Texture@{pangolin\+::\+Gl\+Texture}}
+Inheritance diagram for pangolin\+:\+:Gl\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_gl_texture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_gl_texture_addf883bdafe29c5135ef0990fc7ef3cd}{Gl\+Texture} (G\+Lint width, G\+Lint height, G\+Lint internal\+\_\+format=G\+L\+\_\+\+R\+G\+BA, bool sampling\+\_\+linear=true, int border=0, G\+Lenum glformat=G\+L\+\_\+\+R\+G\+BA, G\+Lenum gltype=G\+L\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+B\+Y\+TE, G\+Lvoid $\ast$data=N\+U\+LL)\hypertarget{classpangolin_1_1_gl_texture_addf883bdafe29c5135ef0990fc7ef3cd}{}\label{classpangolin_1_1_gl_texture_addf883bdafe29c5135ef0990fc7ef3cd}
+
+\begin{DoxyCompactList}\small\item\em internal\+\_\+format normally one of G\+L\+\_\+\+R\+G\+B\+A8, G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+C\+E8, G\+L\+\_\+\+I\+N\+T\+E\+N\+S\+I\+T\+Y16 \end{DoxyCompactList}\item 
+\hyperlink{classpangolin_1_1_gl_texture_a009961fdb69716e2f00ead3a9aee0e15}{Gl\+Texture} ()\hypertarget{classpangolin_1_1_gl_texture_a009961fdb69716e2f00ead3a9aee0e15}{}\label{classpangolin_1_1_gl_texture_a009961fdb69716e2f00ead3a9aee0e15}
+
+\begin{DoxyCompactList}\small\item\em Default constructor represents \textquotesingle{}no texture\textquotesingle{}. \end{DoxyCompactList}\item 
+bool {\bfseries Is\+Valid} () const \hypertarget{classpangolin_1_1_gl_texture_ad860c1ffa1fc1a699aeb0c2e49efbe71}{}\label{classpangolin_1_1_gl_texture_ad860c1ffa1fc1a699aeb0c2e49efbe71}
+
+\item 
+void \hyperlink{classpangolin_1_1_gl_texture_aa2d520d9d1f2d68166bcdc6ce7b7eb33}{Delete} ()\hypertarget{classpangolin_1_1_gl_texture_aa2d520d9d1f2d68166bcdc6ce7b7eb33}{}\label{classpangolin_1_1_gl_texture_aa2d520d9d1f2d68166bcdc6ce7b7eb33}
+
+\begin{DoxyCompactList}\small\item\em Delete Open\+GL resources and fall back to representing \textquotesingle{}no texture\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_gl_texture_ac130d85fde9b0936b5b57dd174fde6df}{Reinitialise} (G\+Lint width, G\+Lint height, G\+Lint internal\+\_\+format=G\+L\+\_\+\+R\+G\+BA, bool sampling\+\_\+linear=true, int border=0, G\+Lenum glformat=G\+L\+\_\+\+R\+G\+BA, G\+Lenum gltype=G\+L\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+B\+Y\+TE, G\+Lvoid $\ast$data=N\+U\+LL)\hypertarget{classpangolin_1_1_gl_texture_ac130d85fde9b0936b5b57dd174fde6df}{}\label{classpangolin_1_1_gl_texture_ac130d85fde9b0936b5b57dd174fde6df}
+
+\begin{DoxyCompactList}\small\item\em Reinitialise teture width / height / format. \end{DoxyCompactList}\item 
+void {\bfseries Bind} () const \hypertarget{classpangolin_1_1_gl_texture_a7b6da38e7ca3222d08c0cac2ca98a218}{}\label{classpangolin_1_1_gl_texture_a7b6da38e7ca3222d08c0cac2ca98a218}
+
+\item 
+void {\bfseries Unbind} () const \hypertarget{classpangolin_1_1_gl_texture_ab37bc2e23047a1f6f9a571ad5fbfb476}{}\label{classpangolin_1_1_gl_texture_ab37bc2e23047a1f6f9a571ad5fbfb476}
+
+\item 
+void \hyperlink{classpangolin_1_1_gl_texture_a5d01b592367029975714da0062b8f6f9}{Upload} (const void $\ast$image, G\+Lenum data\+\_\+format=G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE, G\+Lenum data\+\_\+type=G\+L\+\_\+\+F\+L\+O\+AT)
+\begin{DoxyCompactList}\small\item\em data\+\_\+layout normally one of G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE, G\+L\+\_\+\+R\+GB, ... \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_gl_texture_ad78ac40f91fb27d65705608c35c972c0}{Upload} (const void $\ast$data, unsigned int tex\+\_\+x\+\_\+offset, unsigned int tex\+\_\+y\+\_\+offset, unsigned int data\+\_\+w, unsigned int data\+\_\+h, G\+Lenum data\+\_\+format, G\+Lenum data\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Upload data to texture, overwriting a sub-\/region of it. \end{DoxyCompactList}\item 
+void {\bfseries Load} (const \hyperlink{structpangolin_1_1_typed_image}{Typed\+Image} \&image, bool sampling\+\_\+linear=true)\hypertarget{classpangolin_1_1_gl_texture_a0407f01869fd270aab991116162d936b}{}\label{classpangolin_1_1_gl_texture_a0407f01869fd270aab991116162d936b}
+
+\item 
+void {\bfseries Load\+From\+File} (const std\+::string \&filename, bool sampling\+\_\+linear=true)\hypertarget{classpangolin_1_1_gl_texture_ab7601520d0133e540c192f1d1fa2fd93}{}\label{classpangolin_1_1_gl_texture_ab7601520d0133e540c192f1d1fa2fd93}
+
+\item 
+void {\bfseries Download} (void $\ast$image, G\+Lenum data\+\_\+layout=G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE, G\+Lenum data\+\_\+type=G\+L\+\_\+\+F\+L\+O\+AT) const \hypertarget{classpangolin_1_1_gl_texture_a062809c9c598692fafd039a5f64e9622}{}\label{classpangolin_1_1_gl_texture_a062809c9c598692fafd039a5f64e9622}
+
+\item 
+void {\bfseries Save} (const std\+::string \&filename, bool top\+\_\+line\+\_\+first=true)\hypertarget{classpangolin_1_1_gl_texture_ae8b002a221eefa9871e8a8233f34ddc1}{}\label{classpangolin_1_1_gl_texture_ae8b002a221eefa9871e8a8233f34ddc1}
+
+\item 
+void {\bfseries Set\+Linear} ()\hypertarget{classpangolin_1_1_gl_texture_aab0a12025f129a4bd4ce8e7fe732d727}{}\label{classpangolin_1_1_gl_texture_aab0a12025f129a4bd4ce8e7fe732d727}
+
+\item 
+void {\bfseries Set\+Nearest\+Neighbour} ()\hypertarget{classpangolin_1_1_gl_texture_aa30d98009f39b9e6946134505fa4b87d}{}\label{classpangolin_1_1_gl_texture_aa30d98009f39b9e6946134505fa4b87d}
+
+\item 
+void {\bfseries Render\+To\+Viewport} (const bool flip) const \hypertarget{classpangolin_1_1_gl_texture_a91a8d237faf8dc021dcd2190b1f57837}{}\label{classpangolin_1_1_gl_texture_a91a8d237faf8dc021dcd2190b1f57837}
+
+\item 
+void {\bfseries Render\+To\+Viewport} () const \hypertarget{classpangolin_1_1_gl_texture_a4ab143bc3dcbaa056ee674fb121751ea}{}\label{classpangolin_1_1_gl_texture_a4ab143bc3dcbaa056ee674fb121751ea}
+
+\item 
+void {\bfseries Render\+To\+Viewport} (\hyperlink{structpangolin_1_1_viewport}{Viewport} tex\+\_\+vp, bool flipx=false, bool flipy=false) const \hypertarget{classpangolin_1_1_gl_texture_a53afa64af3be9b786aa58ce737d20833}{}\label{classpangolin_1_1_gl_texture_a53afa64af3be9b786aa58ce737d20833}
+
+\item 
+void {\bfseries Render\+To\+Viewport\+FlipY} () const \hypertarget{classpangolin_1_1_gl_texture_a308da3c55bb8bb6dc36c780be9e6c718}{}\label{classpangolin_1_1_gl_texture_a308da3c55bb8bb6dc36c780be9e6c718}
+
+\item 
+void {\bfseries Render\+To\+Viewport\+Flip\+X\+FlipY} () const \hypertarget{classpangolin_1_1_gl_texture_ab4a06f047c643210ac058abbcc0b8481}{}\label{classpangolin_1_1_gl_texture_ab4a06f047c643210ac058abbcc0b8481}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lint {\bfseries internal\+\_\+format}\hypertarget{classpangolin_1_1_gl_texture_a34e33d1aecc876d45f86a5cc7c6d496b}{}\label{classpangolin_1_1_gl_texture_a34e33d1aecc876d45f86a5cc7c6d496b}
+
+\item 
+G\+Luint {\bfseries tid}\hypertarget{classpangolin_1_1_gl_texture_a706705803a99c28f4b0280dc381074cc}{}\label{classpangolin_1_1_gl_texture_a706705803a99c28f4b0280dc381074cc}
+
+\item 
+G\+Lint {\bfseries width}\hypertarget{classpangolin_1_1_gl_texture_a7f659b562ca69b0aa3d23cf6bea5326b}{}\label{classpangolin_1_1_gl_texture_a7f659b562ca69b0aa3d23cf6bea5326b}
+
+\item 
+G\+Lint {\bfseries height}\hypertarget{classpangolin_1_1_gl_texture_aafdae9fa0e4b38d8446840598a37092b}{}\label{classpangolin_1_1_gl_texture_aafdae9fa0e4b38d8446840598a37092b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Gl\+Texture@{pangolin\+::\+Gl\+Texture}!Upload@{Upload}}
+\index{Upload@{Upload}!pangolin\+::\+Gl\+Texture@{pangolin\+::\+Gl\+Texture}}
+\subsubsection[{\texorpdfstring{Upload(const void $\ast$image, G\+Lenum data\+\_\+format=\+G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+C\+E, G\+Lenum data\+\_\+type=\+G\+L\+\_\+\+F\+L\+O\+A\+T)}{Upload(const void *image, GLenum data_format=GL_LUMINANCE, GLenum data_type=GL_FLOAT)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Gl\+Texture\+::\+Upload (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{image, }
+\item[{G\+Lenum}]{data\+\_\+format = {\ttfamily GL\+\_\+LUMINANCE}, }
+\item[{G\+Lenum}]{data\+\_\+type = {\ttfamily GL\+\_\+FLOAT}}
+\end{DoxyParamCaption}
+)}\hypertarget{classpangolin_1_1_gl_texture_a5d01b592367029975714da0062b8f6f9}{}\label{classpangolin_1_1_gl_texture_a5d01b592367029975714da0062b8f6f9}
+
+
+data\+\_\+layout normally one of G\+L\+\_\+\+L\+U\+M\+I\+N\+A\+N\+CE, G\+L\+\_\+\+R\+GB, ... 
+
+data\+\_\+type normally one of G\+L\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+B\+Y\+TE, G\+L\+\_\+\+U\+N\+S\+I\+G\+N\+E\+D\+\_\+\+S\+H\+O\+RT, G\+L\+\_\+\+F\+L\+O\+AT \index{pangolin\+::\+Gl\+Texture@{pangolin\+::\+Gl\+Texture}!Upload@{Upload}}
+\index{Upload@{Upload}!pangolin\+::\+Gl\+Texture@{pangolin\+::\+Gl\+Texture}}
+\subsubsection[{\texorpdfstring{Upload(const void $\ast$data, unsigned int tex\+\_\+x\+\_\+offset, unsigned int tex\+\_\+y\+\_\+offset, unsigned int data\+\_\+w, unsigned int data\+\_\+h, G\+Lenum data\+\_\+format, G\+Lenum data\+\_\+type)}{Upload(const void *data, unsigned int tex_x_offset, unsigned int tex_y_offset, unsigned int data_w, unsigned int data_h, GLenum data_format, GLenum data_type)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+Gl\+Texture\+::\+Upload (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{data, }
+\item[{unsigned int}]{tex\+\_\+x\+\_\+offset, }
+\item[{unsigned int}]{tex\+\_\+y\+\_\+offset, }
+\item[{unsigned int}]{data\+\_\+w, }
+\item[{unsigned int}]{data\+\_\+h, }
+\item[{G\+Lenum}]{data\+\_\+format, }
+\item[{G\+Lenum}]{data\+\_\+type}
+\end{DoxyParamCaption}
+)}\hypertarget{classpangolin_1_1_gl_texture_ad78ac40f91fb27d65705608c35c972c0}{}\label{classpangolin_1_1_gl_texture_ad78ac40f91fb27d65705608c35c972c0}
+
+
+Upload data to texture, overwriting a sub-\/region of it. 
+
+data ptr contains packed data\+\_\+w x data\+\_\+h of pixel data. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/gl/gl.\+h\end{DoxyCompactItemize}

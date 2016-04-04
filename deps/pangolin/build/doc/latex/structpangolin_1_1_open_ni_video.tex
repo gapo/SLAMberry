@@ -1,0 +1,76 @@
+\hypertarget{structpangolin_1_1_open_ni_video}{}\section{pangolin\+:\+:Open\+Ni\+Video Struct Reference}
+\label{structpangolin_1_1_open_ni_video}\index{pangolin\+::\+Open\+Ni\+Video@{pangolin\+::\+Open\+Ni\+Video}}
+
+
+Interface to video capture sources.  
+
+
+
+
+{\ttfamily \#include $<$openni.\+h$>$}
+
+Inheritance diagram for pangolin\+:\+:Open\+Ni\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structpangolin_1_1_open_ni_video}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Open\+Ni\+Video} (Open\+Ni\+Sensor\+Type s1, Open\+Ni\+Sensor\+Type s2, \hyperlink{structpangolin_1_1_image_dim}{Image\+Dim} dim=\hyperlink{structpangolin_1_1_image_dim}{Image\+Dim}(640, 480), int fps=30)\hypertarget{structpangolin_1_1_open_ni_video_a6d93fba2bcd7dbe988d572eda98a47ab}{}\label{structpangolin_1_1_open_ni_video_a6d93fba2bcd7dbe988d572eda98a47ab}
+
+\item 
+void \hyperlink{structpangolin_1_1_open_ni_video_af77e72402c088527c11d663b2ebaee90}{Start} ()\hypertarget{structpangolin_1_1_open_ni_video_af77e72402c088527c11d663b2ebaee90}{}\label{structpangolin_1_1_open_ni_video_af77e72402c088527c11d663b2ebaee90}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a74a2e3e1b87c7cbf9de9bcb39e1df128}{Video\+Input\+::\+Start()} \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_open_ni_video_a8435ecba39ae1d7b9372580a68be8a51}{Stop} ()\hypertarget{structpangolin_1_1_open_ni_video_a8435ecba39ae1d7b9372580a68be8a51}{}\label{structpangolin_1_1_open_ni_video_a8435ecba39ae1d7b9372580a68be8a51}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a8945f80194cc7ec9594db7f27e7d09b8}{Video\+Input\+::\+Stop()} \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structpangolin_1_1_open_ni_video_ad58408c831e7e1ed900dc99dcd4b9cf7}{Size\+Bytes} () const \hypertarget{structpangolin_1_1_open_ni_video_ad58408c831e7e1ed900dc99dcd4b9cf7}{}\label{structpangolin_1_1_open_ni_video_ad58408c831e7e1ed900dc99dcd4b9cf7}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a93cee5c33386973a2a51165e6bdcf40b}{Video\+Input\+::\+Size\+Bytes()} \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{structpangolin_1_1_open_ni_video_a8084e7beefb248703b1667a4d940d8b4}{Streams} () const \hypertarget{structpangolin_1_1_open_ni_video_a8084e7beefb248703b1667a4d940d8b4}{}\label{structpangolin_1_1_open_ni_video_a8084e7beefb248703b1667a4d940d8b4}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a9030d775d699c39ab7b7ba378c007c6a}{Video\+Input\+::\+Streams()} \end{DoxyCompactList}\item 
+bool \hyperlink{structpangolin_1_1_open_ni_video_aa83894708b9410b457b9dcf5a4e05b5e}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)\hypertarget{structpangolin_1_1_open_ni_video_aa83894708b9410b457b9dcf5a4e05b5e}{}\label{structpangolin_1_1_open_ni_video_aa83894708b9410b457b9dcf5a4e05b5e}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_ad3d8ff59c1ec4139320097e6e1111f32}{Video\+Input\+::\+Grab\+Next()} \end{DoxyCompactList}\item 
+bool \hyperlink{structpangolin_1_1_open_ni_video_af98e477d47faffc3ca5389acb1d7f1ca}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)\hypertarget{structpangolin_1_1_open_ni_video_af98e477d47faffc3ca5389acb1d7f1ca}{}\label{structpangolin_1_1_open_ni_video_af98e477d47faffc3ca5389acb1d7f1ca}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a4c8ac38e3c6a3f591663aeebf645e4c6}{Video\+Input\+::\+Grab\+Newest()} \end{DoxyCompactList}\item 
+void {\bfseries Set\+Auto\+Exposure} (bool enabled)\hypertarget{structpangolin_1_1_open_ni_video_a2ee4009ea3058beecc11a1da11652fc8}{}\label{structpangolin_1_1_open_ni_video_a2ee4009ea3058beecc11a1da11652fc8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{structpangolin_1_1_open_ni_video_a546a3995e35460ee7fe01baf4cbb6624}{}\label{structpangolin_1_1_open_ni_video_a546a3995e35460ee7fe01baf4cbb6624}
+
+\item 
+Open\+Ni\+Sensor\+Type {\bfseries sensor\+\_\+type} \mbox{[}2\mbox{]}\hypertarget{structpangolin_1_1_open_ni_video_aa9c3e7cb9414cfe0b36dd4ea11a49d9a}{}\label{structpangolin_1_1_open_ni_video_aa9c3e7cb9414cfe0b36dd4ea11a49d9a}
+
+\item 
+xn\+::\+Context {\bfseries context}\hypertarget{structpangolin_1_1_open_ni_video_a393c80caa5ce7ff1b86de4b36778bdfc}{}\label{structpangolin_1_1_open_ni_video_a393c80caa5ce7ff1b86de4b36778bdfc}
+
+\item 
+xn\+::\+Depth\+Generator {\bfseries depth\+Node}\hypertarget{structpangolin_1_1_open_ni_video_a6d746cf4caba53b49dfd8076670faebc}{}\label{structpangolin_1_1_open_ni_video_a6d746cf4caba53b49dfd8076670faebc}
+
+\item 
+xn\+::\+Image\+Generator {\bfseries image\+Node}\hypertarget{structpangolin_1_1_open_ni_video_a9bc169dc6e7383c2b232ae3dca2abe6f}{}\label{structpangolin_1_1_open_ni_video_a9bc169dc6e7383c2b232ae3dca2abe6f}
+
+\item 
+xn\+::\+I\+R\+Generator {\bfseries ir\+Node}\hypertarget{structpangolin_1_1_open_ni_video_a906f8046e534c6a73545e04fc88bbd98}{}\label{structpangolin_1_1_open_ni_video_a906f8046e534c6a73545e04fc88bbd98}
+
+\item 
+size\+\_\+t {\bfseries size\+Bytes}\hypertarget{structpangolin_1_1_open_ni_video_a5a28e0dcf514daf69f4b92e47fff56a8}{}\label{structpangolin_1_1_open_ni_video_a5a28e0dcf514daf69f4b92e47fff56a8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface to video capture sources. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/openni.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\hypertarget{structpangolin_1_1_colour}{}\section{pangolin\+:\+:Colour Struct Reference}
+\label{structpangolin_1_1_colour}\index{pangolin\+::\+Colour@{pangolin\+::\+Colour}}
+
+
+Represent Open\+GL floating point colour\+: Red, Green and Blue with alpha.  
+
+
+
+
+{\ttfamily \#include $<$colour.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structpangolin_1_1_colour_af104120f620167f683d7eaa02924e70b}{Colour} ()\hypertarget{structpangolin_1_1_colour_af104120f620167f683d7eaa02924e70b}{}\label{structpangolin_1_1_colour_af104120f620167f683d7eaa02924e70b}
+
+\begin{DoxyCompactList}\small\item\em Default constructs white. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_colour_a8f2a64fe74d5048185450333526edaef}{Colour} (float red, float green, float blue, float alpha=1.\+0)\hypertarget{structpangolin_1_1_colour_a8f2a64fe74d5048185450333526edaef}{}\label{structpangolin_1_1_colour_a8f2a64fe74d5048185450333526edaef}
+
+\begin{DoxyCompactList}\small\item\em Construct from component values. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_colour_aad7b39a22043478cade30fa1a07958ed}{Colour} (float rgba\mbox{[}4\mbox{]})\hypertarget{structpangolin_1_1_colour_aad7b39a22043478cade30fa1a07958ed}{}\label{structpangolin_1_1_colour_aad7b39a22043478cade30fa1a07958ed}
+
+\begin{DoxyCompactList}\small\item\em Construct from rgba array. \end{DoxyCompactList}\item 
+float $\ast$ \hyperlink{structpangolin_1_1_colour_aba37f36802ae8559ba79188b8e5c7832}{Get} ()\hypertarget{structpangolin_1_1_colour_aba37f36802ae8559ba79188b8e5c7832}{}\label{structpangolin_1_1_colour_aba37f36802ae8559ba79188b8e5c7832}
+
+\begin{DoxyCompactList}\small\item\em Return pointer to Open\+GL compatible R\+G\+BA array. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_colour}{Colour} \hyperlink{structpangolin_1_1_colour_ae5405e31317ec5b65a205072f58a3b1a}{With\+Alpha} (float alpha)\hypertarget{structpangolin_1_1_colour_ae5405e31317ec5b65a205072f58a3b1a}{}\label{structpangolin_1_1_colour_ae5405e31317ec5b65a205072f58a3b1a}
+
+\begin{DoxyCompactList}\small\item\em Return this colour with alpha adjusted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structpangolin_1_1_colour}{Colour} \hyperlink{structpangolin_1_1_colour_a52eef9b76740ae72099e5e2e4ca5f980}{Hsv} (float hue, float sat=1.\+0, float val=1.\+0, float alpha=1.\+0)
+\begin{DoxyCompactList}\small\item\em Construct from H\+SV \hyperlink{structpangolin_1_1_colour}{Colour}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>float {\bfseries red}\\
+\>\>float {\bfseries green}\\
+\>\>float {\bfseries blue}\\
+\>\>float {\bfseries alpha}\\
+\>\} \hypertarget{unionpangolin_1_1_colour_1_1_0D2_ac14aaf73fa8a358f8058cfbcb2d05fd2}{}\label{unionpangolin_1_1_colour_1_1_0D2_ac14aaf73fa8a358f8058cfbcb2d05fd2}
+\\
+\>struct \{\\
+\>\>float {\bfseries r}\\
+\>\>float {\bfseries g}\\
+\>\>float {\bfseries b}\\
+\>\>float {\bfseries a}\\
+\>\} \hypertarget{unionpangolin_1_1_colour_1_1_0D2_a160340ce5224aabe94ae3477e41a540e}{}\label{unionpangolin_1_1_colour_1_1_0D2_a160340ce5224aabe94ae3477e41a540e}
+\\
+\>float {\bfseries c} \mbox{[}4\mbox{]}\\
+\}; \hypertarget{structpangolin_1_1_colour_a4054bd432b1a1774b709474ca99a21c1}{}\label{structpangolin_1_1_colour_a4054bd432b1a1774b709474ca99a21c1}
+\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent Open\+GL floating point colour\+: Red, Green and Blue with alpha. 
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Colour@{pangolin\+::\+Colour}!Hsv@{Hsv}}
+\index{Hsv@{Hsv}!pangolin\+::\+Colour@{pangolin\+::\+Colour}}
+\subsubsection[{\texorpdfstring{Hsv(float hue, float sat=1.\+0, float val=1.\+0, float alpha=1.\+0)}{Hsv(float hue, float sat=1.0, float val=1.0, float alpha=1.0)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Colour} pangolin\+::\+Colour\+::\+Hsv (
+\begin{DoxyParamCaption}
+\item[{float}]{hue, }
+\item[{float}]{sat = {\ttfamily 1.0}, }
+\item[{float}]{val = {\ttfamily 1.0}, }
+\item[{float}]{alpha = {\ttfamily 1.0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{structpangolin_1_1_colour_a52eef9b76740ae72099e5e2e4ca5f980}{}\label{structpangolin_1_1_colour_a52eef9b76740ae72099e5e2e4ca5f980}
+
+
+Construct from H\+SV \hyperlink{structpangolin_1_1_colour}{Colour}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hue} & \hyperlink{structpangolin_1_1_colour}{Colour} hue in range \mbox{[}0,1\mbox{]} \\
+\hline
+{\em sat} & Saturation in range \mbox{[}0,1\mbox{]} \\
+\hline
+{\em val} & Value / Brightness in range \mbox{[}0,1\mbox{]}. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/gl/colour.\+h\end{DoxyCompactItemize}

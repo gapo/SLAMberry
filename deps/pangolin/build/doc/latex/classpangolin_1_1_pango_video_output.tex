@@ -1,0 +1,55 @@
+\hypertarget{classpangolin_1_1_pango_video_output}{}\section{pangolin\+:\+:Pango\+Video\+Output Class Reference}
+\label{classpangolin_1_1_pango_video_output}\index{pangolin\+::\+Pango\+Video\+Output@{pangolin\+::\+Pango\+Video\+Output}}
+Inheritance diagram for pangolin\+:\+:Pango\+Video\+Output\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_pango_video_output}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pango\+Video\+Output} (const std\+::string \&filename)\hypertarget{classpangolin_1_1_pango_video_output_aec31206b29c247ca1f7d398000a10392}{}\label{classpangolin_1_1_pango_video_output_aec31206b29c247ca1f7d398000a10392}
+
+\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_pango_video_output_ac23bcb781e1bea1a76643ab2e425826e}{Streams} () const P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_output_ac23bcb781e1bea1a76643ab2e425826e}{}\label{classpangolin_1_1_pango_video_output_ac23bcb781e1bea1a76643ab2e425826e}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Streams} (const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \&streams, const std\+::string \&uri, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&device\+\_\+properties) P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_output_a0538af17827c5a94d32c35206cb066ed}{}\label{classpangolin_1_1_pango_video_output_a0538af17827c5a94d32c35206cb066ed}
+
+\item 
+int {\bfseries Write\+Streams} (unsigned char $\ast$data, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&frame\+\_\+properties) P\+A\+N\+G\+O\+L\+I\+N\+\_\+\+O\+V\+E\+R\+R\+I\+DE\hypertarget{classpangolin_1_1_pango_video_output_afe472eb97d705bbcbbade0bcf3f0371e}{}\label{classpangolin_1_1_pango_video_output_afe472eb97d705bbcbbade0bcf3f0371e}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Write\+Header} ()\hypertarget{classpangolin_1_1_pango_video_output_acf9b87c98d03f3305a20deaf43f7d9c5}{}\label{classpangolin_1_1_pango_video_output_acf9b87c98d03f3305a20deaf43f7d9c5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_pango_video_output_ae873edc5549ace0762cc521040984dc2}{}\label{classpangolin_1_1_pango_video_output_ae873edc5549ace0762cc521040984dc2}
+
+\item 
+std\+::string {\bfseries input\+\_\+uri}\hypertarget{classpangolin_1_1_pango_video_output_adb0087393170be08d938f64f182e8cc9}{}\label{classpangolin_1_1_pango_video_output_adb0087393170be08d938f64f182e8cc9}
+
+\item 
+\hyperlink{classpangolin_1_1json_1_1value}{json\+::value} {\bfseries device\+\_\+properties}\hypertarget{classpangolin_1_1_pango_video_output_a04736e7c26993f17fdc02e2ff1f44eeb}{}\label{classpangolin_1_1_pango_video_output_a04736e7c26993f17fdc02e2ff1f44eeb}
+
+\item 
+\hyperlink{classpangolin_1_1_packet_stream_writer}{Packet\+Stream\+Writer} {\bfseries packetstream}\hypertarget{classpangolin_1_1_pango_video_output_ac0a01e6bb235387ade3c258e36f43b84}{}\label{classpangolin_1_1_pango_video_output_ac0a01e6bb235387ade3c258e36f43b84}
+
+\item 
+int {\bfseries packetstreamsrcid}\hypertarget{classpangolin_1_1_pango_video_output_abb9eecefc2aed72a623760a48765374c}{}\label{classpangolin_1_1_pango_video_output_abb9eecefc2aed72a623760a48765374c}
+
+\item 
+size\+\_\+t {\bfseries total\+\_\+frame\+\_\+size}\hypertarget{classpangolin_1_1_pango_video_output_abb26b19fd1e68fd35f5f85f68337aade}{}\label{classpangolin_1_1_pango_video_output_abb26b19fd1e68fd35f5f85f68337aade}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/pango\+\_\+video\+\_\+output.\+h\end{DoxyCompactItemize}

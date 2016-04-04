@@ -1,0 +1,82 @@
+\hypertarget{structpangolin_1_1_viewport}{}\section{pangolin\+:\+:Viewport Struct Reference}
+\label{structpangolin_1_1_viewport}\index{pangolin\+::\+Viewport@{pangolin\+::\+Viewport}}
+
+
+Encapsulates Open\+Gl \hyperlink{structpangolin_1_1_viewport}{Viewport}.  
+
+
+
+
+{\ttfamily \#include $<$viewport.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Viewport} (G\+Lint l, G\+Lint b, G\+Lint w, G\+Lint h)\hypertarget{structpangolin_1_1_viewport_a6cae39452b106a70af8b6980a1469e3b}{}\label{structpangolin_1_1_viewport_a6cae39452b106a70af8b6980a1469e3b}
+
+\item 
+void {\bfseries Activate} () const \hypertarget{structpangolin_1_1_viewport_ac54528ac9d550fc46d21eb923b1715d7}{}\label{structpangolin_1_1_viewport_ac54528ac9d550fc46d21eb923b1715d7}
+
+\item 
+void {\bfseries Activate\+Identity} () const \hypertarget{structpangolin_1_1_viewport_ac2c656ff85ad388a9e20f3ef2404eed5}{}\label{structpangolin_1_1_viewport_ac2c656ff85ad388a9e20f3ef2404eed5}
+
+\item 
+void {\bfseries Activate\+Pixel\+Orthographic} () const \hypertarget{structpangolin_1_1_viewport_a853b3b1bf1215853199e6b337e0db170}{}\label{structpangolin_1_1_viewport_a853b3b1bf1215853199e6b337e0db170}
+
+\item 
+void {\bfseries Scissor} () const \hypertarget{structpangolin_1_1_viewport_a3a1fd0231848db4990fdb76b913303ff}{}\label{structpangolin_1_1_viewport_a3a1fd0231848db4990fdb76b913303ff}
+
+\item 
+void {\bfseries Activate\+And\+Scissor} () const \hypertarget{structpangolin_1_1_viewport_a38922182bd93bd4b5b6e99cfaaa23865}{}\label{structpangolin_1_1_viewport_a38922182bd93bd4b5b6e99cfaaa23865}
+
+\item 
+bool {\bfseries Contains} (int x, int y) const \hypertarget{structpangolin_1_1_viewport_a364bafc1b94bc487f67aa7e2e33c4779}{}\label{structpangolin_1_1_viewport_a364bafc1b94bc487f67aa7e2e33c4779}
+
+\item 
+\hyperlink{structpangolin_1_1_viewport}{Viewport} {\bfseries Inset} (int i) const \hypertarget{structpangolin_1_1_viewport_ad018b7516ac7b15fa18e2dac548b7ec2}{}\label{structpangolin_1_1_viewport_ad018b7516ac7b15fa18e2dac548b7ec2}
+
+\item 
+\hyperlink{structpangolin_1_1_viewport}{Viewport} {\bfseries Inset} (int horiz, int vert) const \hypertarget{structpangolin_1_1_viewport_a1ceb1f9b607860763235c76c8ac95039}{}\label{structpangolin_1_1_viewport_a1ceb1f9b607860763235c76c8ac95039}
+
+\item 
+\hyperlink{structpangolin_1_1_viewport}{Viewport} {\bfseries Intersect} (const \hyperlink{structpangolin_1_1_viewport}{Viewport} \&vp) const \hypertarget{structpangolin_1_1_viewport_aeba41464220296b0d18b4c7ba0199c51}{}\label{structpangolin_1_1_viewport_aeba41464220296b0d18b4c7ba0199c51}
+
+\item 
+G\+Lint {\bfseries r} () const \hypertarget{structpangolin_1_1_viewport_a13e1a33e33483ee32fd2eaec67f985c7}{}\label{structpangolin_1_1_viewport_a13e1a33e33483ee32fd2eaec67f985c7}
+
+\item 
+G\+Lint {\bfseries t} () const \hypertarget{structpangolin_1_1_viewport_a580bc6ed2e4c95092c66ead45f384d92}{}\label{structpangolin_1_1_viewport_a580bc6ed2e4c95092c66ead45f384d92}
+
+\item 
+G\+Lfloat {\bfseries aspect} () const \hypertarget{structpangolin_1_1_viewport_af29133ab221202f66860311c1b42c560}{}\label{structpangolin_1_1_viewport_af29133ab221202f66860311c1b42c560}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bfseries Disable\+Scissor} ()\hypertarget{structpangolin_1_1_viewport_a3ff1d808ec43332af2e5267938688536}{}\label{structpangolin_1_1_viewport_a3ff1d808ec43332af2e5267938688536}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Lint {\bfseries l}\hypertarget{structpangolin_1_1_viewport_af90b9cafd0ba6419d975c524924fcd2c}{}\label{structpangolin_1_1_viewport_af90b9cafd0ba6419d975c524924fcd2c}
+
+\item 
+G\+Lint {\bfseries b}\hypertarget{structpangolin_1_1_viewport_af5d5b8db188b9012580add7c6bf89d7a}{}\label{structpangolin_1_1_viewport_af5d5b8db188b9012580add7c6bf89d7a}
+
+\item 
+G\+Lint {\bfseries w}\hypertarget{structpangolin_1_1_viewport_ab5ae7c6f4649aeb4ea2831cb83b15d5a}{}\label{structpangolin_1_1_viewport_ab5ae7c6f4649aeb4ea2831cb83b15d5a}
+
+\item 
+G\+Lint {\bfseries h}\hypertarget{structpangolin_1_1_viewport_a5b8c5220b5e6bfc68644c7ddb05096d5}{}\label{structpangolin_1_1_viewport_a5b8c5220b5e6bfc68644c7ddb05096d5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encapsulates Open\+Gl \hyperlink{structpangolin_1_1_viewport}{Viewport}. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/display/viewport.\+h\end{DoxyCompactItemize}

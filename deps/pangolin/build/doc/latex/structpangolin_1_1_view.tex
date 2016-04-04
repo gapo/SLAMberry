@@ -1,0 +1,254 @@
+\hypertarget{structpangolin_1_1_view}{}\section{pangolin\+:\+:View Struct Reference}
+\label{structpangolin_1_1_view}\index{pangolin\+::\+View@{pangolin\+::\+View}}
+
+
+A Display manages the location and resizing of an Open\+Gl viewport.  
+
+
+
+
+{\ttfamily \#include $<$view.\+h$>$}
+
+Inheritance diagram for pangolin\+:\+:View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{structpangolin_1_1_view}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries View} (double aspect=0.\+0)\hypertarget{structpangolin_1_1_view_af365f40a3f6fbdad8e6164c85f1cb227}{}\label{structpangolin_1_1_view_af365f40a3f6fbdad8e6164c85f1cb227}
+
+\item 
+void \hyperlink{structpangolin_1_1_view_a6167990d8a521f66c7eb3c0943a95e13}{Activate} () const \hypertarget{structpangolin_1_1_view_a6167990d8a521f66c7eb3c0943a95e13}{}\label{structpangolin_1_1_view_a6167990d8a521f66c7eb3c0943a95e13}
+
+\begin{DoxyCompactList}\small\item\em Activate Displays viewport for drawing within this area. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a50f036358265f89c928339ac3a0fbbe1}{Activate} (const \hyperlink{classpangolin_1_1_open_gl_render_state}{Open\+Gl\+Render\+State} \&state) const \hypertarget{structpangolin_1_1_view_a50f036358265f89c928339ac3a0fbbe1}{}\label{structpangolin_1_1_view_a50f036358265f89c928339ac3a0fbbe1}
+
+\begin{DoxyCompactList}\small\item\em Activate Displays and set State Matrices. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_aa782fddf295d6d7386c27df5fd1a0e63}{Activate\+And\+Scissor} () const \hypertarget{structpangolin_1_1_view_aa782fddf295d6d7386c27df5fd1a0e63}{}\label{structpangolin_1_1_view_aa782fddf295d6d7386c27df5fd1a0e63}
+
+\begin{DoxyCompactList}\small\item\em Activate Displays viewport and Scissor for drawing within this area. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_aa86b155c4c7acce378b666686bbe9405}{Activate\+Scissor\+And\+Clear} () const \hypertarget{structpangolin_1_1_view_aa86b155c4c7acce378b666686bbe9405}{}\label{structpangolin_1_1_view_aa86b155c4c7acce378b666686bbe9405}
+
+\begin{DoxyCompactList}\small\item\em Activate Displays viewport and Scissor for drawing within this area. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a105adf189a17636f2e2465f6e3520bac}{Activate\+And\+Scissor} (const \hyperlink{classpangolin_1_1_open_gl_render_state}{Open\+Gl\+Render\+State} \&state) const \hypertarget{structpangolin_1_1_view_a105adf189a17636f2e2465f6e3520bac}{}\label{structpangolin_1_1_view_a105adf189a17636f2e2465f6e3520bac}
+
+\begin{DoxyCompactList}\small\item\em Activate Display and set State Matrices. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_ab8bf1ff3b034cdd6a3ee058bc62e29c0}{Activate\+Scissor\+And\+Clear} (const \hyperlink{classpangolin_1_1_open_gl_render_state}{Open\+Gl\+Render\+State} \&state) const \hypertarget{structpangolin_1_1_view_ab8bf1ff3b034cdd6a3ee058bc62e29c0}{}\label{structpangolin_1_1_view_ab8bf1ff3b034cdd6a3ee058bc62e29c0}
+
+\begin{DoxyCompactList}\small\item\em Activate Display and set State Matrices. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a9f1c4b42b919065393ec4389b69e73ce}{Activate\+Pixel\+Orthographic} () const \hypertarget{structpangolin_1_1_view_a9f1c4b42b919065393ec4389b69e73ce}{}\label{structpangolin_1_1_view_a9f1c4b42b919065393ec4389b69e73ce}
+
+\begin{DoxyCompactList}\small\item\em Activate Display and setup coordinate system for 2d pixel \hyperlink{structpangolin_1_1_view}{View} coordinates. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a64cc0f6d644da9253ed7a9f18d60281d}{Activate\+Identity} () const \hypertarget{structpangolin_1_1_view_a64cc0f6d644da9253ed7a9f18d60281d}{}\label{structpangolin_1_1_view_a64cc0f6d644da9253ed7a9f18d60281d}
+
+\begin{DoxyCompactList}\small\item\em Activate Display and reset coordinate system to Open\+GL default. \end{DoxyCompactList}\item 
+G\+Lfloat \hyperlink{structpangolin_1_1_view_a77bcced04b7d4ed936738adc330b2836}{Get\+Closest\+Depth} (int winx, int winy, int radius) const \hypertarget{structpangolin_1_1_view_a77bcced04b7d4ed936738adc330b2836}{}\label{structpangolin_1_1_view_a77bcced04b7d4ed936738adc330b2836}
+
+\begin{DoxyCompactList}\small\item\em Return closest depth buffer value within radius of window (winx,winy) \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a5b1f17180681ccbf4c9a0085035b9480}{Get\+Cam\+Coordinates} (const \hyperlink{classpangolin_1_1_open_gl_render_state}{Open\+Gl\+Render\+State} \&cam\+\_\+state, double winx, double winy, double winzdepth, G\+Ldouble \&x, G\+Ldouble \&y, G\+Ldouble \&z) const \hypertarget{structpangolin_1_1_view_a5b1f17180681ccbf4c9a0085035b9480}{}\label{structpangolin_1_1_view_a5b1f17180681ccbf4c9a0085035b9480}
+
+\begin{DoxyCompactList}\small\item\em Obtain camera space coordinates of scene at pixel (winx, winy, winzdepth) winzdepth can be obtained from Get\+Closest\+Depth. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a5c0aa6e20acadcafc409f1e7b204edad}{Get\+Object\+Coordinates} (const \hyperlink{classpangolin_1_1_open_gl_render_state}{Open\+Gl\+Render\+State} \&cam\+\_\+state, double winx, double winy, double winzdepth, G\+Ldouble \&x, G\+Ldouble \&y, G\+Ldouble \&z) const \hypertarget{structpangolin_1_1_view_a5c0aa6e20acadcafc409f1e7b204edad}{}\label{structpangolin_1_1_view_a5c0aa6e20acadcafc409f1e7b204edad}
+
+\begin{DoxyCompactList}\small\item\em Obtain object space coordinates of scene at pixel (winx, winy, winzdepth) winzdepth can be obtained from Get\+Closest\+Depth. \end{DoxyCompactList}\item 
+virtual void \hyperlink{structpangolin_1_1_view_a2a553103066f757e090152fd0b61755e}{Resize} (const \hyperlink{structpangolin_1_1_viewport}{Viewport} \&parent)\hypertarget{structpangolin_1_1_view_a2a553103066f757e090152fd0b61755e}{}\label{structpangolin_1_1_view_a2a553103066f757e090152fd0b61755e}
+
+\begin{DoxyCompactList}\small\item\em Given the specification of Display, compute viewport. \end{DoxyCompactList}\item 
+virtual void \hyperlink{structpangolin_1_1_view_ac0587430aec6215e0aa4c3028b77c0cb}{Resize\+Children} ()\hypertarget{structpangolin_1_1_view_ac0587430aec6215e0aa4c3028b77c0cb}{}\label{structpangolin_1_1_view_ac0587430aec6215e0aa4c3028b77c0cb}
+
+\begin{DoxyCompactList}\small\item\em Instruct all children to resize. \end{DoxyCompactList}\item 
+virtual void \hyperlink{structpangolin_1_1_view_a15bf43d7ebc4ebe4e02cba572f0d49ba}{Render} ()
+\begin{DoxyCompactList}\small\item\em Perform any automatic rendering for this \hyperlink{structpangolin_1_1_view}{View}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{structpangolin_1_1_view_a909803ac383d29e33b68e45deade690a}{Render\+Children} ()\hypertarget{structpangolin_1_1_view_a909803ac383d29e33b68e45deade690a}{}\label{structpangolin_1_1_view_a909803ac383d29e33b68e45deade690a}
+
+\begin{DoxyCompactList}\small\item\em Instruct all children to render themselves if appropriate. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_ad2738287bfb37b837f5e9d5d787b81cd}{Set\+Focus} ()\hypertarget{structpangolin_1_1_view_ad2738287bfb37b837f5e9d5d787b81cd}{}\label{structpangolin_1_1_view_ad2738287bfb37b837f5e9d5d787b81cd}
+
+\begin{DoxyCompactList}\small\item\em Set this view as the active \hyperlink{structpangolin_1_1_view}{View} to receive input. \end{DoxyCompactList}\item 
+bool \hyperlink{structpangolin_1_1_view_ab16dcf4038a6e651956f286a5ac887d5}{Has\+Focus} () const \hypertarget{structpangolin_1_1_view_ab16dcf4038a6e651956f286a5ac887d5}{}\label{structpangolin_1_1_view_ab16dcf4038a6e651956f286a5ac887d5}
+
+\begin{DoxyCompactList}\small\item\em Returns true iff this view currently has focus and will receive user input. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_a86022aa9a3866ab1d4c77c5bca8fbfb9}{Set\+Bounds} (\hyperlink{structpangolin_1_1_attach}{Attach} bottom, \hyperlink{structpangolin_1_1_attach}{Attach} top, \hyperlink{structpangolin_1_1_attach}{Attach} left, \hyperlink{structpangolin_1_1_attach}{Attach} right)\hypertarget{structpangolin_1_1_view_a86022aa9a3866ab1d4c77c5bca8fbfb9}{}\label{structpangolin_1_1_view_a86022aa9a3866ab1d4c77c5bca8fbfb9}
+
+\begin{DoxyCompactList}\small\item\em Set bounds for the \hyperlink{structpangolin_1_1_view}{View} using mixed fractional / pixel coordinates (Open\+Gl view coordinates) \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_a02e62c91b879a15b0a0808bd112bed04}{Set\+Bounds} (\hyperlink{structpangolin_1_1_attach}{Attach} bottom, \hyperlink{structpangolin_1_1_attach}{Attach} top, \hyperlink{structpangolin_1_1_attach}{Attach} left, \hyperlink{structpangolin_1_1_attach}{Attach} right, bool keep\+\_\+aspect)\hypertarget{structpangolin_1_1_view_a02e62c91b879a15b0a0808bd112bed04}{}\label{structpangolin_1_1_view_a02e62c91b879a15b0a0808bd112bed04}
+
+\begin{DoxyCompactList}\small\item\em Set bounds for the \hyperlink{structpangolin_1_1_view}{View} using mixed fractional / pixel coordinates (Open\+Gl view coordinates) \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_aa6c8327dda338d59b58e50e0f111c908}{Set\+Bounds} (\hyperlink{structpangolin_1_1_attach}{Attach} bottom, \hyperlink{structpangolin_1_1_attach}{Attach} top, \hyperlink{structpangolin_1_1_attach}{Attach} left, \hyperlink{structpangolin_1_1_attach}{Attach} right, double aspect)\hypertarget{structpangolin_1_1_view_aa6c8327dda338d59b58e50e0f111c908}{}\label{structpangolin_1_1_view_aa6c8327dda338d59b58e50e0f111c908}
+
+\begin{DoxyCompactList}\small\item\em Set bounds for the \hyperlink{structpangolin_1_1_view}{View} using mixed fractional / pixel coordinates (Open\+Gl view coordinates) \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_aee1aeff91d515d1bd71cfd564ef6468e}{Set\+Handler} (\hyperlink{structpangolin_1_1_handler}{Handler} $\ast$handler)\hypertarget{structpangolin_1_1_view_aee1aeff91d515d1bd71cfd564ef6468e}{}\label{structpangolin_1_1_view_aee1aeff91d515d1bd71cfd564ef6468e}
+
+\begin{DoxyCompactList}\small\item\em Designate handler for accepting mouse / keyboard input. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_a50159729a9613af04642b2ec1a03a2b2}{Set\+Draw\+Function} (const boostd\+::function$<$ void(\hyperlink{structpangolin_1_1_view}{View} \&)$>$ \&draw\+Func)\hypertarget{structpangolin_1_1_view_a50159729a9613af04642b2ec1a03a2b2}{}\label{structpangolin_1_1_view_a50159729a9613af04642b2ec1a03a2b2}
+
+\begin{DoxyCompactList}\small\item\em Set draw\+Func as the drawing function for this view. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_a21e7cd9473d755add53a6d5a943f70a4}{Set\+Aspect} (double aspect)
+\begin{DoxyCompactList}\small\item\em Force this view to have the given aspect, whilst fitting snuggly within the parent. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_a8720202e284cfa262d2e2bac2a793dd0}{Set\+Lock} (Lock horizontal, Lock vertical)\hypertarget{structpangolin_1_1_view_a8720202e284cfa262d2e2bac2a793dd0}{}\label{structpangolin_1_1_view_a8720202e284cfa262d2e2bac2a793dd0}
+
+\begin{DoxyCompactList}\small\item\em Set how this view should be positioned relative to its parent. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_ab3c23fabb44643b46e30ac1e101e0aec}{Set\+Layout} (Layout layout)\hypertarget{structpangolin_1_1_view_ab3c23fabb44643b46e30ac1e101e0aec}{}\label{structpangolin_1_1_view_ab3c23fabb44643b46e30ac1e101e0aec}
+
+\begin{DoxyCompactList}\small\item\em Set layout policy for this view. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_ad6a09c71ae000f5e42197ba2e7dba00d}{Add\+Display} (\hyperlink{structpangolin_1_1_view}{View} \&view)\hypertarget{structpangolin_1_1_view_ad6a09c71ae000f5e42197ba2e7dba00d}{}\label{structpangolin_1_1_view_ad6a09c71ae000f5e42197ba2e7dba00d}
+
+\begin{DoxyCompactList}\small\item\em Add view as child. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_a764258b46cb0915665f3328e06590f9b}{Show} (bool show=true)\hypertarget{structpangolin_1_1_view_a764258b46cb0915665f3328e06590f9b}{}\label{structpangolin_1_1_view_a764258b46cb0915665f3328e06590f9b}
+
+\begin{DoxyCompactList}\small\item\em Show / hide this view. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a5aa02cfad4320767648b9dc2dbd1e8dc}{Toggle\+Show} ()\hypertarget{structpangolin_1_1_view_a5aa02cfad4320767648b9dc2dbd1e8dc}{}\label{structpangolin_1_1_view_a5aa02cfad4320767648b9dc2dbd1e8dc}
+
+\begin{DoxyCompactList}\small\item\em Toggle this views visibility. \end{DoxyCompactList}\item 
+bool \hyperlink{structpangolin_1_1_view_adeacf774f97a5701609a51215ab2f827}{Is\+Shown} () const 
+\begin{DoxyCompactList}\small\item\em Return whether this view should be shown. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_viewport}{Viewport} \hyperlink{structpangolin_1_1_view_ab89972a5b0a5c2f6417b23f21fc268da}{Get\+Bounds} () const \hypertarget{structpangolin_1_1_view_ab89972a5b0a5c2f6417b23f21fc268da}{}\label{structpangolin_1_1_view_ab89972a5b0a5c2f6417b23f21fc268da}
+
+\begin{DoxyCompactList}\small\item\em Returns viewport reflecting space that will actually get drawn The minimum of vp and v. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a1189c3df354bb6a555f1126e2e2702d9}{Save\+On\+Render} (const std\+::string \&filename\+\_\+prefix)
+\begin{DoxyCompactList}\small\item\em Specify that this views region in the framebuffer should be saved to a file just before the buffer is flipped. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_ac1160b7c3dbe5de54d2152c7c49e960e}{Record\+On\+Render} (const std\+::string \&record\+\_\+uri)\hypertarget{structpangolin_1_1_view_ac1160b7c3dbe5de54d2152c7c49e960e}{}\label{structpangolin_1_1_view_ac1160b7c3dbe5de54d2152c7c49e960e}
+
+\begin{DoxyCompactList}\small\item\em Specify that this views region in the framebuffer should be saved to a video just before the buffer is flipped. \end{DoxyCompactList}\item 
+void \hyperlink{structpangolin_1_1_view_a63e4b9ddc178ec09d8262c4f1693a6fe}{Save\+Render\+Now} (const std\+::string \&filename\+\_\+prefix, float scale=1)
+\begin{DoxyCompactList}\small\item\em Uses the views default render method to draw into an F\+BO \textquotesingle{}scale\textquotesingle{} times the size of the view and save to a file. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structpangolin_1_1_view_a9b0e04e013e1e277765faf7c517fcab0}{Num\+Children} () const \hypertarget{structpangolin_1_1_view_a9b0e04e013e1e277765faf7c517fcab0}{}\label{structpangolin_1_1_view_a9b0e04e013e1e277765faf7c517fcab0}
+
+\begin{DoxyCompactList}\small\item\em Return number of child views attached to this view. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_aa6bf61cec2832c355364da80a71fa5eb}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)\hypertarget{structpangolin_1_1_view_aa6bf61cec2832c355364da80a71fa5eb}{}\label{structpangolin_1_1_view_aa6bf61cec2832c355364da80a71fa5eb}
+
+\begin{DoxyCompactList}\small\item\em Return (i)th child of this view. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structpangolin_1_1_view_a0ac92c4043b56327ffd9dd1630fc6eeb}{Num\+Visible\+Children} () const \hypertarget{structpangolin_1_1_view_a0ac92c4043b56327ffd9dd1630fc6eeb}{}\label{structpangolin_1_1_view_a0ac92c4043b56327ffd9dd1630fc6eeb}
+
+\begin{DoxyCompactList}\small\item\em Return number of visible child views attached to this view. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} \& \hyperlink{structpangolin_1_1_view_ae405a48f6799ea2fcdbc56db972aeaf7}{Visible\+Child} (size\+\_\+t i)\hypertarget{structpangolin_1_1_view_ae405a48f6799ea2fcdbc56db972aeaf7}{}\label{structpangolin_1_1_view_ae405a48f6799ea2fcdbc56db972aeaf7}
+
+\begin{DoxyCompactList}\small\item\em Return visible child by index. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_view}{View} $\ast$ \hyperlink{structpangolin_1_1_view_a089f1377a7a39485875367b0bf1d4b3d}{Find\+Child} (int x, int y)\hypertarget{structpangolin_1_1_view_a089f1377a7a39485875367b0bf1d4b3d}{}\label{structpangolin_1_1_view_a089f1377a7a39485875367b0bf1d4b3d}
+
+\begin{DoxyCompactList}\small\item\em Return visible child at window coords x,y. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double {\bfseries aspect}\hypertarget{structpangolin_1_1_view_a081aa80226a046a620c0ca0175f9915f}{}\label{structpangolin_1_1_view_a081aa80226a046a620c0ca0175f9915f}
+
+\item 
+\hyperlink{structpangolin_1_1_attach}{Attach} {\bfseries top}\hypertarget{structpangolin_1_1_view_a3f86236357e858e766d3332cc6fd5be8}{}\label{structpangolin_1_1_view_a3f86236357e858e766d3332cc6fd5be8}
+
+\item 
+\hyperlink{structpangolin_1_1_attach}{Attach} {\bfseries left}\hypertarget{structpangolin_1_1_view_a826eb4f7f70768ad73d5580afac36208}{}\label{structpangolin_1_1_view_a826eb4f7f70768ad73d5580afac36208}
+
+\item 
+\hyperlink{structpangolin_1_1_attach}{Attach} {\bfseries right}\hypertarget{structpangolin_1_1_view_af245a6236a0872280b11a206c34d717d}{}\label{structpangolin_1_1_view_af245a6236a0872280b11a206c34d717d}
+
+\item 
+\hyperlink{structpangolin_1_1_attach}{Attach} {\bfseries bottom}\hypertarget{structpangolin_1_1_view_acb87b5be6edde21d1d7fd58f00fb5e97}{}\label{structpangolin_1_1_view_acb87b5be6edde21d1d7fd58f00fb5e97}
+
+\item 
+Lock {\bfseries hlock}\hypertarget{structpangolin_1_1_view_a978d4297c29fe19a564da7d35d6f141b}{}\label{structpangolin_1_1_view_a978d4297c29fe19a564da7d35d6f141b}
+
+\item 
+Lock {\bfseries vlock}\hypertarget{structpangolin_1_1_view_af955612be0864b5c277e91bad58e9f8c}{}\label{structpangolin_1_1_view_af955612be0864b5c277e91bad58e9f8c}
+
+\item 
+Layout {\bfseries layout}\hypertarget{structpangolin_1_1_view_a9c27d6aebb6cdbbddc71fe7a01ef0b39}{}\label{structpangolin_1_1_view_a9c27d6aebb6cdbbddc71fe7a01ef0b39}
+
+\item 
+int {\bfseries scroll\+\_\+offset}\hypertarget{structpangolin_1_1_view_ac35110f963ed9a71beda3841cc2b4d5e}{}\label{structpangolin_1_1_view_ac35110f963ed9a71beda3841cc2b4d5e}
+
+\item 
+\hyperlink{structpangolin_1_1_viewport}{Viewport} {\bfseries vp}\hypertarget{structpangolin_1_1_view_a4544c2d2ec0de2f1285f987bfad1d135}{}\label{structpangolin_1_1_view_a4544c2d2ec0de2f1285f987bfad1d135}
+
+\item 
+\hyperlink{structpangolin_1_1_viewport}{Viewport} {\bfseries v}\hypertarget{structpangolin_1_1_view_a8609b65ce966e466a895031997d14391}{}\label{structpangolin_1_1_view_a8609b65ce966e466a895031997d14391}
+
+\item 
+bool {\bfseries show}\hypertarget{structpangolin_1_1_view_a4df9df76234b7adef42227b91139cd9b}{}\label{structpangolin_1_1_view_a4df9df76234b7adef42227b91139cd9b}
+
+\item 
+int {\bfseries zorder}\hypertarget{structpangolin_1_1_view_a75bf00aeedbdfea5f6af40bd593692d5}{}\label{structpangolin_1_1_view_a75bf00aeedbdfea5f6af40bd593692d5}
+
+\item 
+\hyperlink{structpangolin_1_1_handler}{Handler} $\ast$ {\bfseries handler}\hypertarget{structpangolin_1_1_view_a2c64390bdae6a01e80cba175cd1293ad}{}\label{structpangolin_1_1_view_a2c64390bdae6a01e80cba175cd1293ad}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_view}{View} $\ast$ $>$ {\bfseries views}\hypertarget{structpangolin_1_1_view_aba695a4d88f495e746413a2f9003cae2}{}\label{structpangolin_1_1_view_aba695a4d88f495e746413a2f9003cae2}
+
+\item 
+boostd\+::function$<$ void(\hyperlink{structpangolin_1_1_view}{View} \&)$>$ {\bfseries extern\+\_\+draw\+\_\+function}\hypertarget{structpangolin_1_1_view_a9d1bb12c58dcc6ebded4ab3e676f88ba}{}\label{structpangolin_1_1_view_a9d1bb12c58dcc6ebded4ab3e676f88ba}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Display manages the location and resizing of an Open\+Gl viewport. 
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+View@{pangolin\+::\+View}!Is\+Shown@{Is\+Shown}}
+\index{Is\+Shown@{Is\+Shown}!pangolin\+::\+View@{pangolin\+::\+View}}
+\subsubsection[{\texorpdfstring{Is\+Shown() const }{IsShown() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool pangolin\+::\+View\+::\+Is\+Shown (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{structpangolin_1_1_view_adeacf774f97a5701609a51215ab2f827}{}\label{structpangolin_1_1_view_adeacf774f97a5701609a51215ab2f827}
+
+
+Return whether this view should be shown. 
+
+This method should be checked if drawing manually \index{pangolin\+::\+View@{pangolin\+::\+View}!Render@{Render}}
+\index{Render@{Render}!pangolin\+::\+View@{pangolin\+::\+View}}
+\subsubsection[{\texorpdfstring{Render()}{Render()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void pangolin\+::\+View\+::\+Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{structpangolin_1_1_view_a15bf43d7ebc4ebe4e02cba572f0d49ba}{}\label{structpangolin_1_1_view_a15bf43d7ebc4ebe4e02cba572f0d49ba}
+
+
+Perform any automatic rendering for this \hyperlink{structpangolin_1_1_view}{View}. 
+
+Default implementation simply instructs children to render themselves. 
+
+Reimplemented in \hyperlink{structpangolin_1_1_text_input_a76fba1c1f6ececafa48b393b5a823944}{pangolin\+::\+Text\+Input}, \hyperlink{structpangolin_1_1_slider_a53b5643f938eebc26db70f4f85e07bd2}{pangolin\+::\+Slider}, \hyperlink{structpangolin_1_1_checkbox_aa6e9cf9fd2a35b06e0a6462ccd50747d}{pangolin\+::\+Checkbox}, \hyperlink{classpangolin_1_1_plotter_a362ca1771e2738997cd933e75512b5f0}{pangolin\+::\+Plotter}, \hyperlink{classpangolin_1_1_console_view_aca9edf0d08cfc5bb028464379797a908}{pangolin\+::\+Console\+View}, \hyperlink{structpangolin_1_1_button_a567d43e3b445ce6158c21a20c3751190}{pangolin\+::\+Button}, \hyperlink{structpangolin_1_1_panel_a4b9fa5d477bb518ad6917086d1faf2ca}{pangolin\+::\+Panel}, and \hyperlink{classpangolin_1_1_oculus_hud_a54d2f4e6a2e7919a7808de679d490197}{pangolin\+::\+Oculus\+Hud}.
+
+\index{pangolin\+::\+View@{pangolin\+::\+View}!Save\+On\+Render@{Save\+On\+Render}}
+\index{Save\+On\+Render@{Save\+On\+Render}!pangolin\+::\+View@{pangolin\+::\+View}}
+\subsubsection[{\texorpdfstring{Save\+On\+Render(const std\+::string \&filename\+\_\+prefix)}{SaveOnRender(const std::string &filename_prefix)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+View\+::\+Save\+On\+Render (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename\+\_\+prefix}
+\end{DoxyParamCaption}
+)}\hypertarget{structpangolin_1_1_view_a1189c3df354bb6a555f1126e2e2702d9}{}\label{structpangolin_1_1_view_a1189c3df354bb6a555f1126e2e2702d9}
+
+
+Specify that this views region in the framebuffer should be saved to a file just before the buffer is flipped. 
+
+\index{pangolin\+::\+View@{pangolin\+::\+View}!Save\+Render\+Now@{Save\+Render\+Now}}
+\index{Save\+Render\+Now@{Save\+Render\+Now}!pangolin\+::\+View@{pangolin\+::\+View}}
+\subsubsection[{\texorpdfstring{Save\+Render\+Now(const std\+::string \&filename\+\_\+prefix, float scale=1)}{SaveRenderNow(const std::string &filename_prefix, float scale=1)}}]{\setlength{\rightskip}{0pt plus 5cm}void pangolin\+::\+View\+::\+Save\+Render\+Now (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{filename\+\_\+prefix, }
+\item[{float}]{scale = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{structpangolin_1_1_view_a63e4b9ddc178ec09d8262c4f1693a6fe}{}\label{structpangolin_1_1_view_a63e4b9ddc178ec09d8262c4f1693a6fe}
+
+
+Uses the views default render method to draw into an F\+BO \textquotesingle{}scale\textquotesingle{} times the size of the view and save to a file. 
+
+\index{pangolin\+::\+View@{pangolin\+::\+View}!Set\+Aspect@{Set\+Aspect}}
+\index{Set\+Aspect@{Set\+Aspect}!pangolin\+::\+View@{pangolin\+::\+View}}
+\subsubsection[{\texorpdfstring{Set\+Aspect(double aspect)}{SetAspect(double aspect)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf View}\& pangolin\+::\+View\+::\+Set\+Aspect (
+\begin{DoxyParamCaption}
+\item[{double}]{aspect}
+\end{DoxyParamCaption}
+)}\hypertarget{structpangolin_1_1_view_a21e7cd9473d755add53a6d5a943f70a4}{}\label{structpangolin_1_1_view_a21e7cd9473d755add53a6d5a943f70a4}
+
+
+Force this view to have the given aspect, whilst fitting snuggly within the parent. 
+
+A negative value with \textquotesingle{}over-\/draw\textquotesingle{}, fitting the smaller side of the parent. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/display/view.\+h\end{DoxyCompactItemize}

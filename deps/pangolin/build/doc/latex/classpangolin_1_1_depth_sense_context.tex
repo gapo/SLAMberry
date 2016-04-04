@@ -1,0 +1,67 @@
+\hypertarget{classpangolin_1_1_depth_sense_context}{}\section{pangolin\+:\+:Depth\+Sense\+Context Class Reference}
+\label{classpangolin_1_1_depth_sense_context}\index{pangolin\+::\+Depth\+Sense\+Context@{pangolin\+::\+Depth\+Sense\+Context}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_depth_sense_video}{Depth\+Sense\+Video} $\ast$ {\bfseries Get\+Depth\+Sense\+Video} (size\+\_\+t device\+\_\+num, Depth\+Sense\+Sensor\+Type s1, Depth\+Sense\+Sensor\+Type s2, \hyperlink{structpangolin_1_1_image_dim}{Image\+Dim} dim1, \hyperlink{structpangolin_1_1_image_dim}{Image\+Dim} dim2, unsigned int fps1, unsigned int fps2, const \hyperlink{classpangolin_1_1_uri}{Uri} \&uri)\hypertarget{classpangolin_1_1_depth_sense_context_a2b1f4bedc98fbe76ac5e09df121f0855}{}\label{classpangolin_1_1_depth_sense_context_a2b1f4bedc98fbe76ac5e09df121f0855}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classpangolin_1_1_depth_sense_context}{Depth\+Sense\+Context} \& {\bfseries I} ()\hypertarget{classpangolin_1_1_depth_sense_context_a9dde63e7479ebbc5055ca9499650971a}{}\label{classpangolin_1_1_depth_sense_context_a9dde63e7479ebbc5055ca9499650971a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Depth\+Sense\+::\+Context \& {\bfseries Context} ()\hypertarget{classpangolin_1_1_depth_sense_context_a922d781bcc0827080ab1b9986ed5229d}{}\label{classpangolin_1_1_depth_sense_context_a922d781bcc0827080ab1b9986ed5229d}
+
+\item 
+void {\bfseries New\+Device\+Running} ()\hypertarget{classpangolin_1_1_depth_sense_context_abe6593ca96e87b0a2b48fadd2b6166c4}{}\label{classpangolin_1_1_depth_sense_context_abe6593ca96e87b0a2b48fadd2b6166c4}
+
+\item 
+void {\bfseries Device\+Closing} ()\hypertarget{classpangolin_1_1_depth_sense_context_a6d11676ede6775280bf1ba708c167335}{}\label{classpangolin_1_1_depth_sense_context_a6d11676ede6775280bf1ba708c167335}
+
+\item 
+void {\bfseries Start\+Nodes} ()\hypertarget{classpangolin_1_1_depth_sense_context_af55aed48a6799102a2cb3ab65e804c7f}{}\label{classpangolin_1_1_depth_sense_context_af55aed48a6799102a2cb3ab65e804c7f}
+
+\item 
+void {\bfseries Stop\+Nodes} ()\hypertarget{classpangolin_1_1_depth_sense_context_a59b4cf2bf6192902f77c7268b923a7cd}{}\label{classpangolin_1_1_depth_sense_context_a59b4cf2bf6192902f77c7268b923a7cd}
+
+\item 
+void {\bfseries Event\+Loop} ()\hypertarget{classpangolin_1_1_depth_sense_context_aa4db3ae2ec465cf2b281c5c2438ca165}{}\label{classpangolin_1_1_depth_sense_context_aa4db3ae2ec465cf2b281c5c2438ca165}
+
+\item 
+void {\bfseries on\+Device\+Connected} (Depth\+Sense\+::\+Context context, Depth\+Sense\+::\+Context\+::\+Device\+Added\+Data data)\hypertarget{classpangolin_1_1_depth_sense_context_ad66efd6cd90d1f4d7feefdfac4eb98a9}{}\label{classpangolin_1_1_depth_sense_context_ad66efd6cd90d1f4d7feefdfac4eb98a9}
+
+\item 
+void {\bfseries on\+Device\+Disconnected} (Depth\+Sense\+::\+Context context, Depth\+Sense\+::\+Context\+::\+Device\+Removed\+Data data)\hypertarget{classpangolin_1_1_depth_sense_context_a874bcbb9a30a658d548e499883384f9d}{}\label{classpangolin_1_1_depth_sense_context_a874bcbb9a30a658d548e499883384f9d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Depth\+Sense\+::\+Context {\bfseries g\+\_\+context}\hypertarget{classpangolin_1_1_depth_sense_context_a4fd9e52fb37ca4124c50ca833440d01a}{}\label{classpangolin_1_1_depth_sense_context_a4fd9e52fb37ca4124c50ca833440d01a}
+
+\item 
+boostd\+::thread {\bfseries event\+\_\+thread}\hypertarget{classpangolin_1_1_depth_sense_context_a6a56bedac63b7d64c91632c3c9553160}{}\label{classpangolin_1_1_depth_sense_context_a6a56bedac63b7d64c91632c3c9553160}
+
+\item 
+bool {\bfseries is\+\_\+running}\hypertarget{classpangolin_1_1_depth_sense_context_a636fdcd1c7e8e81acaf3d488ace5dc97}{}\label{classpangolin_1_1_depth_sense_context_a636fdcd1c7e8e81acaf3d488ace5dc97}
+
+\item 
+int {\bfseries running\+\_\+devices}\hypertarget{classpangolin_1_1_depth_sense_context_ad92dd2ca0ae080d194aa01801a32e4f3}{}\label{classpangolin_1_1_depth_sense_context_ad92dd2ca0ae080d194aa01801a32e4f3}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Depth\+Sense\+Video}\hypertarget{classpangolin_1_1_depth_sense_context_a0580f16d7b7ead7adb6a44bdd4730f71}{}\label{classpangolin_1_1_depth_sense_context_a0580f16d7b7ead7adb6a44bdd4730f71}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/depthsense.\+h\end{DoxyCompactItemize}

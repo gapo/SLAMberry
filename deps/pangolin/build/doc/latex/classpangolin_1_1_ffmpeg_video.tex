@@ -1,0 +1,91 @@
+\hypertarget{classpangolin_1_1_ffmpeg_video}{}\section{pangolin\+:\+:Ffmpeg\+Video Class Reference}
+\label{classpangolin_1_1_ffmpeg_video}\index{pangolin\+::\+Ffmpeg\+Video@{pangolin\+::\+Ffmpeg\+Video}}
+Inheritance diagram for pangolin\+:\+:Ffmpeg\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_ffmpeg_video}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ffmpeg\+Video} (const std\+::string filename, const std\+::string fmtout=\char`\"{}R\+G\+B24\char`\"{}, const std\+::string codec\+\_\+hint=\char`\"{}\char`\"{}, bool dump\+\_\+info=false, int user\+\_\+video\+\_\+stream=-\/1)\hypertarget{classpangolin_1_1_ffmpeg_video_a0aaac4d5d20e0aa4cdf9e057424039dc}{}\label{classpangolin_1_1_ffmpeg_video_a0aaac4d5d20e0aa4cdf9e057424039dc}
+
+\item 
+void \hyperlink{classpangolin_1_1_ffmpeg_video_a918cd0530ef8e92a11cc1568082dbe6f}{Start} ()\hypertarget{classpangolin_1_1_ffmpeg_video_a918cd0530ef8e92a11cc1568082dbe6f}{}\label{classpangolin_1_1_ffmpeg_video_a918cd0530ef8e92a11cc1568082dbe6f}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a74a2e3e1b87c7cbf9de9bcb39e1df128}{Video\+Input\+::\+Start()} \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_ffmpeg_video_a5da92c12324d7a9f04c76366b13b361e}{Stop} ()\hypertarget{classpangolin_1_1_ffmpeg_video_a5da92c12324d7a9f04c76366b13b361e}{}\label{classpangolin_1_1_ffmpeg_video_a5da92c12324d7a9f04c76366b13b361e}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a8945f80194cc7ec9594db7f27e7d09b8}{Video\+Input\+::\+Stop()} \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_ffmpeg_video_ab45d5acd24526f05004815722fdcd645}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_ffmpeg_video_ab45d5acd24526f05004815722fdcd645}{}\label{classpangolin_1_1_ffmpeg_video_ab45d5acd24526f05004815722fdcd645}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a93cee5c33386973a2a51165e6bdcf40b}{Video\+Input\+::\+Size\+Bytes()} \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_ffmpeg_video_a510314ebff17c36606cf7d1f65c98934}{Streams} () const \hypertarget{classpangolin_1_1_ffmpeg_video_a510314ebff17c36606cf7d1f65c98934}{}\label{classpangolin_1_1_ffmpeg_video_a510314ebff17c36606cf7d1f65c98934}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a9030d775d699c39ab7b7ba378c007c6a}{Video\+Input\+::\+Streams()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_ffmpeg_video_a724f49203ba3d5053edea3a00c227d44}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_ffmpeg_video_a724f49203ba3d5053edea3a00c227d44}{}\label{classpangolin_1_1_ffmpeg_video_a724f49203ba3d5053edea3a00c227d44}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_ad3d8ff59c1ec4139320097e6e1111f32}{Video\+Input\+::\+Grab\+Next()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_ffmpeg_video_ac1c3386eaaee6d3f8de590a635b59106}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_ffmpeg_video_ac1c3386eaaee6d3f8de590a635b59106}{}\label{classpangolin_1_1_ffmpeg_video_ac1c3386eaaee6d3f8de590a635b59106}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a4c8ac38e3c6a3f591663aeebf645e4c6}{Video\+Input\+::\+Grab\+Newest()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Init\+Url} (const std\+::string filename, const std\+::string fmtout=\char`\"{}R\+G\+B24\char`\"{}, const std\+::string codec\+\_\+hint=\char`\"{}\char`\"{}, bool dump\+\_\+info=false, int user\+\_\+video\+\_\+stream=-\/1)\hypertarget{classpangolin_1_1_ffmpeg_video_a29ea654733c7355d36e4f4ba246dd3be}{}\label{classpangolin_1_1_ffmpeg_video_a29ea654733c7355d36e4f4ba246dd3be}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_ffmpeg_video_a33740101213d676377d61db21ff38a7c}{}\label{classpangolin_1_1_ffmpeg_video_a33740101213d676377d61db21ff38a7c}
+
+\item 
+Sws\+Context $\ast$ {\bfseries img\+\_\+convert\+\_\+ctx}\hypertarget{classpangolin_1_1_ffmpeg_video_a91e245cf35b771898638aa4974c097be}{}\label{classpangolin_1_1_ffmpeg_video_a91e245cf35b771898638aa4974c097be}
+
+\item 
+A\+V\+Format\+Context $\ast$ {\bfseries p\+Format\+Ctx}\hypertarget{classpangolin_1_1_ffmpeg_video_a98e9b20fec415cb89a0036ec1046e1db}{}\label{classpangolin_1_1_ffmpeg_video_a98e9b20fec415cb89a0036ec1046e1db}
+
+\item 
+int {\bfseries video\+Stream}\hypertarget{classpangolin_1_1_ffmpeg_video_a9533107dc47d7682efd3eb7d8cbe670d}{}\label{classpangolin_1_1_ffmpeg_video_a9533107dc47d7682efd3eb7d8cbe670d}
+
+\item 
+int {\bfseries audio\+Stream}\hypertarget{classpangolin_1_1_ffmpeg_video_a6151c955129b48bca1e658ab3f8c9f48}{}\label{classpangolin_1_1_ffmpeg_video_a6151c955129b48bca1e658ab3f8c9f48}
+
+\item 
+A\+V\+Codec\+Context $\ast$ {\bfseries p\+Vid\+Codec\+Ctx}\hypertarget{classpangolin_1_1_ffmpeg_video_a848bc22224fa78db1c10f7e9f6d9a5a5}{}\label{classpangolin_1_1_ffmpeg_video_a848bc22224fa78db1c10f7e9f6d9a5a5}
+
+\item 
+A\+V\+Codec\+Context $\ast$ {\bfseries p\+Aud\+Codec\+Ctx}\hypertarget{classpangolin_1_1_ffmpeg_video_a4d6108e0c11307fce448a7ec1b829d9f}{}\label{classpangolin_1_1_ffmpeg_video_a4d6108e0c11307fce448a7ec1b829d9f}
+
+\item 
+A\+V\+Codec $\ast$ {\bfseries p\+Vid\+Codec}\hypertarget{classpangolin_1_1_ffmpeg_video_aa67b5074b353911aaca08ce2d485ab53}{}\label{classpangolin_1_1_ffmpeg_video_aa67b5074b353911aaca08ce2d485ab53}
+
+\item 
+A\+V\+Codec $\ast$ {\bfseries p\+Aud\+Codec}\hypertarget{classpangolin_1_1_ffmpeg_video_ac5e55f322a785ec3bec63f3526d2a29d}{}\label{classpangolin_1_1_ffmpeg_video_ac5e55f322a785ec3bec63f3526d2a29d}
+
+\item 
+A\+V\+Frame $\ast$ {\bfseries p\+Frame}\hypertarget{classpangolin_1_1_ffmpeg_video_afcaf4367e2165016cba0bc6d53885f67}{}\label{classpangolin_1_1_ffmpeg_video_afcaf4367e2165016cba0bc6d53885f67}
+
+\item 
+A\+V\+Frame $\ast$ {\bfseries p\+Frame\+Out}\hypertarget{classpangolin_1_1_ffmpeg_video_afd159be76fca1627679e33241c0983e4}{}\label{classpangolin_1_1_ffmpeg_video_afd159be76fca1627679e33241c0983e4}
+
+\item 
+A\+V\+Packet {\bfseries packet}\hypertarget{classpangolin_1_1_ffmpeg_video_aeea5ad8a8a8028895d4690bd68c3248f}{}\label{classpangolin_1_1_ffmpeg_video_aeea5ad8a8a8028895d4690bd68c3248f}
+
+\item 
+int {\bfseries num\+Bytes\+Out}\hypertarget{classpangolin_1_1_ffmpeg_video_a52c23d3a5bb360cf82dd4e715d5712ad}{}\label{classpangolin_1_1_ffmpeg_video_a52c23d3a5bb360cf82dd4e715d5712ad}
+
+\item 
+uint8\+\_\+t $\ast$ {\bfseries buffer}\hypertarget{classpangolin_1_1_ffmpeg_video_a2479d68835213b014cefc60158b2e77a}{}\label{classpangolin_1_1_ffmpeg_video_a2479d68835213b014cefc60158b2e77a}
+
+\item 
+Pixel\+Format {\bfseries fmtout}\hypertarget{classpangolin_1_1_ffmpeg_video_aae8ae4a5e6b6635b1da6a6e361dd5b1c}{}\label{classpangolin_1_1_ffmpeg_video_aae8ae4a5e6b6635b1da6a6e361dd5b1c}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.\+h\end{DoxyCompactItemize}

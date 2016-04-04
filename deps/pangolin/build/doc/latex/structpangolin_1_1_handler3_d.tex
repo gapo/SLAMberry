@@ -1,0 +1,79 @@
+\hypertarget{structpangolin_1_1_handler3_d}{}\section{pangolin\+:\+:Handler3D Struct Reference}
+\label{structpangolin_1_1_handler3_d}\index{pangolin\+::\+Handler3D@{pangolin\+::\+Handler3D}}
+Inheritance diagram for pangolin\+:\+:Handler3D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{structpangolin_1_1_handler3_d}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Handler3D} (\hyperlink{classpangolin_1_1_open_gl_render_state}{Open\+Gl\+Render\+State} \&cam\+\_\+state, Axis\+Direction enforce\+\_\+up=Axis\+None, float trans\+\_\+scale=0.\+01f, float zoom\+\_\+fraction=\+P\+A\+N\+G\+O\+\_\+\+D\+F\+L\+T\+\_\+\+H\+A\+N\+D\+L\+E\+R3\+D\+\_\+\+Z\+F)\hypertarget{structpangolin_1_1_handler3_d_aeb1fcf641c24a7921d2528812be71f6c}{}\label{structpangolin_1_1_handler3_d_aeb1fcf641c24a7921d2528812be71f6c}
+
+\item 
+virtual void {\bfseries Get\+Pos\+Normal} (\hyperlink{structpangolin_1_1_view}{View} \&view, int x, int y, G\+Lprecision p\mbox{[}3\mbox{]}, G\+Lprecision Pw\mbox{[}3\mbox{]}, G\+Lprecision Pc\mbox{[}3\mbox{]}, G\+Lprecision n\mbox{[}3\mbox{]}, G\+Lprecision default\+\_\+z=1.\+0)\hypertarget{structpangolin_1_1_handler3_d_a15a0805e015e69eb0723f6c5ffa1cd1f}{}\label{structpangolin_1_1_handler3_d_a15a0805e015e69eb0723f6c5ffa1cd1f}
+
+\item 
+void {\bfseries Keyboard} (\hyperlink{structpangolin_1_1_view}{View} \&, unsigned char key, int x, int y, bool pressed)\hypertarget{structpangolin_1_1_handler3_d_afef8f0be6394bdd2ba347f188d6c5cac}{}\label{structpangolin_1_1_handler3_d_afef8f0be6394bdd2ba347f188d6c5cac}
+
+\item 
+void {\bfseries Mouse} (\hyperlink{structpangolin_1_1_view}{View} \&, Mouse\+Button button, int x, int y, bool pressed, int button\+\_\+state)\hypertarget{structpangolin_1_1_handler3_d_a915108c717411e1e56777e3a3e3eb626}{}\label{structpangolin_1_1_handler3_d_a915108c717411e1e56777e3a3e3eb626}
+
+\item 
+void {\bfseries Mouse\+Motion} (\hyperlink{structpangolin_1_1_view}{View} \&, int x, int y, int button\+\_\+state)\hypertarget{structpangolin_1_1_handler3_d_a71a05eec4a20c7ae8f179ff91f59cbd7}{}\label{structpangolin_1_1_handler3_d_a71a05eec4a20c7ae8f179ff91f59cbd7}
+
+\item 
+void {\bfseries Special} (\hyperlink{structpangolin_1_1_view}{View} \&, Input\+Special in\+Type, float x, float y, float p1, float p2, float p3, float p4, int button\+\_\+state)\hypertarget{structpangolin_1_1_handler3_d_a48df691909b0070f063db6c4b5fb6fc3}{}\label{structpangolin_1_1_handler3_d_a48df691909b0070f063db6c4b5fb6fc3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_open_gl_render_state}{Open\+Gl\+Render\+State} $\ast$ {\bfseries cam\+\_\+state}\hypertarget{structpangolin_1_1_handler3_d_a06a4bcc642f05b6f862de28bdcc7eb2e}{}\label{structpangolin_1_1_handler3_d_a06a4bcc642f05b6f862de28bdcc7eb2e}
+
+\item 
+Axis\+Direction {\bfseries enforce\+\_\+up}\hypertarget{structpangolin_1_1_handler3_d_a203fad3e6e2f23764e31a8defd326164}{}\label{structpangolin_1_1_handler3_d_a203fad3e6e2f23764e31a8defd326164}
+
+\item 
+float {\bfseries tf}\hypertarget{structpangolin_1_1_handler3_d_a21f13cb711928a706e92a63e2a657043}{}\label{structpangolin_1_1_handler3_d_a21f13cb711928a706e92a63e2a657043}
+
+\item 
+float {\bfseries zf}\hypertarget{structpangolin_1_1_handler3_d_a926550a49e53b85efb6a27dbb3674869}{}\label{structpangolin_1_1_handler3_d_a926550a49e53b85efb6a27dbb3674869}
+
+\item 
+\hyperlink{structpangolin_1_1_camera_spec}{Camera\+Spec} {\bfseries cameraspec}\hypertarget{structpangolin_1_1_handler3_d_a711ca05ff5438fc1e64f2e3d54fc4be7}{}\label{structpangolin_1_1_handler3_d_a711ca05ff5438fc1e64f2e3d54fc4be7}
+
+\item 
+G\+Lprecision {\bfseries last\+\_\+z}\hypertarget{structpangolin_1_1_handler3_d_acaf2d043cde724556982f840fd73d062}{}\label{structpangolin_1_1_handler3_d_acaf2d043cde724556982f840fd73d062}
+
+\item 
+float {\bfseries last\+\_\+pos} \mbox{[}2\mbox{]}\hypertarget{structpangolin_1_1_handler3_d_a879a2f62df14b7d29fff9f40eb57155b}{}\label{structpangolin_1_1_handler3_d_a879a2f62df14b7d29fff9f40eb57155b}
+
+\item 
+G\+Lprecision {\bfseries rot\+\_\+center} \mbox{[}3\mbox{]}\hypertarget{structpangolin_1_1_handler3_d_a8ec057108e664f92a42c8063bfbc2612}{}\label{structpangolin_1_1_handler3_d_a8ec057108e664f92a42c8063bfbc2612}
+
+\item 
+G\+Lprecision {\bfseries p} \mbox{[}3\mbox{]}\hypertarget{structpangolin_1_1_handler3_d_a18db4aec11a163928ee997a5b49abaf0}{}\label{structpangolin_1_1_handler3_d_a18db4aec11a163928ee997a5b49abaf0}
+
+\item 
+G\+Lprecision {\bfseries Pw} \mbox{[}3\mbox{]}\hypertarget{structpangolin_1_1_handler3_d_a47843978f86d00d6260c1f68876217ab}{}\label{structpangolin_1_1_handler3_d_a47843978f86d00d6260c1f68876217ab}
+
+\item 
+G\+Lprecision {\bfseries Pc} \mbox{[}3\mbox{]}\hypertarget{structpangolin_1_1_handler3_d_a1f48117a4adc74babdf6361dc9d07d81}{}\label{structpangolin_1_1_handler3_d_a1f48117a4adc74babdf6361dc9d07d81}
+
+\item 
+G\+Lprecision {\bfseries n} \mbox{[}3\mbox{]}\hypertarget{structpangolin_1_1_handler3_d_a08dd6b6230dd714ce3071b0b94112c00}{}\label{structpangolin_1_1_handler3_d_a08dd6b6230dd714ce3071b0b94112c00}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int {\bfseries hwin} = 8\hypertarget{structpangolin_1_1_handler3_d_aef53600505d7706a0a191a87211da6ce}{}\label{structpangolin_1_1_handler3_d_aef53600505d7706a0a191a87211da6ce}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/handler/handler.\+h\end{DoxyCompactItemize}

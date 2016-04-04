@@ -1,0 +1,52 @@
+\hypertarget{classpangolin_1_1_var_state}{}\section{pangolin\+:\+:Var\+State Class Reference}
+\label{classpangolin_1_1_var_state}\index{pangolin\+::\+Var\+State@{pangolin\+::\+Var\+State}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \hyperlink{classpangolin_1_1_var_value_generic}{Var\+Value\+Generic} $\ast$ $>$ {\bfseries Var\+Store\+Container}\hypertarget{classpangolin_1_1_var_state_a4b0f4490d5a2d774355568abab604827}{}\label{classpangolin_1_1_var_state_a4b0f4490d5a2d774355568abab604827}
+
+\item 
+typedef std\+::vector$<$ std\+::string $>$ {\bfseries Var\+Store\+Additions}\hypertarget{classpangolin_1_1_var_state_a83362aae7d05747448cd0caa039b5d0a}{}\label{classpangolin_1_1_var_state_a83362aae7d05747448cd0caa039b5d0a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Clear} ()\hypertarget{classpangolin_1_1_var_state_a2345876a86667af235fbfcd34d592765}{}\label{classpangolin_1_1_var_state_a2345876a86667af235fbfcd34d592765}
+
+\item 
+{\footnotesize template$<$typename T $>$ }\\void {\bfseries Notify\+New\+Var} (const std\+::string \&name, \hyperlink{classpangolin_1_1_var_value}{Var\+Value}$<$ T $>$ \&var)\hypertarget{classpangolin_1_1_var_state_a0c46301ad04fd79b3d39cf4aad06a27b}{}\label{classpangolin_1_1_var_state_a0c46301ad04fd79b3d39cf4aad06a27b}
+
+\item 
+\hyperlink{classpangolin_1_1_var_value_generic}{Var\+Value\+Generic} $\ast$\& {\bfseries operator\mbox{[}$\,$\mbox{]}} (const std\+::string \&str)\hypertarget{classpangolin_1_1_var_state_a7c47b668551ba9bec79af99417fbd22a}{}\label{classpangolin_1_1_var_state_a7c47b668551ba9bec79af99417fbd22a}
+
+\item 
+bool {\bfseries Exists} (const std\+::string \&str) const \hypertarget{classpangolin_1_1_var_state_ac1cb727a005c19f064512a707ff21ff6}{}\label{classpangolin_1_1_var_state_ac1cb727a005c19f064512a707ff21ff6}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classpangolin_1_1_var_state}{Var\+State} \& {\bfseries I} ()\hypertarget{classpangolin_1_1_var_state_aa7d02f377798c62f7669b81662acd0bc}{}\label{classpangolin_1_1_var_state_aa7d02f377798c62f7669b81662acd0bc}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Var\+Store\+Container {\bfseries vars}\hypertarget{classpangolin_1_1_var_state_ac3b9cb32a9c9781e3d9bc8fbdaa8392b}{}\label{classpangolin_1_1_var_state_ac3b9cb32a9c9781e3d9bc8fbdaa8392b}
+
+\item 
+Var\+Store\+Additions {\bfseries var\+\_\+adds}\hypertarget{classpangolin_1_1_var_state_a6c13d1b6ae71a520ec272fca48917027}{}\label{classpangolin_1_1_var_state_a6c13d1b6ae71a520ec272fca48917027}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_new_var_callback}{New\+Var\+Callback} $>$ {\bfseries new\+\_\+var\+\_\+callbacks}\hypertarget{classpangolin_1_1_var_state_ac1af07eb2736ca373b344068f9fe702c}{}\label{classpangolin_1_1_var_state_ac1af07eb2736ca373b344068f9fe702c}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_gui_var_changed_callback}{Gui\+Var\+Changed\+Callback} $>$ {\bfseries gui\+\_\+var\+\_\+changed\+\_\+callbacks}\hypertarget{classpangolin_1_1_var_state_ac01d31cc1ea6943fc81cb7f0778070bb}{}\label{classpangolin_1_1_var_state_ac01d31cc1ea6943fc81cb7f0778070bb}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/var/varstate.\+h\end{DoxyCompactItemize}

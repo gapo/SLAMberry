@@ -1,0 +1,58 @@
+\hypertarget{classpangolin_1_1_video_output}{}\section{pangolin\+:\+:Video\+Output Class Reference}
+\label{classpangolin_1_1_video_output}\index{pangolin\+::\+Video\+Output@{pangolin\+::\+Video\+Output}}
+
+
+\hyperlink{classpangolin_1_1_video_output}{Video\+Output} wrap to generically construct instances of \hyperlink{structpangolin_1_1_video_output_interface}{Video\+Output\+Interface}.  
+
+
+
+
+{\ttfamily \#include $<$video\+\_\+output.\+h$>$}
+
+Inheritance diagram for pangolin\+:\+:Video\+Output\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_video_output}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Video\+Output} (const std\+::string \&uri)\hypertarget{classpangolin_1_1_video_output_a05f21856f0889370d780ca0e5491ea47}{}\label{classpangolin_1_1_video_output_a05f21856f0889370d780ca0e5491ea47}
+
+\item 
+bool {\bfseries Is\+Open} () const \hypertarget{classpangolin_1_1_video_output_a4ad8612501aecd51d1caa98c3515d874}{}\label{classpangolin_1_1_video_output_a4ad8612501aecd51d1caa98c3515d874}
+
+\item 
+void {\bfseries Open} (const std\+::string \&uri)\hypertarget{classpangolin_1_1_video_output_ad1727d79393c51bfd72b75dc3937d1f4}{}\label{classpangolin_1_1_video_output_ad1727d79393c51bfd72b75dc3937d1f4}
+
+\item 
+void {\bfseries Close} ()\hypertarget{classpangolin_1_1_video_output_ab801c9900c515a5cb2d9fc0ffba6ea89}{}\label{classpangolin_1_1_video_output_ab801c9900c515a5cb2d9fc0ffba6ea89}
+
+\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_video_output_abe468e7219ecd20dbfd65f1d4b03ca4c}{Streams} () const \hypertarget{classpangolin_1_1_video_output_abe468e7219ecd20dbfd65f1d4b03ca4c}{}\label{classpangolin_1_1_video_output_abe468e7219ecd20dbfd65f1d4b03ca4c}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Streams} (const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \&streams, const std\+::string \&uri=\char`\"{}\char`\"{}, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&properties=\hyperlink{classpangolin_1_1json_1_1value}{json\+::value}())\hypertarget{classpangolin_1_1_video_output_a1378babb3b2661b36109c1a3dd6bec1e}{}\label{classpangolin_1_1_video_output_a1378babb3b2661b36109c1a3dd6bec1e}
+
+\item 
+int {\bfseries Write\+Streams} (unsigned char $\ast$data, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&frame\+\_\+properties=\hyperlink{classpangolin_1_1json_1_1value}{json\+::value}())\hypertarget{classpangolin_1_1_video_output_a5554458300e9f542d5a4c06681c255a8}{}\label{classpangolin_1_1_video_output_a5554458300e9f542d5a4c06681c255a8}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_uri}{Uri} {\bfseries uri}\hypertarget{classpangolin_1_1_video_output_a1dbd8853c3d0f736f27ec41a2d24a639}{}\label{classpangolin_1_1_video_output_a1dbd8853c3d0f736f27ec41a2d24a639}
+
+\item 
+\hyperlink{structpangolin_1_1_video_output_interface}{Video\+Output\+Interface} $\ast$ {\bfseries recorder}\hypertarget{classpangolin_1_1_video_output_af18517a8f7070fa7b8cddcc9fa5cecf4}{}\label{classpangolin_1_1_video_output_af18517a8f7070fa7b8cddcc9fa5cecf4}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classpangolin_1_1_video_output}{Video\+Output} wrap to generically construct instances of \hyperlink{structpangolin_1_1_video_output_interface}{Video\+Output\+Interface}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/video\+\_\+output.\+h\end{DoxyCompactItemize}

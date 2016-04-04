@@ -1,0 +1,67 @@
+\hypertarget{classpangolin_1_1_pvn_video}{}\section{pangolin\+:\+:Pvn\+Video Class Reference}
+\label{classpangolin_1_1_pvn_video}\index{pangolin\+::\+Pvn\+Video@{pangolin\+::\+Pvn\+Video}}
+Inheritance diagram for pangolin\+:\+:Pvn\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_pvn_video}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Pvn\+Video} (const std\+::string \&filename, bool realtime=false)\hypertarget{classpangolin_1_1_pvn_video_a400eea7ffd4dd3b470ddc184028d2c2b}{}\label{classpangolin_1_1_pvn_video_a400eea7ffd4dd3b470ddc184028d2c2b}
+
+\item 
+void \hyperlink{classpangolin_1_1_pvn_video_a9228cafe6aca4fb7464a6a1d1e6abc9d}{Start} ()\hypertarget{classpangolin_1_1_pvn_video_a9228cafe6aca4fb7464a6a1d1e6abc9d}{}\label{classpangolin_1_1_pvn_video_a9228cafe6aca4fb7464a6a1d1e6abc9d}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a74a2e3e1b87c7cbf9de9bcb39e1df128}{Video\+Input\+::\+Start()} \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_pvn_video_a62be1cc72d780a6fc96f603b8a1f3e35}{Stop} ()\hypertarget{classpangolin_1_1_pvn_video_a62be1cc72d780a6fc96f603b8a1f3e35}{}\label{classpangolin_1_1_pvn_video_a62be1cc72d780a6fc96f603b8a1f3e35}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a8945f80194cc7ec9594db7f27e7d09b8}{Video\+Input\+::\+Stop()} \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_pvn_video_ae64b6281bae28d96d4972d21a9898797}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_pvn_video_ae64b6281bae28d96d4972d21a9898797}{}\label{classpangolin_1_1_pvn_video_ae64b6281bae28d96d4972d21a9898797}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a93cee5c33386973a2a51165e6bdcf40b}{Video\+Input\+::\+Size\+Bytes()} \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_pvn_video_a3c18009ef903c82fd4009ebc635020ae}{Streams} () const \hypertarget{classpangolin_1_1_pvn_video_a3c18009ef903c82fd4009ebc635020ae}{}\label{classpangolin_1_1_pvn_video_a3c18009ef903c82fd4009ebc635020ae}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a9030d775d699c39ab7b7ba378c007c6a}{Video\+Input\+::\+Streams()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_pvn_video_abbe2e6f77a226c520fc40a79c443ba81}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_pvn_video_abbe2e6f77a226c520fc40a79c443ba81}{}\label{classpangolin_1_1_pvn_video_abbe2e6f77a226c520fc40a79c443ba81}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_ad3d8ff59c1ec4139320097e6e1111f32}{Video\+Input\+::\+Grab\+Next()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_pvn_video_abe3e1aa11b6ebb46842fae10cee2aa97}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_pvn_video_abe3e1aa11b6ebb46842fae10cee2aa97}{}\label{classpangolin_1_1_pvn_video_abe3e1aa11b6ebb46842fae10cee2aa97}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a4c8ac38e3c6a3f591663aeebf645e4c6}{Video\+Input\+::\+Grab\+Newest()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries Read\+File\+Header} ()\hypertarget{classpangolin_1_1_pvn_video_af288a0b4427f1fafd7ade0619771591f}{}\label{classpangolin_1_1_pvn_video_af288a0b4427f1fafd7ade0619771591f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries frames}\hypertarget{classpangolin_1_1_pvn_video_ac992b2df415c30dfc12f2a06b453c0d5}{}\label{classpangolin_1_1_pvn_video_ac992b2df415c30dfc12f2a06b453c0d5}
+
+\item 
+std\+::ifstream {\bfseries file}\hypertarget{classpangolin_1_1_pvn_video_a9176e1821e47a7aab33ebe1a77d1a00c}{}\label{classpangolin_1_1_pvn_video_a9176e1821e47a7aab33ebe1a77d1a00c}
+
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_pvn_video_a843d63896c9aac7c0979f6b18e2bb750}{}\label{classpangolin_1_1_pvn_video_a843d63896c9aac7c0979f6b18e2bb750}
+
+\item 
+size\+\_\+t {\bfseries frame\+\_\+size\+\_\+bytes}\hypertarget{classpangolin_1_1_pvn_video_a6c20ee585d2b7b211fc0bb14d76e657e}{}\label{classpangolin_1_1_pvn_video_a6c20ee585d2b7b211fc0bb14d76e657e}
+
+\item 
+bool {\bfseries realtime}\hypertarget{classpangolin_1_1_pvn_video_a9fc8db20cd07ad434e7388370d1372e5}{}\label{classpangolin_1_1_pvn_video_a9fc8db20cd07ad434e7388370d1372e5}
+
+\item 
+pangolin\+::basetime {\bfseries frame\+\_\+interval}\hypertarget{classpangolin_1_1_pvn_video_a961ef0dba437cdd274c5539dd4198374}{}\label{classpangolin_1_1_pvn_video_a961ef0dba437cdd274c5539dd4198374}
+
+\item 
+pangolin\+::basetime {\bfseries last\+\_\+frame}\hypertarget{classpangolin_1_1_pvn_video_a8fca6c98411066d3e4cef526e8ad1d94}{}\label{classpangolin_1_1_pvn_video_a8fca6c98411066d3e4cef526e8ad1d94}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/pvn\+\_\+video.\+h\end{DoxyCompactItemize}

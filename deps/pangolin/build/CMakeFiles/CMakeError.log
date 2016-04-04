@@ -1,0 +1,23 @@
+Performing C++ SOURCE FILE Test HAVE_FFMPEG_MAX_ANALYZE_DURATION2 failed with the following output:
+Change Dir: /home/gapo/meng/deps/pangolin/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb2ac/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb2ac.dir/build.make CMakeFiles/cmTC_eb2ac.dir/build
+make[1]: Entering directory '/home/gapo/meng/deps/pangolin/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb2ac.dir/src.cxx.o
+/usr/bin/c++     -std=c++0x -Wall  -DHAVE_FFMPEG_MAX_ANALYZE_DURATION2   -o CMakeFiles/cmTC_eb2ac.dir/src.cxx.o -c /home/gapo/meng/deps/pangolin/build/CMakeFiles/CMakeTmp/src.cxx
+/home/gapo/meng/deps/pangolin/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/gapo/meng/deps/pangolin/build/CMakeFiles/CMakeTmp/src.cxx:3:10: error: ‘max_analyze_duration2’ is not a member of ‘AVFormatContext’
+         &AVFormatContext::max_analyze_duration2;
+          ^
+CMakeFiles/cmTC_eb2ac.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_eb2ac.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_eb2ac.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/gapo/meng/deps/pangolin/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_eb2ac/fast' failed
+make: *** [cmTC_eb2ac/fast] Error 2
+
+Source file was:
+#include "/usr/include/libavformat/avformat.h"
+      int main() {
+        &AVFormatContext::max_analyze_duration2;
+      }

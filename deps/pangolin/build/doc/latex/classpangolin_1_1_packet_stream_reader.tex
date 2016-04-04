@@ -1,0 +1,85 @@
+\hypertarget{classpangolin_1_1_packet_stream_reader}{}\section{pangolin\+:\+:Packet\+Stream\+Reader Class Reference}
+\label{classpangolin_1_1_packet_stream_reader}\index{pangolin\+::\+Packet\+Stream\+Reader@{pangolin\+::\+Packet\+Stream\+Reader}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Packet\+Stream\+Reader} (const std\+::string \&filename, bool realtime=true)\hypertarget{classpangolin_1_1_packet_stream_reader_a23167792afe67996054ba235d4037b3f}{}\label{classpangolin_1_1_packet_stream_reader_a23167792afe67996054ba235d4037b3f}
+
+\item 
+void {\bfseries Open} (const std\+::string \&filename, bool realtime=true)\hypertarget{classpangolin_1_1_packet_stream_reader_a1b331c0e8749b20e22d474d9a36f5eb3}{}\label{classpangolin_1_1_packet_stream_reader_a1b331c0e8749b20e22d474d9a36f5eb3}
+
+\item 
+void {\bfseries Close} ()\hypertarget{classpangolin_1_1_packet_stream_reader_a9779adccfba39d9284bbc0f2463a833e}{}\label{classpangolin_1_1_packet_stream_reader_a9779adccfba39d9284bbc0f2463a833e}
+
+\item 
+const std\+::vector$<$ \hyperlink{structpangolin_1_1_packet_stream_source}{Packet\+Stream\+Source} $>$ \& {\bfseries Sources} () const \hypertarget{classpangolin_1_1_packet_stream_reader_a44524078dc65d6eb3ac5af77f95ebe7e}{}\label{classpangolin_1_1_packet_stream_reader_a44524078dc65d6eb3ac5af77f95ebe7e}
+
+\item 
+bool {\bfseries Read\+To\+Source\+Packet\+And\+Lock} (Packet\+Stream\+Source\+Id src\+\_\+id)\hypertarget{classpangolin_1_1_packet_stream_reader_a4973f580b31d4fead776e58323338c31}{}\label{classpangolin_1_1_packet_stream_reader_a4973f580b31d4fead776e58323338c31}
+
+\item 
+void {\bfseries Release\+Source\+Packet\+Lock} (Packet\+Stream\+Source\+Id src\+\_\+id)\hypertarget{classpangolin_1_1_packet_stream_reader_af4cc1d531c2dcb229103e9e99994486e}{}\label{classpangolin_1_1_packet_stream_reader_af4cc1d531c2dcb229103e9e99994486e}
+
+\item 
+std\+::basic\+\_\+istream$<$ char $>$ \& {\bfseries Read} (char $\ast$s, size\+\_\+t n)\hypertarget{classpangolin_1_1_packet_stream_reader_a03aec2d97f5c5af53d0d09cbb7f5377d}{}\label{classpangolin_1_1_packet_stream_reader_a03aec2d97f5c5af53d0d09cbb7f5377d}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t {\bfseries Read\+Timestamp} ()\hypertarget{classpangolin_1_1_packet_stream_reader_aadca1f14ec7e421831e3b0a4b34c1f45}{}\label{classpangolin_1_1_packet_stream_reader_aadca1f14ec7e421831e3b0a4b34c1f45}
+
+\item 
+size\+\_\+t {\bfseries Read\+Compressed\+Unsigned\+Int} ()\hypertarget{classpangolin_1_1_packet_stream_reader_ac594ef5afa759ce58b3ae2a2fc0a3420}{}\label{classpangolin_1_1_packet_stream_reader_ac594ef5afa759ce58b3ae2a2fc0a3420}
+
+\item 
+void {\bfseries Process\+Message} ()\hypertarget{classpangolin_1_1_packet_stream_reader_a090d547ec84af0003dfe5d43f2f01e9f}{}\label{classpangolin_1_1_packet_stream_reader_a090d547ec84af0003dfe5d43f2f01e9f}
+
+\item 
+void {\bfseries Process\+Messages\+Until\+Source\+Packet} (int \&nxt\+\_\+src\+\_\+id, int64\+\_\+t \&time\+\_\+us)\hypertarget{classpangolin_1_1_packet_stream_reader_a421f6924b19826ac412822d2d54f56e6}{}\label{classpangolin_1_1_packet_stream_reader_a421f6924b19826ac412822d2d54f56e6}
+
+\item 
+bool {\bfseries Read\+Tag} ()\hypertarget{classpangolin_1_1_packet_stream_reader_acc53cd09b91d94629c44c189f42b942e}{}\label{classpangolin_1_1_packet_stream_reader_acc53cd09b91d94629c44c189f42b942e}
+
+\item 
+void {\bfseries Read\+Header\+Packet} ()\hypertarget{classpangolin_1_1_packet_stream_reader_aa7756bbe7d074c8fc6ff18124f069d8a}{}\label{classpangolin_1_1_packet_stream_reader_aa7756bbe7d074c8fc6ff18124f069d8a}
+
+\item 
+void {\bfseries Read\+Source\+Packet\+Meta} (\hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&json)\hypertarget{classpangolin_1_1_packet_stream_reader_a3ba94740c0f9a43e1e2750f5271536bd}{}\label{classpangolin_1_1_packet_stream_reader_a3ba94740c0f9a43e1e2750f5271536bd}
+
+\item 
+void {\bfseries Read\+New\+Source\+Packet} ()\hypertarget{classpangolin_1_1_packet_stream_reader_a84ec5d9535eea4a0fabedb00fa15140e}{}\label{classpangolin_1_1_packet_stream_reader_a84ec5d9535eea4a0fabedb00fa15140e}
+
+\item 
+void {\bfseries Read\+Stats\+Packet} ()\hypertarget{classpangolin_1_1_packet_stream_reader_ad0a465df200d79caba45efc373f30d34}{}\label{classpangolin_1_1_packet_stream_reader_ad0a465df200d79caba45efc373f30d34}
+
+\item 
+void {\bfseries Read\+Over\+Source\+Packet} (Packet\+Stream\+Source\+Id src\+\_\+id)\hypertarget{classpangolin_1_1_packet_stream_reader_af5ac5ea1d39fdf07529d474c065b350b}{}\label{classpangolin_1_1_packet_stream_reader_af5ac5ea1d39fdf07529d474c065b350b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t {\bfseries next\+\_\+tag}\hypertarget{classpangolin_1_1_packet_stream_reader_a7239d69f9b43fac490395bcbce28c134}{}\label{classpangolin_1_1_packet_stream_reader_a7239d69f9b43fac490395bcbce28c134}
+
+\item 
+std\+::vector$<$ \hyperlink{structpangolin_1_1_packet_stream_source}{Packet\+Stream\+Source} $>$ {\bfseries sources}\hypertarget{classpangolin_1_1_packet_stream_reader_ae3898701de5378a9915e4227ffca0378}{}\label{classpangolin_1_1_packet_stream_reader_ae3898701de5378a9915e4227ffca0378}
+
+\item 
+std\+::ifstream {\bfseries reader}\hypertarget{classpangolin_1_1_packet_stream_reader_a0972aad6e76f5b2ff52da1cedb9fc652}{}\label{classpangolin_1_1_packet_stream_reader_a0972aad6e76f5b2ff52da1cedb9fc652}
+
+\item 
+boostd\+::mutex {\bfseries read\+\_\+mutex}\hypertarget{classpangolin_1_1_packet_stream_reader_aef1a3ce851522a0778a5af396dd150ce}{}\label{classpangolin_1_1_packet_stream_reader_aef1a3ce851522a0778a5af396dd150ce}
+
+\item 
+int {\bfseries packets}\hypertarget{classpangolin_1_1_packet_stream_reader_acbb565d521eaf0fe3165b747c85c478f}{}\label{classpangolin_1_1_packet_stream_reader_acbb565d521eaf0fe3165b747c85c478f}
+
+\item 
+bool {\bfseries realtime}\hypertarget{classpangolin_1_1_packet_stream_reader_a13dbb3164ace61d512eeb7a3980624c3}{}\label{classpangolin_1_1_packet_stream_reader_a13dbb3164ace61d512eeb7a3980624c3}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/log/packetstream.\+h\end{DoxyCompactItemize}

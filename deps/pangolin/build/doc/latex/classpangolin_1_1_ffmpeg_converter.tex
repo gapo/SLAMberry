@@ -1,0 +1,79 @@
+\hypertarget{classpangolin_1_1_ffmpeg_converter}{}\section{pangolin\+:\+:Ffmpeg\+Converter Class Reference}
+\label{classpangolin_1_1_ffmpeg_converter}\index{pangolin\+::\+Ffmpeg\+Converter@{pangolin\+::\+Ffmpeg\+Converter}}
+Inheritance diagram for pangolin\+:\+:Ffmpeg\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpangolin_1_1_ffmpeg_converter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Ffmpeg\+Converter} (\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$videoin, const std\+::string pixelfmtout=\char`\"{}R\+G\+B24\char`\"{}, Ffmpeg\+Method method=F\+F\+M\+P\+E\+G\+\_\+\+P\+O\+I\+NT)\hypertarget{classpangolin_1_1_ffmpeg_converter_a69b5561ab5a5a8e8cab92f1ecdd13212}{}\label{classpangolin_1_1_ffmpeg_converter_a69b5561ab5a5a8e8cab92f1ecdd13212}
+
+\item 
+void \hyperlink{classpangolin_1_1_ffmpeg_converter_a25e3030bf21b559196b14c27aa1e53e3}{Start} ()\hypertarget{classpangolin_1_1_ffmpeg_converter_a25e3030bf21b559196b14c27aa1e53e3}{}\label{classpangolin_1_1_ffmpeg_converter_a25e3030bf21b559196b14c27aa1e53e3}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a74a2e3e1b87c7cbf9de9bcb39e1df128}{Video\+Input\+::\+Start()} \end{DoxyCompactList}\item 
+void \hyperlink{classpangolin_1_1_ffmpeg_converter_a8e3a0216a517525c104bfc753050a463}{Stop} ()\hypertarget{classpangolin_1_1_ffmpeg_converter_a8e3a0216a517525c104bfc753050a463}{}\label{classpangolin_1_1_ffmpeg_converter_a8e3a0216a517525c104bfc753050a463}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a8945f80194cc7ec9594db7f27e7d09b8}{Video\+Input\+::\+Stop()} \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classpangolin_1_1_ffmpeg_converter_a6f251afa8078734cf1d8ee334746c8f7}{Size\+Bytes} () const \hypertarget{classpangolin_1_1_ffmpeg_converter_a6f251afa8078734cf1d8ee334746c8f7}{}\label{classpangolin_1_1_ffmpeg_converter_a6f251afa8078734cf1d8ee334746c8f7}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a93cee5c33386973a2a51165e6bdcf40b}{Video\+Input\+::\+Size\+Bytes()} \end{DoxyCompactList}\item 
+const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{classpangolin_1_1_ffmpeg_converter_a52ba3ad0dac71cba146b87257c8d546c}{Streams} () const \hypertarget{classpangolin_1_1_ffmpeg_converter_a52ba3ad0dac71cba146b87257c8d546c}{}\label{classpangolin_1_1_ffmpeg_converter_a52ba3ad0dac71cba146b87257c8d546c}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a9030d775d699c39ab7b7ba378c007c6a}{Video\+Input\+::\+Streams()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_ffmpeg_converter_a967ca60f307208300a216b044938375f}{Grab\+Next} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_ffmpeg_converter_a967ca60f307208300a216b044938375f}{}\label{classpangolin_1_1_ffmpeg_converter_a967ca60f307208300a216b044938375f}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_ad3d8ff59c1ec4139320097e6e1111f32}{Video\+Input\+::\+Grab\+Next()} \end{DoxyCompactList}\item 
+bool \hyperlink{classpangolin_1_1_ffmpeg_converter_a86127ecc83c86d6e31685c2779eea482}{Grab\+Newest} (unsigned char $\ast$image, bool wait=true)\hypertarget{classpangolin_1_1_ffmpeg_converter_a86127ecc83c86d6e31685c2779eea482}{}\label{classpangolin_1_1_ffmpeg_converter_a86127ecc83c86d6e31685c2779eea482}
+
+\begin{DoxyCompactList}\small\item\em Implement \hyperlink{structpangolin_1_1_video_input_a4c8ac38e3c6a3f591663aeebf645e4c6}{Video\+Input\+::\+Grab\+Newest()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ {\bfseries streams}\hypertarget{classpangolin_1_1_ffmpeg_converter_a2b1efbd33002a11a0eacf1ba2c43571c}{}\label{classpangolin_1_1_ffmpeg_converter_a2b1efbd33002a11a0eacf1ba2c43571c}
+
+\item 
+\hyperlink{structpangolin_1_1_video_interface}{Video\+Interface} $\ast$ {\bfseries videoin}\hypertarget{classpangolin_1_1_ffmpeg_converter_ae7f5f68d7a45fd0ce4e1d5d476099a26}{}\label{classpangolin_1_1_ffmpeg_converter_ae7f5f68d7a45fd0ce4e1d5d476099a26}
+
+\item 
+Sws\+Context $\ast$ {\bfseries img\+\_\+convert\+\_\+ctx}\hypertarget{classpangolin_1_1_ffmpeg_converter_aea617eee3da7ec80b89111fa169fa35e}{}\label{classpangolin_1_1_ffmpeg_converter_aea617eee3da7ec80b89111fa169fa35e}
+
+\item 
+Pixel\+Format {\bfseries fmtsrc}\hypertarget{classpangolin_1_1_ffmpeg_converter_a473f55dc1219d571b121c70f77780c7c}{}\label{classpangolin_1_1_ffmpeg_converter_a473f55dc1219d571b121c70f77780c7c}
+
+\item 
+Pixel\+Format {\bfseries fmtdst}\hypertarget{classpangolin_1_1_ffmpeg_converter_a22f1af94ed4f48c49128f0264e28ff1b}{}\label{classpangolin_1_1_ffmpeg_converter_a22f1af94ed4f48c49128f0264e28ff1b}
+
+\item 
+A\+V\+Frame $\ast$ {\bfseries avsrc}\hypertarget{classpangolin_1_1_ffmpeg_converter_accf06173a714645a808be178f8d76e98}{}\label{classpangolin_1_1_ffmpeg_converter_accf06173a714645a808be178f8d76e98}
+
+\item 
+A\+V\+Frame $\ast$ {\bfseries avdst}\hypertarget{classpangolin_1_1_ffmpeg_converter_ac630a10c0376d0a12bec9df520d5ac62}{}\label{classpangolin_1_1_ffmpeg_converter_ac630a10c0376d0a12bec9df520d5ac62}
+
+\item 
+uint8\+\_\+t $\ast$ {\bfseries bufsrc}\hypertarget{classpangolin_1_1_ffmpeg_converter_aca2fa5e0c62c88a20db742c9f1ae6496}{}\label{classpangolin_1_1_ffmpeg_converter_aca2fa5e0c62c88a20db742c9f1ae6496}
+
+\item 
+uint8\+\_\+t $\ast$ {\bfseries bufdst}\hypertarget{classpangolin_1_1_ffmpeg_converter_aaad093a9400770306758419b14617d3f}{}\label{classpangolin_1_1_ffmpeg_converter_aaad093a9400770306758419b14617d3f}
+
+\item 
+int {\bfseries numbytessrc}\hypertarget{classpangolin_1_1_ffmpeg_converter_a29d46022dbf371499178da6a2790b584}{}\label{classpangolin_1_1_ffmpeg_converter_a29d46022dbf371499178da6a2790b584}
+
+\item 
+int {\bfseries numbytesdst}\hypertarget{classpangolin_1_1_ffmpeg_converter_a137ced15d2543031b8b6a643641a7ab0}{}\label{classpangolin_1_1_ffmpeg_converter_a137ced15d2543031b8b6a643641a7ab0}
+
+\item 
+unsigned {\bfseries w}\hypertarget{classpangolin_1_1_ffmpeg_converter_ae9e979fcd4f74680da019cb2ecfebb0e}{}\label{classpangolin_1_1_ffmpeg_converter_ae9e979fcd4f74680da019cb2ecfebb0e}
+
+\item 
+unsigned {\bfseries h}\hypertarget{classpangolin_1_1_ffmpeg_converter_aa0e124d177b5b4a3d7fb69ca9de2e98f}{}\label{classpangolin_1_1_ffmpeg_converter_aa0e124d177b5b4a3d7fb69ca9de2e98f}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.\+h\end{DoxyCompactItemize}

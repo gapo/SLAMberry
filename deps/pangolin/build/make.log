@@ -1,0 +1,961 @@
+[  1%] Building CXX object src/CMakeFiles/pangolin.dir/video/video.cpp.o
+[  3%] Building CXX object src/CMakeFiles/pangolin.dir/video/video_output.cpp.o
+[  4%] Building CXX object src/CMakeFiles/pangolin.dir/video/drivers/ffmpeg.cpp.o
+In file included from /home/gapo/meng/deps/pangolin/src/video/video.cpp:40:0:
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:94:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtout;
+     ^
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:142:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtsrc;
+     ^
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:143:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtdst;
+     ^
+src/CMakeFiles/pangolin.dir/build.make:662: recipe for target 'src/CMakeFiles/pangolin.dir/video/video.cpp.o' failed
+make[2]: *** [src/CMakeFiles/pangolin.dir/video/video.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:0:
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:94:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtout;
+     ^
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:142:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtsrc;
+     ^
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:143:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtdst;
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:40:1: error: ‘PixelFormat’ does not name a type
+ PixelFormat FfmpegFmtFromString(const std::string fmt)
+ ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:51:37: error: ‘PixelFormat’ does not name a type
+ std::string FfmpegFmtToString(const PixelFormat fmt)
+                                     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In function ‘std::__cxx11::string pangolin::FfmpegFmtToString(int)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV420P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:55:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV420P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUYV422’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:56:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUYV422);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB24’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:57:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB24);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR24’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:58:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR24);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV422P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:59:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV422P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV444P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:60:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV444P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV410P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:61:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV410P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV411P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:62:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV411P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_GRAY8’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:63:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(GRAY8);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_MONOWHITE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:64:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(MONOWHITE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_MONOBLACK’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:65:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(MONOBLACK);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_PAL8’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:66:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(PAL8);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUVJ420P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:67:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUVJ420P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUVJ422P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:68:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUVJ422P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUVJ444P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:69:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUVJ444P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_XVMC_MPEG2_MC’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:70:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(XVMC_MPEG2_MC);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_XVMC_MPEG2_IDCT’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:71:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(XVMC_MPEG2_IDCT);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_UYVY422’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:72:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(UYVY422);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_UYYVYY411’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:73:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(UYYVYY411);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR8’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:74:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR8);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR4’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:75:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR4);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR4_BYTE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:76:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR4_BYTE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB8’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:77:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB8);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB4’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:78:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB4);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB4_BYTE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:79:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB4_BYTE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_NV12’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:80:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(NV12);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_NV21’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:81:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(NV21);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_ARGB’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:82:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(ARGB);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGBA’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:83:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGBA);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_ABGR’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:84:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(ABGR);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGRA’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:85:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGRA);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_GRAY16BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:86:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(GRAY16BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_GRAY16LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:87:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(GRAY16LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV440P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:88:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV440P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUVJ440P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:89:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUVJ440P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUVA420P’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:90:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUVA420P);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VDPAU_H264’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:91:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VDPAU_H264);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VDPAU_MPEG1’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:92:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VDPAU_MPEG1);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VDPAU_MPEG2’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:93:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VDPAU_MPEG2);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VDPAU_WMV3’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:94:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VDPAU_WMV3);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VDPAU_VC1’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:95:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VDPAU_VC1);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB48BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:96:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB48BE );
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB48LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:97:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB48LE );
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB565BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:98:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB565BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB565LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:99:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB565LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB555BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:100:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB555BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB555LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:101:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB555LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR565BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:102:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR565BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR565LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:103:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR565LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR555BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:104:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR555BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR555LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:105:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR555LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VAAPI_MOCO’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:106:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VAAPI_MOCO);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VAAPI_IDCT’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:107:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VAAPI_IDCT);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VAAPI_VLD’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:108:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VAAPI_VLD);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV420P16LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:109:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV420P16LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV420P16BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:110:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV420P16BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV422P16LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:111:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV422P16LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV422P16BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:112:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV422P16BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV444P16LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:113:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV444P16LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_YUV444P16BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:114:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(YUV444P16BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_VDPAU_MPEG4’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:115:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(VDPAU_MPEG4);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_DXVA2_VLD’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:116:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(DXVA2_VLD);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB444BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:117:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB444BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_RGB444LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:118:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(RGB444LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR444BE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:119:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR444BE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_BGR444LE’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:120:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(BGR444LE);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_Y400A’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:121:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(Y400A   );
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:49:39: error: ‘PIX_FMT_NB’ was not declared in this scope
+ #define TEST_PIX_FMT_RETURN(fmt) case PIX_FMT_##fmt: return #fmt;
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:122:5: note: in expansion of macro ‘TEST_PIX_FMT_RETURN’
+     TEST_PIX_FMT_RETURN(NB      );
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In member function ‘void pangolin::FfmpegVideo::InitUrl(std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, bool, int)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:243:5: error: ‘fmtout’ was not declared in this scope
+     fmtout = FfmpegFmtFromString(strfmtout);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:243:43: error: ‘FfmpegFmtFromString’ was not declared in this scope
+     fmtout = FfmpegFmtFromString(strfmtout);
+                                           ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:244:18: error: ‘PIX_FMT_NONE’ was not declared in this scope
+     if(fmtout == PIX_FMT_NONE )
+                  ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:252:17: warning: ‘int avpicture_get_size(AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     numBytesOut=avpicture_get_size(fmtout, w, h);
+                 ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5119:5: note: declared here
+ int avpicture_get_size(enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:252:17: warning: ‘int avpicture_get_size(AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     numBytesOut=avpicture_get_size(fmtout, w, h);
+                 ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5119:5: note: declared here
+ int avpicture_get_size(enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:257:5: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     avpicture_fill((AVPicture *)pFrameOut, buffer, fmtout, w, h);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:257:5: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     avpicture_fill((AVPicture *)pFrameOut, buffer, fmtout, w, h);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In member function ‘virtual bool pangolin::FfmpegVideo::GrabNext(unsigned char*, bool)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:336:9: warning: ‘void av_free_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+         av_free_packet(&packet);
+         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:4262:6: note: declared here
+ void av_free_packet(AVPacket *pkt);
+      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:336:9: warning: ‘void av_free_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+         av_free_packet(&packet);
+         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:4262:6: note: declared here
+ void av_free_packet(AVPacket *pkt);
+      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:336:31: warning: ‘void av_free_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+         av_free_packet(&packet);
+                               ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:4262:6: note: declared here
+ void av_free_packet(AVPacket *pkt);
+      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In constructor ‘pangolin::FfmpegConverter::FfmpegConverter(pangolin::VideoInterface*, std::__cxx11::string, pangolin::FfmpegMethod)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:361:5: error: ‘fmtsrc’ was not declared in this scope
+     fmtsrc = FfmpegFmtFromString(instrm.PixFormat());
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:361:52: error: ‘FfmpegFmtFromString’ was not declared in this scope
+     fmtsrc = FfmpegFmtFromString(instrm.PixFormat());
+                                                    ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:362:5: error: ‘fmtdst’ was not declared in this scope
+     fmtdst = FfmpegFmtFromString(sfmtdst);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:372:17: warning: ‘int avpicture_get_size(AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     numbytessrc=avpicture_get_size(fmtsrc, w, h);
+                 ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5119:5: note: declared here
+ int avpicture_get_size(enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:372:17: warning: ‘int avpicture_get_size(AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     numbytessrc=avpicture_get_size(fmtsrc, w, h);
+                 ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5119:5: note: declared here
+ int avpicture_get_size(enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:373:17: warning: ‘int avpicture_get_size(AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     numbytesdst=avpicture_get_size(fmtdst, w, h);
+                 ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5119:5: note: declared here
+ int avpicture_get_size(enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:373:17: warning: ‘int avpicture_get_size(AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     numbytesdst=avpicture_get_size(fmtdst, w, h);
+                 ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5119:5: note: declared here
+ int avpicture_get_size(enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:384:5: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     avpicture_fill((AVPicture*)avsrc,bufsrc,fmtsrc,w,h);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:384:5: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     avpicture_fill((AVPicture*)avsrc,bufsrc,fmtsrc,w,h);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:385:5: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     avpicture_fill((AVPicture*)avdst,bufdst,fmtdst,w,h);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:385:5: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     avpicture_fill((AVPicture*)avdst,bufdst,fmtdst,w,h);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: At global scope:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:454:105: error: ‘PixelFormat’ has not been declared
+ static AVStream* CreateStream(AVFormatContext *oc, CodecID codec_id, uint64_t frame_rate, int bit_rate, PixelFormat EncoderFormat, int width, int height)
+                                                                                                         ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In function ‘AVStream* pangolin::CreateStream(AVFormatContext*, pangolin::CodecID, uint64_t, int, int, int, int)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:486:38: error: invalid conversion from ‘int’ to ‘AVPixelFormat’ [-fpermissive]
+         stream->codec->pix_fmt       = EncoderFormat;
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: At global scope:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:521:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat input_format;
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:522:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat output_format;
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In member function ‘void pangolin::FfmpegVideoOutputStream::WriteFrame(AVFrame*)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:585:5: warning: ‘void av_free_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+     av_free_packet(&pkt);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:4262:6: note: declared here
+ void av_free_packet(AVPacket *pkt);
+      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:585:5: warning: ‘void av_free_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+     av_free_packet(&pkt);
+     ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:4262:6: note: declared here
+ void av_free_packet(AVPacket *pkt);
+      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:585:24: warning: ‘void av_free_packet(AVPacket*)’ is deprecated [-Wdeprecated-declarations]
+     av_free_packet(&pkt);
+                        ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:4262:6: note: declared here
+ void av_free_packet(AVPacket *pkt);
+      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In member function ‘void pangolin::FfmpegVideoOutputStream::WriteImage(const uint8_t*, int, int, double)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:598:9: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+         avpicture_fill(&src_picture,const_cast<uint8_t*>(img),input_format,w,h);
+         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:598:9: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+         avpicture_fill(&src_picture,const_cast<uint8_t*>(img),input_format,w,h);
+         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:598:63: error: ‘input_format’ was not declared in this scope
+         avpicture_fill(&src_picture,const_cast<uint8_t*>(img),input_format,w,h);
+                                                               ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:600:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data[i] += (h-1) * src_picture.linesize[i];
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:600:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data[i] += (h-1) * src_picture.linesize[i];
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:600:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data[i] += (h-1) * src_picture.linesize[i];
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:600:56: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data[i] += (h-1) * src_picture.linesize[i];
+                                                        ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:600:56: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data[i] += (h-1) * src_picture.linesize[i];
+                                                        ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:600:56: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data[i] += (h-1) * src_picture.linesize[i];
+                                                        ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:601:25: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.linesize[i] *= -1;
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:601:25: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.linesize[i] *= -1;
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:601:25: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.linesize[i] *= -1;
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:605:9: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+         avpicture_fill(&src_picture,const_cast<uint8_t*>(img),input_format,w,h);
+         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:605:9: warning: ‘int avpicture_fill(AVPicture*, const uint8_t*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+         avpicture_fill(&src_picture,const_cast<uint8_t*>(img),input_format,w,h);
+         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5104:5: note: declared here
+ int avpicture_fill(AVPicture *picture, const uint8_t *ptr,
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:605:63: error: ‘input_format’ was not declared in this scope
+         avpicture_fill(&src_picture,const_cast<uint8_t*>(img),input_format,w,h);
+                                                               ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:608:23: error: ‘input_format’ was not declared in this scope
+     if (c->pix_fmt != input_format || c->width != w || c->height != h) {
+                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:618:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data, src_picture.linesize, 0, h,
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:618:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data, src_picture.linesize, 0, h,
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:618:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data, src_picture.linesize, 0, h,
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:618:43: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data, src_picture.linesize, 0, h,
+                                           ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:618:43: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data, src_picture.linesize, 0, h,
+                                           ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:618:43: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             src_picture.data, src_picture.linesize, 0, h,
+                                           ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:619:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             dst_picture.data, dst_picture.linesize
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:619:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             dst_picture.data, dst_picture.linesize
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:619:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+             dst_picture.data, dst_picture.linesize
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:619:43: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             dst_picture.data, dst_picture.linesize
+                                           ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:619:43: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             dst_picture.data, dst_picture.linesize
+                                           ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:619:43: warning: ‘AVPicture::linesize’ is deprecated [-Wdeprecated-declarations]
+             dst_picture.data, dst_picture.linesize
+                                           ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3716:38: note: declared here
+     int linesize[AV_NUM_DATA_POINTERS];     ///< number of bytes per line
+                                      ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In constructor ‘pangolin::FfmpegVideoOutputStream::FfmpegVideoOutputStream(pangolin::FfmpegVideoOutput&, pangolin::CodecID, uint64_t, int, const pangolin::StreamInfo&)’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:647:7: error: class ‘pangolin::FfmpegVideoOutputStream’ does not have any field named ‘input_format’
+       input_format(FfmpegFmtFromString(input_info.PixFormat())),
+       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:647:62: error: ‘FfmpegFmtFromString’ was not declared in this scope
+       input_format(FfmpegFmtFromString(input_info.PixFormat())),
+                                                              ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:648:7: error: class ‘pangolin::FfmpegVideoOutputStream’ does not have any field named ‘output_format’
+       output_format( FfmpegFmtFromString("YUV420P") ),
+       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:651:72: error: ‘output_format’ was not declared in this scope
+     stream = CreateStream(recorder.oc, codec_id, frame_rate, bit_rate, output_format, input_info.Width(), input_info.Height() );
+                                                                        ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:654:15: warning: ‘int avpicture_alloc(AVPicture*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     int ret = avpicture_alloc(&dst_picture, stream->codec->pix_fmt, stream->codec->width, stream->codec->height);
+               ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5092:5: note: declared here
+ int avpicture_alloc(AVPicture *picture, enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:654:15: warning: ‘int avpicture_alloc(AVPicture*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     int ret = avpicture_alloc(&dst_picture, stream->codec->pix_fmt, stream->codec->width, stream->codec->height);
+               ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5092:5: note: declared here
+ int avpicture_alloc(AVPicture *picture, enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:654:112: warning: ‘int avpicture_alloc(AVPicture*, AVPixelFormat, int, int)’ is deprecated [-Wdeprecated-declarations]
+     int ret = avpicture_alloc(&dst_picture, stream->codec->pix_fmt, stream->codec->width, stream->codec->height);
+                                                                                                                ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:5092:5: note: declared here
+ int avpicture_alloc(AVPicture *picture, enum AVPixelFormat pix_fmt, int width, int height);
+     ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp: In destructor ‘pangolin::FfmpegVideoOutputStream::~FfmpegVideoOutputStream()’:
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:673:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+     av_free(dst_picture.data[0]);
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:673:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+     av_free(dst_picture.data[0]);
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+/home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:673:25: warning: ‘AVPicture::data’ is deprecated [-Wdeprecated-declarations]
+     av_free(dst_picture.data[0]);
+                         ^
+In file included from /usr/include/libavformat/avformat.h:317:0,
+                 from /home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:43,
+                 from /home/gapo/meng/deps/pangolin/src/video/drivers/ffmpeg.cpp:28:
+/usr/include/libavcodec/avcodec.h:3714:39: note: declared here
+     uint8_t *data[AV_NUM_DATA_POINTERS];    ///< pointers to the image data planes
+                                       ^
+In file included from /home/gapo/meng/deps/pangolin/src/video/video_output.cpp:33:0:
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:94:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtout;
+     ^
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:142:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtsrc;
+     ^
+/home/gapo/meng/deps/pangolin/include/pangolin/video/drivers/ffmpeg.h:143:5: error: ‘PixelFormat’ does not name a type
+     PixelFormat     fmtdst;
+     ^
+src/CMakeFiles/pangolin.dir/build.make:1070: recipe for target 'src/CMakeFiles/pangolin.dir/video/drivers/ffmpeg.cpp.o' failed
+make[2]: *** [src/CMakeFiles/pangolin.dir/video/drivers/ffmpeg.cpp.o] Error 1
+src/CMakeFiles/pangolin.dir/build.make:614: recipe for target 'src/CMakeFiles/pangolin.dir/video/video_output.cpp.o' failed
+make[2]: *** [src/CMakeFiles/pangolin.dir/video/video_output.cpp.o] Error 1
+CMakeFiles/Makefile2:136: recipe for target 'src/CMakeFiles/pangolin.dir/all' failed
+make[1]: *** [src/CMakeFiles/pangolin.dir/all] Error 2
+Makefile:127: recipe for target 'all' failed
+make: *** [all] Error 2

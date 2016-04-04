@@ -1,0 +1,42 @@
+\hypertarget{structpangolin_1_1_video_playback_interface}{}\section{pangolin\+:\+:Video\+Playback\+Interface Struct Reference}
+\label{structpangolin_1_1_video_playback_interface}\index{pangolin\+::\+Video\+Playback\+Interface@{pangolin\+::\+Video\+Playback\+Interface}}
+Inheritance diagram for pangolin\+:\+:Video\+Playback\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structpangolin_1_1_video_playback_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{structpangolin_1_1_video_playback_interface_a1853ad8ca4b10b8a87599d0c288b9c86}{Get\+Current\+Frame\+Id} () const =0\hypertarget{structpangolin_1_1_video_playback_interface_a1853ad8ca4b10b8a87599d0c288b9c86}{}\label{structpangolin_1_1_video_playback_interface_a1853ad8ca4b10b8a87599d0c288b9c86}
+
+\begin{DoxyCompactList}\small\item\em Return monotonic id of current frame. \end{DoxyCompactList}\item 
+virtual int \hyperlink{structpangolin_1_1_video_playback_interface_aa1ab605b49009c52a80eaa0cc074b63b}{Get\+Total\+Frames} () const =0
+\begin{DoxyCompactList}\small\item\em Return total number of frames to be captured from device, or std\+::numeric\+\_\+limits$<$int$>$\+::max() on failure. \end{DoxyCompactList}\item 
+virtual int \hyperlink{structpangolin_1_1_video_playback_interface_a0f65ae246e93ddc884b139ac0ba06d25}{Seek} (int frameid)=0\hypertarget{structpangolin_1_1_video_playback_interface_a0f65ae246e93ddc884b139ac0ba06d25}{}\label{structpangolin_1_1_video_playback_interface_a0f65ae246e93ddc884b139ac0ba06d25}
+
+\begin{DoxyCompactList}\small\item\em Return -\/1 on failure, frameid on success. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{pangolin\+::\+Video\+Playback\+Interface@{pangolin\+::\+Video\+Playback\+Interface}!Get\+Total\+Frames@{Get\+Total\+Frames}}
+\index{Get\+Total\+Frames@{Get\+Total\+Frames}!pangolin\+::\+Video\+Playback\+Interface@{pangolin\+::\+Video\+Playback\+Interface}}
+\subsubsection[{\texorpdfstring{Get\+Total\+Frames() const =0}{GetTotalFrames() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int pangolin\+::\+Video\+Playback\+Interface\+::\+Get\+Total\+Frames (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{structpangolin_1_1_video_playback_interface_aa1ab605b49009c52a80eaa0cc074b63b}{}\label{structpangolin_1_1_video_playback_interface_aa1ab605b49009c52a80eaa0cc074b63b}
+
+
+Return total number of frames to be captured from device, or std\+::numeric\+\_\+limits$<$int$>$\+::max() on failure. 
+
+
+
+Implemented in \hyperlink{structpangolin_1_1_open_ni_video2_ae36b50354e352f5faf7e396e35ba62d1}{pangolin\+::\+Open\+Ni\+Video2}, and \hyperlink{classpangolin_1_1_pango_video_af6c22038f6e41b16f34ca08d7c82fec2}{pangolin\+::\+Pango\+Video}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/video.\+h\end{DoxyCompactItemize}

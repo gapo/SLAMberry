@@ -1,0 +1,48 @@
+\hypertarget{classpangolin_1_1_colour_wheel}{}\section{pangolin\+:\+:Colour\+Wheel Class Reference}
+\label{classpangolin_1_1_colour_wheel}\index{pangolin\+::\+Colour\+Wheel@{pangolin\+::\+Colour\+Wheel}}
+
+
+A \hyperlink{classpangolin_1_1_colour_wheel}{Colour\+Wheel} is like a continuous colour palate that can be sampled.  
+
+
+
+
+{\ttfamily \#include $<$colour.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpangolin_1_1_colour_wheel_a3ceb3513ba6cad92d6e2844671da7f43}{Colour\+Wheel} (float saturation=0.\+5, float value=1.\+0, float alpha=1.\+0)\hypertarget{classpangolin_1_1_colour_wheel_a3ceb3513ba6cad92d6e2844671da7f43}{}\label{classpangolin_1_1_colour_wheel_a3ceb3513ba6cad92d6e2844671da7f43}
+
+\begin{DoxyCompactList}\small\item\em Construct \hyperlink{classpangolin_1_1_colour_wheel}{Colour\+Wheel} with Saturation, Value and Alpha constant. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_colour}{Colour} \hyperlink{classpangolin_1_1_colour_wheel_ac8d1538dbe99eca9eb769f3a6076ea53}{Get\+Colour\+Bin} (int i) const \hypertarget{classpangolin_1_1_colour_wheel_ac8d1538dbe99eca9eb769f3a6076ea53}{}\label{classpangolin_1_1_colour_wheel_ac8d1538dbe99eca9eb769f3a6076ea53}
+
+\begin{DoxyCompactList}\small\item\em Use Golden ratio (/angle) to pick well spaced colours. \end{DoxyCompactList}\item 
+\hyperlink{structpangolin_1_1_colour}{Colour} \hyperlink{classpangolin_1_1_colour_wheel_af6f84ad1b063c82019927fee17ceba3f}{Get\+Unique\+Colour} ()\hypertarget{classpangolin_1_1_colour_wheel_af6f84ad1b063c82019927fee17ceba3f}{}\label{classpangolin_1_1_colour_wheel_af6f84ad1b063c82019927fee17ceba3f}
+
+\begin{DoxyCompactList}\small\item\em Return next unique colour from \hyperlink{classpangolin_1_1_colour_wheel}{Colour\+Wheel}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries unique\+\_\+colours}\hypertarget{classpangolin_1_1_colour_wheel_a7829fb1c01b8f0f3b93ad7436892a92f}{}\label{classpangolin_1_1_colour_wheel_a7829fb1c01b8f0f3b93ad7436892a92f}
+
+\item 
+float {\bfseries sat}\hypertarget{classpangolin_1_1_colour_wheel_a4c7188ac25ce50b5b77038668c1b4b73}{}\label{classpangolin_1_1_colour_wheel_a4c7188ac25ce50b5b77038668c1b4b73}
+
+\item 
+float {\bfseries val}\hypertarget{classpangolin_1_1_colour_wheel_a2e1f6a24f74dd33eb0a67b503cd63e8a}{}\label{classpangolin_1_1_colour_wheel_a2e1f6a24f74dd33eb0a67b503cd63e8a}
+
+\item 
+float {\bfseries alpha}\hypertarget{classpangolin_1_1_colour_wheel_a73efd17611316d61e992f2095fcbbcb5}{}\label{classpangolin_1_1_colour_wheel_a73efd17611316d61e992f2095fcbbcb5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classpangolin_1_1_colour_wheel}{Colour\+Wheel} is like a continuous colour palate that can be sampled. 
+
+In the future, different Colour\+Wheels will be supported, but this one is based on sampling hues in H\+SV colourspace. An indefinite number of unique colours are sampled using the golden angle. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/gl/colour.\+h\end{DoxyCompactItemize}

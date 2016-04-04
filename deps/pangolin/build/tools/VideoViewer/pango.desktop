@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PangoVideoViewer
+Exec=/home/gapo/meng/deps/pangolin/build/tools/VideoViewer/VideoViewer
+MimeType=application/x-pango
+Icon=
+Terminal=false
+Type=Application
+Categories=AudioVideo;Player;Video;
+Comment=

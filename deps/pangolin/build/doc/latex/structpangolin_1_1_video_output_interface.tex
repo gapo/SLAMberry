@@ -1,0 +1,37 @@
+\hypertarget{structpangolin_1_1_video_output_interface}{}\section{pangolin\+:\+:Video\+Output\+Interface Struct Reference}
+\label{structpangolin_1_1_video_output_interface}\index{pangolin\+::\+Video\+Output\+Interface@{pangolin\+::\+Video\+Output\+Interface}}
+
+
+Interface to video recording destinations.  
+
+
+
+
+{\ttfamily \#include $<$video\+\_\+output.\+h$>$}
+
+Inheritance diagram for pangolin\+:\+:Video\+Output\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.924399cm]{structpangolin_1_1_video_output_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \& \hyperlink{structpangolin_1_1_video_output_interface_aa26739928e046aea3562d8c4afd7b006}{Streams} () const =0\hypertarget{structpangolin_1_1_video_output_interface_aa26739928e046aea3562d8c4afd7b006}{}\label{structpangolin_1_1_video_output_interface_aa26739928e046aea3562d8c4afd7b006}
+
+\begin{DoxyCompactList}\small\item\em Get format and dimensions of all video streams. \end{DoxyCompactList}\item 
+virtual void {\bfseries Set\+Streams} (const std\+::vector$<$ \hyperlink{classpangolin_1_1_stream_info}{Stream\+Info} $>$ \&streams, const std\+::string \&uri=\char`\"{}\char`\"{}, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&properties=\hyperlink{classpangolin_1_1json_1_1value}{json\+::value}())=0\hypertarget{structpangolin_1_1_video_output_interface_aa7ea42f95ac003680fa12124037f5aae}{}\label{structpangolin_1_1_video_output_interface_aa7ea42f95ac003680fa12124037f5aae}
+
+\item 
+virtual int {\bfseries Write\+Streams} (unsigned char $\ast$data, const \hyperlink{classpangolin_1_1json_1_1value}{json\+::value} \&frame\+\_\+properties)=0\hypertarget{structpangolin_1_1_video_output_interface_a2fff62f48a6a7a208a1780f579e4844a}{}\label{structpangolin_1_1_video_output_interface_a2fff62f48a6a7a208a1780f579e4844a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface to video recording destinations. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/gapo/meng/deps/pangolin/include/pangolin/video/video\+\_\+output.\+h\end{DoxyCompactItemize}
